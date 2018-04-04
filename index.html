@@ -10,71 +10,589 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
 
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 768px)" href="css/layout-mobile.css">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 1179px)" href="css/layout-tablet.css">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 </head>
 <body>
-	<ul class="ps-lines">
-		<li class="v" style="margin-left:-501px"></li>
-		<li class="v" style="margin-left:500px"></li>
-		<li class="v" ></li>
+<div id="mobile-menu" class="mobile-menu hide">
+	<ul>
+		<h2 class="b-title">Меню</h2>
+		<li><a href="index.html" class="active">Главная</a></li>
+		<li><a href="services.html">Услуги и продукты</a></li>
+		<li><a href="about.html">О компании</a></li>
+		<li><a href="cooperation.html">Сотрудничество</a></li>
+		<li><a href="documents.html">Документация</a></li>
+		<li><a href="contacts.html" class="contact-info">Контакты</a></li>
 	</ul>
-	<div class="b b-1">
-		<div class="b-block">
-			<div class="b-logo-cont left">
-				<div class="b-logo-text left blue">ФРАНШИЗА "ELECTROFROG"<br/>ОТ КРУПНЕЙШЕГО ЗАВОДА ЗАО "ЛИТМАШДЕТАЛЬ"</div>
+	<div class="social-icons">
+		<a href="#" class="icon-facebook"></a>
+		<a href="#" class="icon-vk"></a>
+		<a href="#" class="icon-instagram"></a>
+	</div>
+</div>
+<div id="panel-page">
+	<div class="b b-top">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<ul class="b-top-content">
+					<li>
+						<a href="https://t.me/EAconsbot" class="contact-info telegram">
+							<img src="i/telegram.svg" class="telegram">@EAConsBot
+						</a>
+					</li>
+					<li>
+						<a href="#" class="contact-info">Контактная информация</a>
+					</li>
+					<li>
+						<div class="social-icons">
+							<a href="#" class="icon-facebook" target="_blank"></a>
+							<a href="#" class="icon-vk" target="_blank"></a>
+							<a href="#" class="icon-instagram" target="_blank"></a>
+							<a href="#" class="icon-twitter" target="_blank"></a>
+						</div>
+					</li>
+					<li>
+						<a href="tel:+74991100046" class="phone">+7 499 110 00 46</a>
+					</li>
+					<li class="cabinet-cont">
+						<a href="#" class="cabinet"><span class="icon-cabinet"></span>Кабинет</a>
+						<div class="cabinet-bubble">
+							<div class="cabinet-bubble-wrap">
+								<h3 class="b-title">Войти</h3>
+								<form id="b-login-form" class="b-login-form" method="post" action="action.php">
+									<input type="text" name="email" placeholder="E-mail" required>
+									<input type="password" name="password" placeholder="Пароль" required>
+									<a href="#" class="b-btn b-btn-blue ajax" onclick="$('#b-login-form').submit(); return false;">Войти</a>
+								</form>
+								<a href="#" class="b-btn b-btn-transparent">Регистрация</a>
+								<a href="#" class="restore-password">Восстановить пароль</a>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
-			<div class="b-date-cont right">
-				<h2 class="blue">8 (800) 555 15 24</h2>
-				<p class="right"><a href="#b-popup-1" class="b-get-callback b-orange-butt fancy goal-click" data-goal="CALLBACK_B">Заказать звонок</a></p>
+		</div>
+	</div>
+	<div class="b b-menu">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<div class="b-logo">
+					<a href="index.html">
+						<img src="i/logo.png" data-retina-src="i/logo@2x.png">
+					</a>
+				</div>
+				<ul class="b-menu-items">
+					<li><a href="services.html">Услуги и продукты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Вики</a></li>
+					<li><a href="documents.html">Блог</a></li>
+				</ul>
+				<div id="burger-menu" class="burger-menu icon-menu">
+					
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="b b-2">
+	<div class="b b-index">
 		<div class="b-block">
-			
+			<div class="left-block">
+				<h2 class="b-title white">Тендерное сопровождение и&nbsp;сервисы для малого и&nbsp;среднего&nbsp;бизнеса</h1>
+				<h3 class="white">Комплексные решения по сопровождению тендерной&nbsp;деятельности вашего бизнеса - аудит и&nbsp;консалтинг, а также банковские, страховые, лизинговые&nbsp;продукты от наших партнеров.</h3>
+				<ul class="white">
+					<li class="icon-mark">
+						Проффесиональная команда
+					</li>
+					<li class="icon-mark">
+						Экспертная поддержка 24/7
+					</li>
+					<li class="icon-mark">
+						Лучшие продукты для малого и среднего бизнеса
+					</li>
+				</ul>
+				<a href="#" class="b-btn-more">Узнать больше</a>
+			</div>
+			<div class="right-block">
+				<h3 class="title white">Месяц тендерного сопровождения бесплатно!</h3>
+				<form method="POST" action="kitsend.php">
+					<div class="input-string clearfix">
+						<input type="text" name="name" placeholder="Ваше имя" required>
+					</div>
+					<div class="input-string clearfix">
+						<input type="text" name="phone" placeholder="Ваш телефон" oninput="this.value = this.value.replace(/\D/g, '')" pattern="[0-9]*" required>
+					</div>
+					<div class="input-string clearfix">
+						<input type="text" name="subject" placeholder="Ваш email" required>
+					</div>
+					<div class="input-string clearfix">
+						<textarea name="comment" placeholder="Ваше сообщение" required></textarea>
+					</div>
+					<input type="text" name="MAIL">
+					<div class="text-center-block">
+						<div class="form-center">
+							<input type="checkbox" class="checkbox" id="personal" required>
+							<label for="personal" class="personal-info white">Cогласен на обработку персональных данных</label>
+						</div>
+					</div>
+					<div class="b-btn-center"><a href="#" class="b-btn ajax">Отправить</a></div>
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+				</form>
+			</div>
 		</div>
 	</div>
-	<div class="b b-3">
+	<div class="b-menu-down">
+		<ul>
+			<li><img src="i/downmenu-1.png" data-retina-src="i/downmenu-1@2x.png"><a href="#">Проекты Ea consult</a></li>
+			<li><img src="i/downmenu-2.png" data-retina-src="i/downmenu-2@2x.png"><a href="#">Малый и средний бизнес</a></li>
+			<li><img src="i/downmenu-3.png" data-retina-src="i/downmenu-3@2x.png"><a href="#">Сотрудничество</a></li>
+			<li><img src="i/downmenu-4.png" data-retina-src="i/downmenu-4@2x.png"><a href="#">Шаблоны документов</a></li>
+			<li><img src="i/downmenu-5.png" data-retina-src="i/downmenu-5@2x.png"><a href="#">Отраслевая практика</a></li>
+		</ul>
+	</div>
+	<div class="b-special">
 		<div class="b-block">
-			
+			<div class="text-center-block">
+				<div class="form-center">
+					<h2 class="b-title white">Специальные предложения</h2>
+					<p class="white">Мы сформировали для наших клиентов оптимальные пакетные предложения, чтобы вам было проще работать с многочисленными продуктами и услугами нашей группы. Всего три базовых пакета, наполненных консалтингом, финансовыми сервисами от наших партнеров и экспертной поддержкой 24/7. Оцените выгоду для вашего бизнеса с нашими актуальными специальными предложениями.</p>
+				</div>
+			</div>
+			<div class="b-special-list">
+				<div class="b-special-item">
+					<div class="white-block">
+						<h3 class="b-title">Пакет стандарт</h3>
+						<h4 class="item-title">Тендерное сопровождение</h4>
+						<ul>
+							<li class="icon-mark">1 высококлассный юрист на ваших проектах</li>
+							<li class="icon-mark">до 3-х закупочных процедур в месяц, общим бюджетом до 100 млн руб.</li>
+							<li class="icon-mark">индивидуальный "ручной" подбор тендеров</li>
+							<li class="icon-mark">ЭЦП на 2-х площадках - бесплатно!</li>
+							<li class="icon-mark">поддержка 24/7</li>
+						</ul>
+						<h4 class="item-title">Финансовое обеспечение, страховка и лизинг</h4>
+						<ul>
+							<li class="icon-mark">Расширенная кредитная линия в банках-парнерах!</li>
+							<li class="icon-mark">CASH BACK 5% на все продукты раздела по программе лояльности;<br>
+							<a href="#">Узнайте подробнее о программах лояльности EA Consult</a></li>
+						</ul>
+						<h4 class="item-title">Лицензии, СРО и сертификация</h4>
+						<ul>
+							<li class="icon-mark">срочная лицензия за 48 часов!</li>
+							<li class="icon-mark">CASH BACK 2% по программе лояльности</li>
+						</ul>
+					</div>
+					<div class="blue-block">
+						<h3 class="b-title white">100 тыс руб в месяц</h3>
+						<h4 class="item-title white">600 тыс руб = <div class="line-through">6</div>  7 мес</h4>
+						<p class="white">1 месяц в подарок при заключении контракта на полгода</p>
+						<h4 class="item-title white">1,2 млн руб = <div class="line-through">12</div> 15 мес</h4>
+						<p class="white">3 месяца в подарок при заключении контракта на год</p>
+						<div class="text-center-block">
+							<div class="form-center">
+								<a href="#" class="b-btn">Отправить заявку</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-special-item">
+					<div class="white-block">
+						<h3 class="b-title">Пакет медиум</h3>
+						<h4 class="item-title">Тендерное сопровождение</h4>
+						<ul>
+							<li class="icon-mark">2 высококлассных юриста на ваших проектах по всей России</li>
+							<li class="icon-mark">до 5-х закупочных процедур в месяц, с общим бюджетом до 200 млн руб.</li>
+							<li class="icon-mark">индивидуальный "ручной" подбор тендеров</li>
+							<li class="icon-mark">ЭЦП на 3-х площадках - бесплатно!</li>
+							<li class="icon-mark">поддержка 24/7 - горячая линия</li>
+						</ul>
+						<h4 class="item-title">Финансовое обеспечение, страховка и лизинг</h4>
+						<ul>
+							<li class="icon-mark">Расширенная кредитная линия в банках-парнерах!</li>
+							<li class="icon-mark">CASH BACK 5% на все продукты раздела по программе лояльности;
+								<br><a href="#">Узнайте подробнее о программах лояльности EA Consult</a></li>
+							<li class="icon-mark">Персональный финансовый менеджер</li>
+						</ul>
+						<h4 class="item-title">Лицензии, СРО и сертификация</h4>
+						<ul>
+							<li class="icon-mark">срочная лицензия за 48 часов!</li>
+							<li class="icon-mark">CASH BACK 3% по программе лояльности</li>
+						</ul>
+					</div>
+					<div class="blue-block">
+						<h3 class="b-title white">200 тыс руб в месяц</h3>
+						<h4 class="item-title white">1,2 млн руб = <div class="line-through">6</div>  7 мес</h4>
+						<p class="white">1 месяц в подарок при заключении контракта на полгода</p>
+						<h4 class="item-title white">1,2 млн руб = <div class="line-through">12</div> 15 мес</h4>
+						<p class="white">3 месяца в подарок при заключении контракта на год</p>
+						<div class="text-center-block">
+							<div class="form-center">
+								<a href="#" class="b-btn">Отправить заявку</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-special-item">
+					<div class="white-block">
+						<h3 class="b-title">Пакет премиум</h3>
+						<h4 class="item-title">Тендерное сопровождение</h4>
+						<ul>
+							<li class="icon-mark">Команда юристов и аналитиков от 3-х человек на ваших проектах по всей России</li>
+							<li class="icon-mark">до 10-х закупочных процедур в месяц, общим бюджетом до 400 млн руб.</li>
+							<li class="icon-mark">индивидуальный "ручной" подбор тендеров</li>
+							<li class="icon-mark">ЭЦП на 2-х площадках - бесплатно!</li>
+							<li class="icon-mark">поддержка 24/7 - горячая линия</li>
+						</ul>
+						<h4 class="item-title">Финансовое обеспечение, страховка и лизинг</h4>
+						<ul>
+							<li class="icon-mark">Расширенная кредитная линия в банках-парнерах!</li>
+							<li class="icon-mark">CASH BACK 5% на все продукты раздела по программе лояльности;
+								<br><a href="#">Узнайте подробнее о программах лояльности EA Consult</a></li>
+							<li class="icon-mark">Персональный финансовый менеджер</li>
+						</ul>
+						<h4 class="item-title">Лицензии, СРО и сертификация</h4>
+						<ul>
+							<li class="icon-mark">срочная лицензия за 48 часов!</li>
+							<li class="icon-mark">CASH BACK 5% по программе лояльности</li>
+							
+						</ul>
+					</div>
+					<div class="blue-block">
+						<h3 class="b-title white">350 тыс руб в месяц</h3>
+						<h4 class="item-title white">2,1 млн руб = <div class="line-through">6 </div> 7 мес</h4>
+						<p class="white">1 месяц в подарок при заключении контракта на полгода</p>
+						<h4 class="item-title white">1,2 млн руб = <div class="line-through">12 </div> 15 мес</h4>
+						<p class="white">3 месяца в подарок при заключении контракта на год</p>
+						<div class="text-center-block">
+							<div class="form-center">
+								<a href="#" class="b-btn">Отправить заявку</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center-block">
+				<div class="form-center">
+					<a href="#" class="b-btn-more">Больше спецпредложений</a>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="b b-4">
+	<div class="b-services">
 		<div class="b-block">
-			
+			<h2 class="b-title">Что предлагаем</h2>
+			<div class="choice-block"><!-- 
+				 --><a href="#tender" class="active" id="tender" onclick="return false">Тендерное сопровождение</a><!-- 
+				 --><a href="#bank-guarantees" id="bank-guarantees" onclick="return false">Банковские гарантии и тендерный кредит</a><!-- 
+				 --><a href="#" class="deactive" id="insurance" onclick="return false">Страховые продукты для вашего бизнеса</a><!-- 
+				 --><a href="#" class="deactive" id="leasing" onclick="return false">Лизинг</a><!-- 
+				 --><a href="#" class="deactive" id="licensees" onclick="return false">Лицензии и СРО</a><!-- 
+				 --><a href="#" class="deactive" id="certification" onclick="return false">Сертификация и обучение</a>
+			</div>
+			<div id="tender" class="b-choice-item">
+				<h3 class="b-title">Тендерное сопровождение</h3>
+				<p>EA Consult реализует полный комплект работ тендерного отдела под ключ, в том числе:</p>
+				<div class="item-services-list">
+					<div class="item-service">
+						<img src="i/tender-icon-1.png" data-retina-src="i/tender-icon-1@2x.png">
+						<p class="white">Работа с электронными площадками и средствами электронно-цифровой подписи</p>
+						<ul class="white">
+							<li>Заказ и оформление ЭЦП</li>
+							<li>Аккредитация на ЭТП</li>
+							<li>Настройка ПК для работы с ЭТП</li>
+						</ul>
+						<a href="#" class="b-btn-more">Узнать больше</a>
+					</div>
+					<div class="item-service">
+						<img src="i/tender-icon-2.png" data-retina-src="i/tender-icon-2@2x.png">
+						<p class="white">Обработка и анализ информации о закупках, исследования и отчетность</p>
+						<ul class="white">
+							<li>Индивидуальный подбор тендеров</li>
+							<li>Экспертиза тендерной документации</li>
+							<li>Разработка стратегии и операционных планов тендерного отдела</li>
+						</ul>
+						<a href="#" class="b-btn-more">Узнать больше</a>
+					</div>
+					<div class="item-service">
+						<img src="i/tender-icon-3.png" data-retina-src="i/tender-icon-3@2x.png">
+						<p class="white">Сопровождение конкурсных процедур: заявки, запросы, работа с ФАС и другое</p>
+						<ul class="white">
+							<li>Заявки, жалобы, запросы на разъяснения</li>
+							<li>Представительство в ФАС и иных органах</li>
+							<li>Иные сопутствующие услуги финансово-юридического характера</li>
+						</ul>
+						<a href="#" class="b-btn-more">Узнать больше</a>
+					</div>
+				</div>
+				<div class="citate-block">
+					<p>Возможно вам окажется полезной наша база знаний. Мы собрали множество шаблонов документов, рекомендаций и экспертных материалов по отдельным ключевым юридическим и организационным вопросам тендерной деятельности.</p><p>Также напоминаем, что для простоты на базе услуг по тендерному сопровождению мы сформировали несколько пакетных предложений, ознакомиться с которыми вы можете выше на главной странице сайта.</p>
+				</div>
+			</div>
+			<div id="bank-guarantees" class="b-choice-item hide">
+				<h3 class="b-title">Банковские гарантии и тендерный кредит</h3>
+				<p>EA Consult реализует полный комплект работ тендерного отдела под ключ, в том числе:</p>
+				<div class="item-services-list">
+					<div class="item-service">
+						<img src="i/tender-icon-1.png">
+						<p class="white">Работа с электронными площадками и средствами электронно-цифровой подписи</p>
+						<ul class="white">
+							<li>Заказ и оформление ЭЦП</li>
+							<li>Аккредитация на ЭТП</li>
+							<li>Настройка ПК для работы с ЭТП</li>
+						</ul>
+						<a href="#" class="b-btn-more">Узнать больше</a>
+					</div>
+					<div class="item-service">
+						<img src="i/tender-icon-2.png">
+						<p class="white">Обработка и анализ информации о закупках, исследования и отчетность</p>
+						<ul class="white">
+							<li>Индивидуальный подбор тендеров</li>
+							<li>Экспертиза тендерной документации</li>
+							<li>Разработка стратегии и операционных планов тендерного отдела</li>
+						</ul>
+						<a href="#" class="b-btn-more">Узнать больше</a>
+					</div>
+					<div class="item-service">
+						<img src="i/tender-icon-3.png">
+						<p class="white">Сопровождение конкурсных процедур: заявки, запросы, работа с ФАС и другое</p>
+						<ul class="white">
+							<li>Заявки, жалобы, запросы на разъяснения</li>
+							<li>Представительство в ФАС и иных органах</li>
+							<li>Иные сопутствующие услуги финансово-юридического характера</li>
+						</ul>
+						<a href="#" class="b-btn-more">Узнать больше</a>
+					</div>
+				</div>
+				<div class="citate-block">
+					<p>Возможно вам окажется полезной наша база знаний. Мы собрали множество шаблонов документов, рекомендаций и экспертных материалов по отдельным ключевым юридическим и организационным вопросам тендерной деятельности.</p><p>Также напоминаем, что для простоты на базе услуг по тендерному сопровождению мы сформировали несколько пакетных предложений, ознакомиться с которыми вы можете выше на главной странице сайта.</p>
+				</div>
+			</div>
+			<div class="text-center-block">
+				<div class="form-center">
+					<a href="#" class="b-btn">Больше услуг</a>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="b b-5">
+	<div class="b-calc">
 		<div class="b-block">
-			
+			<h2 class="b-title">Рассчитайте стоимость</h2>
+			<div class="choice-block">
+				<div><a href="#" class="active icon-rectangle" id="bank-guarantees-calc" onclick="return false">Банковская гарантия</a></div>
+				<div class="deactive"><a href="#" class="deactive" id="tender-calc" onclick="return false">Тендерный кредит</a></div>
+				<div class="deactive"><a href="#" class="deactive" id="insurance" onclick="return false">Страховые продукты</a></div>
+				<div class="deactive"><a href="#" class="deactive" id="leasing" onclick="return false">Лизинг</a></div>
+			</div>
+			<form id="b-calc-form" class="b-calc-form" method="post" action="action.php">
+				<div class="b-calc-item b-calc-select">
+					<select name="type">
+						<option value="val1">Возврат аванса</option>
+						<option value="val2">Возврат аванса</option>
+						<option value="val3">Возврат аванса</option>
+					</select>
+				</div>
+				<div class="b-calc-item b-calc-sum">
+					<input type="text" name="sum" placeholder="5 350 000" oninput="this.value = this.value.replace(/\D/g, '')" pattern="[0-9]*">
+				</div>
+				<div class="b-calc-item b-calc-period">
+					<input type="text" name="period" placeholder="30">
+					<div class="period-items">
+						<a href="#" class="days period-active" onclick="return false;">дней</a> 
+						<a href="#" class="months" onclick="return false;">месяцев</a> 
+						<a href="#" class="period" onclick="return false;">период</a>
+					</div>
+					<div class="period-datepicker hide">
+						<input type="text" class="period-start" pattern="[0-9]*" placeholder="xx.xx.20xx" required name="period-start"><!-- 
+						 --><div class="dash">—</div><!-- 
+						 --><input type="text" class="period-finish" pattern="[0-9]*" placeholder="xx.xx.20xx" required name="period-finish">
+					</div>
+				</div>
+				<div class="b-calc-item result-item">
+					<p class="calc-result-min icon-rub-medium">15000</p>
+					<p> – </p>
+					<p class="calc-result-max icon-rub-medium">21986</p>
+				</div>
+				<div class="b-calc-item">
+					<span>Точную сумму сделки просчитывает менеджер, её формирование зависит от финансового положения компании, требований заказчика к банку, условий заключаемого контракта и прочее</span>
+				</div>
+				<div class="b-calc-item">
+					<a href="#" class="b-btn b-btn-blue">Отправить заявку</a>
+				</div>
+			</form>
 		</div>
 	</div>
-	<div class="b b-6">
+	<div class="b-about">
 		<div class="b-block">
-			
+			<div class="text-center-block">
+				<div class="form-center">
+					<h2 class="b-title"> О компании </h2>
+					<p>EA Consult — профессиональная команда специалистов по финансовому анализу и юридическому консалтингу в области государственных, муниципальных и коммерческих закупок. Для наших клиентов мы оказываем надежный сервис на индивидуальных условиях - комплексный аутсорсинг тендерных отделов, банковские гарантии и кредитные линии для вашего бизнеса.</p>
+				</div>
+			</div>
+			<div class="b-about-list">
+				<div class="b-about-item">
+					<div><img src="i/about-icon-1.png"></div>
+					<p>Прозрачность партнерских отношений</p>
+				</div>
+				<div class="b-about-item">
+					<div><img src="i/about-icon-2.png"></div>
+					<p>Доступ к широкому ассортименту финансовых продуктов</p>
+				</div>
+				<div class="b-about-item">
+					<div><img src="i/about-icon-3.png"></div>
+					<p>Экономия средств</p>
+				</div>
+				<div class="b-about-item">
+					<div><img src="i/about-icon-4.png"></div>
+					<p>Экономия времени</p>
+				</div>				
+				<div class="b-about-item">
+					<div><img src="i/about-icon-5.png"></div>
+					<p>Оказание помощи</p>
+				</div>
+				<div class="b-about-item">
+					<div><img src="i/about-icon-6.png"></div>
+					<p>Теплый приём и приятная атмосфера</p>
+				</div>
+			</div>
+			<div class="b-about-blocks">
+				<div class="b-about-blocks-item">
+					<p class="blue icon-mark">Консалтинговая компания.</p>
+					<p>Профессиональная команда специалистов по юридическому консалтингу</p>
+				</div>
+				<div class="b-about-blocks-item">
+					<p class="blue icon-mark">Маркетплейс.</p>
+					<p>банковские, страховые, лизинговые продукты и сервисы для малого и среднего бизнеса</p>
+				</div>
+				<div class="b-about-blocks-item">
+					<p class="blue icon-mark">Центр обучения и сертификации.</p>
+					<p>Эксклюзивные курсы, тренинги, сертификационные программы</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="b b-7">
+	<div class="b-partners">
 		<div class="b-block">
-			
+			<h2 class="b-title">Банки-партнеры</h2>
+			<div class="b-banks">
+				<div class="b-top-bank">
+					<img src="i/bank-img.jpg" class="bank-img">
+					<div class="b-bank-info">
+						<div class="b-bank-info-top">
+							<img src="i/absolut-bank-logo.png" class="bank-logo">
+							<h3>Абсолют Банк</h3>
+							<p>ПАО «АКБ «Абсолют Банк» — крупный коммерческий фининститут, дочерняя организация негосударственного пенсионного фонда «Благосостояние». До мая 2013 года банк принадлежал бельгийской группе KBC, которая продала его&nbsp;структурам НПФ за 300 млн евро. Приоритетными направлениями деятельности банка являются обслуживание корпоративных клиентов и среднего бизнеса.</p>
+						</div>
+						<div class="b-bank-info-bottom">
+							  <h4>Финансовый рейтинг </h4><span>на 01.02.2018</span>
+							  <div class="b-table">
+							  		<div class="b-table-row">
+							  			<div class="b-table-cell">Активы нетто</div>
+							  			<div class="b-table-cell"><p>269 511 670 тыс. рублей</p><span><a href="#">35 место </a>по России,<a href="#"> 28 место </a>в регионе</span></div>
+							  		</div>
+							  		<div class="b-table-row">
+							  			<div class="b-table-cell">Чистая прибыль</div>
+							  			<div class="b-table-cell"><p>269 511 670 тыс. рублей</p><span><a href="#">35 место </a>по России,<a href="#"> 28 место </a>в регионе</span></div>
+							  		</div>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="b-bank-slider">
+					<div class="b-bank-slider-item">
+						<img src="i/logo-bank-1.png">
+					</div><!-- 
+					 --><div class="b-bank-slider-item">
+						<img src="i/logo-home-bank@2x.png">
+					</div><!-- 
+					 --><div class="b-bank-slider-item">
+						<img src="i/logo-bank-mia.png">
+					</div><!-- 
+					 --><div class="b-bank-slider-item">
+						<img src="i/logo-sber.png">
+					</div><!-- 
+					 --><div class="b-bank-slider-item">
+						<img src="i/logo-mos.png">
+					</div><!-- 
+					 --><div class="b-bank-slider-item">
+						<img src="i/logo-rus.png">
+					</div><!-- 
+					 --><div class="b-bank-slider-item">
+						<img src="i/logo-bank-1.png">
+					</div>
+				</div>
+			</div>
+			<div class="b-info-partners">
+				<div class="b-block">
+					<div class="text-center-block">
+						<div class="form-center">
+							<h2 class="b-title">Информационные и&nbsp;справочные партнеры</h2>
+						</div>
+					</div>
+					<div class="b-info-partners-list">
+						<a href="http://zakupki360.ru/?slide=main" target="_blank" class="b-info-partners-item"> 
+							<img src="i/logo-partner-1.png">
+							<p>Закупки360</p>
+						</a> 
+						<a href="http://www.spark-interfax.ru/" target="_blank" class="b-info-partners-item"> 
+							<img src="i/logo-partner-2.png">
+							<p>Спарк-Интерфакс</p>
+						</a> 
+						<a href="https://zakupki.kontur.ru/" target="_blank" class="b-info-partners-item"> 
+							<img src="i/logo-partner-3.png">
+							<p>Контур. Закупки</p>
+						</a> 
+						<a href="http://www.consultant.ru/" target="_blank" class="b-info-partners-item"> 
+							<img src="i/logo-partner-4.png">
+							<p>Консультант</p>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="b b-8">
+	<div class="b-footer">
 		<div class="b-block">
-			
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Сотрудничество</a></li>
+					<li><a href="cooperation.html#career">Карьера</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">Тендерное сопровождение</a></li>
+					<li><a href="#">Банковские гарантии и&nbsp;тендерный&nbsp;кредит</a></li>
+					<li><a href="#">Обучение и сертификация</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">44-ФЗ</a></li>
+					<li><a href="#">223-ФЗ</a></li>
+					<li><a href="#">Список электронных торговых&nbsp;площадок</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<a href="tel:+74991100046" class="phone">+7 499 110 00 46</a>
+				<p>Москва, Боткинский 1-й проезд, офис А 224 </p>
+				<p><a href="mailto:***@mail.ru">eaconsult@.ru</a></p>
+			</div>
+			<div class="b-bottom">
+				<p>© 2012 — 2017 «EA CONSULT»</p>
+			</div>
 		</div>
 	</div>
-	<div class="b b-9">
-		<div class="b-block">
-			
-		</div>
-	</div>
+	<div class="b-menu-overlay" id="b-menu-overlay" style="display: none;"></div>
+</div>
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-1">
@@ -108,12 +626,15 @@
 	</div>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-	<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script>
+	<!-- <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script> -->
 	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/slideout.min.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
 </body>
 </html>
