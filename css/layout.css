@@ -649,6 +649,9 @@ ul.b-menu-items{
 		margin-bottom: 18px;
 		letter-spacing: 1px;
 	}
+	.right-block form{
+		position: relative;
+	}
 	.right-block form input{
 		margin-bottom: 24px;
 		font-family: 'GothamProMedium';
@@ -690,11 +693,11 @@ ul.b-menu-items{
 	  opacity: 0;
 	  margin: 10px 0 0 20px;
 	}
-	.checkbox + label {
+	label.personal-info {
 	 	position: relative;
 	 	cursor: pointer;
 	}
-	.checkbox + label:before {
+	label.personal-info:before {
 	 	content: '';
 	 	border: 1px solid #fff;
 	 	position: absolute;
@@ -708,7 +711,10 @@ ul.b-menu-items{
 	    -o-transition: .2s;
 	 	transition: .2s;
 	}
-	.checkbox:checked + label:before {
+	.checkbox.error ~ label.personal-info:before{
+		border: 1px solid #f00;
+	}
+	.checkbox:checked ~ label:before {
 	    background: #1b82c7;
 	    border: 1px solid #fff;
 	}
@@ -815,8 +821,8 @@ background-color: #013c6e;
 }
 	.b-special p{
 		font-family: 'GothamProRegular';
-		font-size: 14px;
-		line-height: 19px;
+		font-size: 16px;
+		line-height: 22px;
 	}
 	.b-special h2.b-title{
 		padding-bottom: 14px;
@@ -854,7 +860,7 @@ background-color: #013c6e;
 			margin-right: 30px;
 			width: calc(100%/3 - 20px);
 			padding: 30px 25px 0px;
-			box-shadow: 4px 22px #1b82c7;
+			box-shadow: 4px 22px #135e90;
 		}
 		.b-special-item ul > li{
 			position: relative;
@@ -885,6 +891,38 @@ background-color: #013c6e;
 }
 .white-block a:hover{
 	text-decoration: none;
+}
+.white-block p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+ul.inside-list{
+	padding-left: 30px;
+}
+h3 span.icon-rub-medium{
+	position: relative;
+	padding-right: 26px;
+}
+h3 .icon-rub-medium:before{
+	position: absolute;
+    content: '\e908';
+    right: 0px;
+    bottom: 4px;
+    font-size: 24px;
+}
+h4 span.icon-rub-medium{
+	position: relative;
+	padding-right: 18px;
+}
+h4 .icon-rub-medium:before{
+	position: absolute;
+    content: '\e908';
+    right: 0px;
+    bottom: 4px;
+    font-size: 16px;
+}
+.big-num{
+	font-size: 20px;
 }
 .blue-block{
 	background-color: #1b82c7;
@@ -925,15 +963,16 @@ background-color: #013c6e;
 .line-through{
 	display: inline;
 	position: relative;
+	font-family: 'GothamPromedium';
 }
 .line-through:before{
     position: absolute;
     content: "";
-    top: 47%;
-    left: 50%;
-    width: 23px;
-    border-bottom: 3px solid #f7a506;
-    transform: translateX(-50%);
+    top: 50%;
+    right: 1px;
+    width: 100%;
+    border-bottom: 3px solid #d60000;
+    transform: rotate(-45deg);
 }
 .b-special .b-btn-more{
     text-transform: uppercase;
@@ -1088,6 +1127,12 @@ background-color: #013c6e;
 		text-align: left;
 		padding-top: 23px;
 	}
+	.citate-block a{
+		text-decoration: underline;
+	}
+	.citate-block a:hover{
+		text-decoration: none;
+	}
 .citate-block:before{
 	position: absolute;
     content: url(../i/upquote.svg);
@@ -1158,7 +1203,10 @@ form#b-calc-form{
 		font-size: 19px;
 	}
 	.b-calc-item select{
-	    -moz-appearance: none;
+		display: none;
+	}
+	.jq-selectbox__select{
+		-moz-appearance: none;
 	    -webkit-appearance: none;
 	    border: none;
 	    padding: 19px 0px 21px 22px;
@@ -1167,6 +1215,45 @@ form#b-calc-form{
 		font-size: 19px; 
 		background-color: #fff;
 	    border-radius: 0;
+	}
+	.jq-selectbox__dropdown ul{
+		position: absolute;
+	    width: 100%;
+	    z-index: 99;
+	}
+	.jq-selectbox__dropdown li:hover{
+		background-color: #deebff;
+	}
+	.jq-selectbox__dropdown li:last-child{
+		border-bottom: 1px solid #b7b7b7;
+	}
+	.jq-selectbox__dropdown li{
+		-moz-appearance: none;
+	    -webkit-appearance: none;
+	    border: none;
+	    border-top: 1px solid #b7b7b7;
+	    padding: 19px 0px 21px 22px;
+		width: 100%;
+		font-family: 'GothamProBold';
+		font-size: 19px; 
+		background-color: #fff;
+	    border-radius: 0;
+	}
+	.b-calc-item select > option {
+        -webkit-appearance: none;
+	    border: none;
+	    padding: 19px 0px 21px 22px;
+	    width: 100%;
+	    font-family: 'GothamProBold';
+	    font-size: 19px;
+	    background-color: #fff;
+	    border-radius: 0;
+	}
+	form#b-calc-form .b-calc-select:after{
+		position: absolute;
+		content: url(../i/arrow-down.svg);
+	    bottom: 20px;
+    	right: 19px;
 	}
 	.b-calc-item span{
 	    font-family: 'GothamProRegular';
@@ -1206,8 +1293,20 @@ form#b-calc-form{
 		letter-spacing: 1.2px;
 	}
 	.b-calc-item .b-btn{
-	    padding: 24px 60px 20px 57px;
+        padding: 13px 5px 14px 5px;
    		width: 100%;
+   		font-size: 16px;
+	}
+	.b-calc .citate-block{
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+	.citate-block p{
+		text-align: left;
+		padding-top: 23px;
+		font-family: 'GothamProMedium';
+	    font-size: 16px;
+	    line-height: 22px;
 	}
 form#b-calc-form .b-calc-sum:before{
 	font-family: 'GothamProRegular';
@@ -1297,12 +1396,21 @@ form#b-calc-form .b-calc-item span:before{
 	padding-top: 76px;
 	padding-bottom: 95px;
 }
+	.b-about .b-btn-more{
+		margin-top: 40px;
+	    padding: 23px 61px 25px 61px;
+	}
+	.third-width.form-center{
+	    width: calc(100%/3 - 19.4px);
+	}
 	.b-about h2.b-title{
 	    padding-bottom: 13px;
 	}
 	.b-about .text-center-block p{
 		width: 770px;
 		font-family: 'GothamProRegular';
+	    font-size: 16px;
+   		line-height: 22px;
 	}
 	
 .b-about-blocks{
@@ -1380,6 +1488,7 @@ form#b-calc-form .b-calc-item span:before{
 	padding-bottom: 104px;
 }
 	.b-partners h2.b-title{
+		text-align: center;
 		text-transform: uppercase;
 		margin-bottom: 16px;
 	}
@@ -1394,7 +1503,7 @@ form#b-calc-form .b-calc-item span:before{
 	.b-partners .b-top-bank{
 		display: inline-block;
 		padding-bottom: 22px;
-		border-bottom: 1px solid #dadada	;
+		border-bottom: 1px solid #dadada;
 	}
 	.b-partners .b-top-bank .bank-img{
 		padding-right: 26px;
@@ -1410,6 +1519,7 @@ form#b-calc-form .b-calc-item span:before{
 		font-family: 'GothamProBold';
 		font-size: 24px;
 		text-transform: uppercase;
+		line-height: 28px;
 	}
 	.b-bank-info-top p{
 		font-family: 'GothamProRegular';
@@ -1422,6 +1532,8 @@ form#b-calc-form .b-calc-item span:before{
 }
 	.b-bank-info-top .bank-logo{
 		padding-bottom: 18px;
+	    max-width: 145px;
+  		max-height: 65px;
 	}
 	.b-bank-info-top h3{
 		padding-bottom: 17px;
@@ -1481,7 +1593,7 @@ form#b-calc-form .b-calc-item span:before{
     width: 31px;
     height: 39px;
     background-color: #fff;
-    left: -16px;
+    left: -25px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -1492,7 +1604,7 @@ form#b-calc-form .b-calc-item span:before{
     width: 31px;
     height: 39px;
     background-color: #fff;
-    right: -16px;
+    right: -25px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -1504,11 +1616,16 @@ form#b-calc-form .b-calc-item span:before{
     left: 10px;
 }
 .icon-arrow-right:before{
-	content: url('../i/arrow-right.svg');
-	top: 50%;
+	content: url('../i/arrow-left.svg');
+	top: 25%;
     position: absolute;
     transform: translateY(-50%);
     right: 10px;
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+    	    transform: rotate(180deg);
 }
 .icon-arrow-right:hover, .icon-arrow-left:hover{
 	box-shadow: 0px 0px 4px 0px #000000;
@@ -1595,10 +1712,10 @@ form#b-calc-form .b-calc-item span:before{
 
 
 input::-webkit-input-placeholder {
-	color: #000;
+	color: #828282;
 }
 input:-moz-placeholder {
-	color: #000;
+	color: #828282;
 }
 .b-calc input:focus::-webkit-input-placeholder {
 	color: transparent;
@@ -1607,10 +1724,10 @@ input:-moz-placeholder {
 	color: transparent;
 }
 textarea::-webkit-input-placeholder {
-	color: #000;
+	color: #828282;
 }
 textarea:-moz-placeholder {
-	color: #000;
+	color: #828282;
 }
 .b-table{
 	display: table;
@@ -1703,7 +1820,34 @@ textarea:-moz-placeholder {
 input[name="MAIL"]{
 	display: none;
 }
-
+.b-thanks.b-popup{
+    padding: 40px 60px 28px;
+}
+.b-thanks.b-popup h3{
+    font-family: 'GothamProMedium';
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+.b-thanks.b-popup h4{
+    font-size: 18px;
+    font-family: 'GothamProRegular';
+    padding-top: 16px;
+    text-align: center;
+}
+.b-thanks.b-popup input[type="submit"]{
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 23px 91px 21px 90px;
+    font-family: 'GothamProBold';
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #1b82c7;
+    color: #FFF;
+}
 
 
 

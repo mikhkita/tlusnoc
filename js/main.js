@@ -1,6 +1,9 @@
 $(document).ready(function(){	
 
-    isRetina = retina();
+    var isDesktop = false,
+        isTablet = false,
+        isMobile = false,
+        isRetina = retina();
 
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
@@ -13,6 +16,20 @@ $(document).ready(function(){
         } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
+        }
+
+        if( myWidth > 1179 ){
+            isDesktop = true;
+            isTablet = false;
+            isMobile = false;
+        }else if( myWidth > 767 && myWidth < 1180 ){
+            isDesktop = false;
+            isTablet = true;
+            isMobile = false;
+        }else{
+            isDesktop = false;
+            isTablet = false;
+            isMobile = true;
         }
     }
     $(window).resize(resize);
@@ -124,15 +141,18 @@ $(document).ready(function(){
     
     }
 
-    WhiteBlockHeight();
-    ServiceItemBlockHeight();
-    AboutItemBlockHeight();
-    BankInfoBlockHeight();
-
-    $( window ).resize(function() {
+    if (!isMobile) {
         WhiteBlockHeight();
         ServiceItemBlockHeight();
         AboutItemBlockHeight();
+        BankInfoBlockHeight();
+    }
+    $( window ).resize(function() {
+        if (!isMobile) {
+            WhiteBlockHeight();
+            ServiceItemBlockHeight();
+            AboutItemBlockHeight();
+        }
     });
     
 
@@ -203,6 +223,7 @@ $(document).ready(function(){
             $(tab).fadeIn(400);
         }
     });
+    
     $('.b-calc .choice-block a').click(function(e) {
         e.preventDefault();
         if ($(this).hasClass('deactive')) {
@@ -213,6 +234,7 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
     });
+    $('.b-calc-item select').styler();
     
 
     // function toggleBlock($this){
@@ -247,12 +269,24 @@ $(document).ready(function(){
         autoplaySpeed: 3000,
     });
 
-     $('.b-bank-slider').slick({
+    $('.b-top-bank-slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 600,
+        autoplay: false,
+        asNavFor: '.b-bank-slider',
+    });
+    $('.b-bank-slider').slick({
         dots: false,
         arrows: true,
         nextArrow: '<div class="icon-arrow-right b-bank-arrows" aria-hidden="true"></div>',
         prevArrow: '<div class="icon-arrow-left b-bank-arrows" aria-hidden="true"></div>',
         infinite: true,
+        asNavFor: '.b-top-bank-slider',
+        focusOnSelect: true,
         slidesToShow: 6,
         slidesToScroll: 1,
         speed: 600,

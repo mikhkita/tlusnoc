@@ -14,6 +14,12 @@ body {
 	color: #1b1b1b;
 	line-height: 18px;
 }
+.b-block{
+    max-width: calc(100% - 16px);
+}
+.b-thanks.b-popup{
+    padding: 40px 20px 28px;
+}
 
 /*-----------Slideout-----------*/
 
@@ -72,8 +78,20 @@ body {
 }
 
 /*-----------------------*/
+.b-btn-more{
+	font-size: 16px;
+}
 .b-index{
 	padding-top: 60px;
+}
+.right-block{
+	padding: 32px 8px 47px 8px;
+}
+.blue-block{
+    padding: 35px 16px 19px;
+}
+.b-special .b-btn-more{
+    padding: 21px 30px 19px 30px;
 }
 .b-services h2{
 	width: 100%;
@@ -84,6 +102,12 @@ body {
 .b-services .b-choice-item p{
 	width: 100%;
 }
+.white-block{
+	height: auto;
+}
+.left-block .b-btn-more{
+	padding: 19px 60px 21px;
+}
 .choice-block a:not(:nth-child(3n)){
     margin-right: 0; 
 }
@@ -92,6 +116,16 @@ body {
 }
 .choice-block a{
     width: calc(100%/2 - 25px);
+}
+form#b-calc-form{
+    padding: 17px 16px 33px;
+}
+.b-calc-item .b-btn{
+    padding: 24px 20px 20px 20px;
+    font-size: 16px;  
+}
+.b-calc-item:last-child{
+	text-align: center;
 }
 .b-calc .choice-block div:not(:last-child){
 	margin-right: 0; 
@@ -131,6 +165,17 @@ body {
 	}
 .b-about-blocks{
     margin-top: 40px;
+}
+.b-partners .b-banks{
+	padding: 0;
+	background-color: #fff;
+}
+.b-bank-slider{
+    background-color: #ebebeb;
+    padding: 10px 0px;
+}
+.b-bank-info{
+    padding: 21px 8px 26px 8px;
 }
 @media screen and (max-width: 600px){
 	.b-menu-down li{
@@ -256,6 +301,12 @@ body {
 	.b-special-item ul > li{
 		padding-bottom: 10px;
 	}
+	h3 .icon-rub-medium:before{
+		font-size: 18px;
+	}
+	h3 span.icon-rub-medium{
+		padding-right: 20px;
+	}
 	.blue-block p{
 		padding-bottom: 10px;
 	}
@@ -292,6 +343,30 @@ body {
 	.citate-block:after{
 	    bottom: -33px;
 	    right: 10px;
+	}
+	@media screen and (max-width: 500px){
+		.b-calc-item input{
+			font-size: 16px;
+		}
+		.jq-selectbox__select{
+			font-size: 16px;
+		}
+		.jq-selectbox__dropdown li{
+			font-size: 16px;
+		}
+		.dash{
+			padding: 20px 0;
+		}
+		.b-calc-item p{
+			font-size: 16px;
+		}
+		.b-calc-item select{
+			font-size: 16px;
+		}
+		.b-calc .icon-rub-medium:before{
+			font-size: 12px;
+			bottom: 3px;
+		}
 	}
 }
 
