@@ -178,6 +178,12 @@ form#b-calc-form{
 .b-bank-info{
     padding: 21px 8px 26px 8px;
 }
+.icon-arrow-right{
+	right: 15px;
+}
+.icon-arrow-left{
+	left: 15px;
+}
 @media screen and (max-width: 600px){
 	.b-menu-down li{
 		width: calc(100%/2 - 3px);

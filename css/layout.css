@@ -173,6 +173,9 @@ input.error,textarea.error{
 	left: 50%;
 	margin-left: -500px;
 }
+.b-go{
+
+}
 [class^="icon-"]:before, 
 [class*=" icon-"]:before  {
 	font-family: 'icomoon' !important;
@@ -1426,9 +1429,7 @@ form#b-calc-form .b-calc-item span:before{
 	.b-about .b-btn-more{
 		margin-top: 40px;
 	    padding: 23px 61px 25px 61px;
-	}
-	.third-width.form-center{
-	    width: calc(100%/3 - 19.4px);
+	    max-width: 350px;
 	}
 	.b-about h2.b-title{
 	    padding-bottom: 13px;
