@@ -1002,22 +1002,31 @@ h4 .icon-rub-medium:before{
 .choice-block{
     text-align: center;
 }
+	.b-services .choice-block div{
+	    position: relative;
+	    width: calc(100%/3 - 25px);
+	    display: inline-block;
+	    height: 61px;
+	    vertical-align: bottom;
+	}
 	.choice-block a{
-		position: relative;
-		text-transform: uppercase;
 		color: #000;
-		display: inline-block;
-		width: calc(100%/3 - 25px);
+		border-bottom: 4px solid #000;
+		text-transform: uppercase;
 		font-size: 20px;
 		font-family: 'GothamProBold';
-		border-bottom: 4px solid #000;
 		padding: 29px 0px 15px 0px;
 		line-height: 23px;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    padding: 5px 0px 6px 0px;
 	}
-	.choice-block a:nth-child(n+4){
+	.b-services .choice-block div:nth-child(n+4){
 		margin-top: 43px;
 	}
-	.choice-block a:not(:nth-child(3n)){
+	.b-services .choice-block div:not(:nth-child(3n)){
 		margin-right: 37px;
 	}
 	.choice-block a.active{
@@ -1031,9 +1040,16 @@ h4 .icon-rub-medium:before{
 	}
 	.b-services .choice-block a.deactive:after,.b-calc .choice-block div.deactive:after{
 		position: absolute;
-		content: url('../i/soon.png');
+		content: 'скоро';
+		font-size: 14px;
+		font-family: 'UbuntuRegular';
 		top: -17px;
 		right: -2px;
+		width: 51px;
+		height: 21px;
+		background-color: #d1d1d1;
+		color: #2c5b83;
+		text-transform: lowercase;
 	}
 	
 .b-services .b-choice-item{
@@ -1225,13 +1241,13 @@ form#b-calc-form{
 		background-color: #deebff;
 	}
 	.jq-selectbox__dropdown li:last-child{
-		border-bottom: 1px solid #b7b7b7;
+		border-bottom: 1px solid #eee;
 	}
 	.jq-selectbox__dropdown li{
 		-moz-appearance: none;
 	    -webkit-appearance: none;
 	    border: none;
-	    border-top: 1px solid #b7b7b7;
+	    border-top: 1px solid #eee;
 	    padding: 19px 0px 21px 22px;
 		width: 100%;
 		font-family: 'GothamProBold';
@@ -1249,11 +1265,22 @@ form#b-calc-form{
 	    background-color: #fff;
 	    border-radius: 0;
 	}
-	form#b-calc-form .b-calc-select:after{
+	.jq-selectbox:after{
 		position: absolute;
 		content: url(../i/arrow-down.svg);
 	    bottom: 20px;
     	right: 19px;
+	}
+	.jq-selectbox.opened:after{
+		position: absolute;
+		content: url(../i/arrow-down.svg);
+	    bottom: 20px;
+    	right: 19px;
+    	-webkit-transform: rotate(180deg);
+           -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+    	        transform: rotate(180deg);
 	}
 	.b-calc-item span{
 	    font-family: 'GothamProRegular';

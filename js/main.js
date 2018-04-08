@@ -224,6 +224,7 @@ $(document).ready(function(){
             $('.b-choice-item').not(tab).addClass('hide');
             $(tab).fadeIn(400);
         }
+        return false;
     });
     
     $('.b-calc .choice-block a').click(function(e) {
@@ -235,6 +236,7 @@ $(document).ready(function(){
             $('.b-calc .choice-block .active').removeClass('active');
             $(this).addClass('active');
         }
+        return false;
     });
     $('.b-calc-item select').styler();
     
