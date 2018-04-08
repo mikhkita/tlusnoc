@@ -102,21 +102,22 @@ body {
 .b-services .b-choice-item p{
 	width: 100%;
 }
+.b-services .choice-block div{
+	width: calc(100%);
+}
+.b-services .choice-block div:nth-child(2n){
+	margin-left: 0;
+}
+.b-services .choice-block div:nth-child(n+1){
+	margin-top: 19px;
+}
 .white-block{
 	height: auto;
 }
 .left-block .b-btn-more{
 	padding: 19px 60px 21px;
 }
-.choice-block a:not(:nth-child(3n)){
-    margin-right: 0; 
-}
-.choice-block a:nth-child(2n){
-	margin-left: 37px; 
-}
-.choice-block a{
-    width: calc(100%/2 - 25px);
-}
+
 form#b-calc-form{
     padding: 17px 16px 33px;
 }
@@ -139,7 +140,7 @@ form#b-calc-form{
 .b-calc .choice-block div:nth-child(2n){
 	margin-left: 31px; 
 }
-.b-services .choice-block a.deactive:after, .b-calc .choice-block div.deactive:after{
+.b-calc .choice-block div.deactive:after{
     top: 5px;
 }
 .b-calc .choice-block div a.active:before{

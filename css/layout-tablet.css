@@ -78,9 +78,24 @@ body {
 	.b-menu-down li{
 	    width: calc(100%/3 - 3px);
 	}
+	.b-services .choice-block div{
+		width: calc(100%/2 - 25px);
+	}
+
+	.b-services .choice-block div:not(:nth-child(3n)){
+		margin-right: 0;
+	}
+	.b-services .choice-block div:nth-child(n+4){
+		margin-top: 0;
+	}
+	.b-services .choice-block div:nth-child(2n){
+		margin-left: 37px;
+		margin-top: 43px;
+	}
 	.b-choice-item .item-service{
 		width: 100%;
 	}
+
 		.b-choice-item .item-service:not(:last-child){
 			margin-bottom: 20px;
 		}
