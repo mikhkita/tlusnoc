@@ -141,12 +141,14 @@ $(document).ready(function(){
     
     }
 
-    if (!isMobile) {
-        WhiteBlockHeight();
-        ServiceItemBlockHeight();
-        AboutItemBlockHeight();
-        BankInfoBlockHeight();
-    }
+    window.onload = function() {
+        if(!isMobile) {
+            WhiteBlockHeight();
+            ServiceItemBlockHeight();
+            AboutItemBlockHeight();
+            BankInfoBlockHeight();
+        }
+    };
     $( window ).resize(function() {
         if (!isMobile) {
             WhiteBlockHeight();
