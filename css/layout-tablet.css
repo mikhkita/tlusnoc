@@ -42,6 +42,23 @@ body {
 	}
 }
 @media screen and (max-width: 960px){
+	.b-btn-center{
+		display: inline-block;
+		float: right;
+	}
+	.b-index{
+		padding-bottom: 0;
+		background-size: unset;
+	}
+	.burger-menu{
+		display: inline-block;
+	}
+	.b-top-content .contact-info{
+		display: none;
+	}
+	ul.b-menu-items{
+	    display: none;
+	}
 	.b-partners,.b-calc,.b-about,.b-services,.b-special{
 	    padding-top: 45px;
 	    padding-bottom: 60px;
@@ -122,9 +139,6 @@ body {
 	}
 }
 @media screen and (max-width: 844px){
-	.burger-menu{
-		display: inline-block;
-	}
 	.b-index h2.b-title{
 	    font-size: 36px;
     	line-height: 42px;
@@ -132,12 +146,6 @@ body {
 	h2.b-title{
 	    font-size: 36px;
     	line-height: 42px;
-	}
-	.b-top-content .contact-info{
-		display: none;
-	}
-	ul.b-menu-items{
-	    display: none;
 	}
 	.b-special-item{
 		width: 100%;

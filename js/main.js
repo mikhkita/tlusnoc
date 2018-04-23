@@ -1,5 +1,3 @@
-$(document).ready(function(){	
-
     var isDesktop = false,
         isTablet = false,
         isMobile = false,
@@ -32,8 +30,6 @@ $(document).ready(function(){
             isMobile = true;
         }
     }
-    $(window).resize(resize);
-    resize();
 
     function retina(){
         var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
@@ -46,6 +42,59 @@ $(document).ready(function(){
             return true;
         return false;
     }
+
+function WhiteBlockHeight(){
+
+    $(".white-block").removeAttr( 'style' );
+
+    var maxHeight = $(".white-block").height();
+
+    $(".white-block").each(function(){
+      if ( $(this).height() > maxHeight ) 
+      { 
+        maxHeight = $(this).height();
+      }
+    });
+     
+    $(".white-block").height(maxHeight);
+
+}
+
+function ServiceItemBlockHeight(){
+
+    $(".item-service").css("height","");
+
+    var maxHeight = $(".item-service").height();
+
+    $(".item-service").each(function(){
+      if ( $(this).height() > maxHeight ) 
+      { 
+        maxHeight = $(this).height();
+      }
+    });
+     
+    $(".item-service").height(maxHeight);
+}
+function AboutItemBlockHeight(){
+
+    $(".b-about-blocks-item").css("height","");
+
+    var maxHeight = $(".b-about-blocks-item").height();
+
+    $(".b-about-blocks-item").each(function(){
+      if ( $(this).height() > maxHeight ) 
+      { 
+        maxHeight = $(this).height();
+      }
+    });
+     
+    $(".b-about-blocks-item").height(maxHeight);
+}
+
+$(document).ready(function(){	
+
+    $(window).resize(resize);
+    resize();
 
     $.fn.placeholder = function() {
         if(typeof document.createElement("input").placeholder == 'undefined') {
@@ -87,73 +136,16 @@ $(document).ready(function(){
         });
     }
 
-    function WhiteBlockHeight(){
-
-        $(".white-block").removeAttr( 'style' );
-
-        var maxHeight = $(".white-block").height();
- 
-        $(".white-block").each(function(){
-          if ( $(this).height() > maxHeight ) 
-          { 
-            maxHeight = $(this).height();
-          }
-        });
-         
-        $(".white-block").height(maxHeight);
-
-    }
-
-    function ServiceItemBlockHeight(){
-
-        $(".item-service").css("height","");
-
-        var maxHeight = $(".item-service").height();
- 
-        $(".item-service").each(function(){
-          if ( $(this).height() > maxHeight ) 
-          { 
-            maxHeight = $(this).height();
-          }
-        });
-         
-        $(".item-service").height(maxHeight);
-    }
-    function AboutItemBlockHeight(){
-
-        $(".b-about-blocks-item").css("height","");
-
-        var maxHeight = $(".b-about-blocks-item").height();
- 
-        $(".b-about-blocks-item").each(function(){
-          if ( $(this).height() > maxHeight ) 
-          { 
-            maxHeight = $(this).height();
-          }
-        });
-         
-        $(".b-about-blocks-item").height(maxHeight);
-    }
-    function BankInfoBlockHeight(){
-
-        var imgHeight = $('.b-top-bank img').height();
-        $(".b-bank-info").css("min-height",imgHeight);
-    
-    }
-
-    window.onload = function() {
-        if(!isMobile) {
-            WhiteBlockHeight();
-            ServiceItemBlockHeight();
-            AboutItemBlockHeight();
-            BankInfoBlockHeight();
-        }
-    };
-    $( window ).resize(function() {
+    $(window).resize(function() {
         if (!isMobile) {
             WhiteBlockHeight();
             ServiceItemBlockHeight();
             AboutItemBlockHeight();
+        }
+        else{
+            $(".white-block").css("height","auto");
+            $(".item-service").css("height","auto");
+            $(".b-about-blocks-item").css("height","auto");
         }
     });
     
@@ -208,23 +200,6 @@ $(document).ready(function(){
 
     e.on('swipeRight', function(event) {
         slideout.close();
-    });
-
-    $('.b-services .choice-block a').click(function(e) {
-        e.preventDefault();
-        if ($(this).hasClass('deactive')) {
-
-        }
-        else{
-            $('.b-services .choice-block .active').removeClass('active');
-            $(this).addClass('active');
-            var tab = $(this).attr('href');
-            $('.b-choice-item').removeClass('hide');
-
-            $('.b-choice-item').not(tab).addClass('hide');
-            $(tab).fadeIn(400);
-        }
-        return false;
     });
     
     $('.b-calc .choice-block a').click(function(e) {
@@ -282,6 +257,8 @@ $(document).ready(function(){
         speed: 600,
         autoplay: false,
         asNavFor: '.b-bank-slider',
+        adaptiveHeight: true,
+        fade: true,
     });
     $('.b-bank-slider').slick({
         dots: false,
@@ -298,7 +275,7 @@ $(document).ready(function(){
         autoplaySpeed: 3000,
         responsive: [
             {
-              breakpoint: 1100,
+              breakpoint: 1440,
               settings: {
                 slidesToShow: 4
               }
@@ -620,3 +597,17 @@ var dataPeriod = [[1,29],[30,59],[60,89],[90,119],[120,149],[150,179],[180,209],
 
 });
 
+$(window).on('load', function(){
+    
+    myWidth = window.innerWidth;
+
+    if (myWidth < 767) {
+        isMobile = true;
+    }
+
+    if (!isMobile) {
+        WhiteBlockHeight();
+        ServiceItemBlockHeight();
+        AboutItemBlockHeight();
+    }
+});
