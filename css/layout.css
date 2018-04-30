@@ -2066,7 +2066,6 @@ form#b-calc-form .b-calc-item span:before{
 	.scheme{
 		background-image: url(../i/scheme-bg.svg);
 		background-position: 50% 0;
-		background-size: cover;
 		background-repeat: no-repeat;
 		overflow-x: hidden;
 		position: relative;
@@ -2475,6 +2474,9 @@ input[name="MAIL"]{
 	.b-block{
 		width: 860px;
 	}
+	.b-block-before, .b-block-after{
+	    width: calc((100% - 860px)/2 - 5px);
+	}
 	.b-logo{
 		width: 200px;
 	}
@@ -2680,4 +2682,83 @@ input[name="MAIL"]{
 	.b-info-partners-list img{
 	    max-width: 100%;
 	}
+	/*services*/
+	.service-item .b-block h2{
+		padding-right: 0;
+		line-height: 48px;
+	}
+	.service-item h3{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.service-item-section a{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.service-link div:last-child{
+		padding-left: 8px;
+	}
+	.service-link:not(:first-child){
+		margin-left: 0;
+	}
+	.b-block-after a{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.service-mark p{
+		font-size: 16px;
+	}
+	.guarantee-info h3{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.guarantee-info h2.b-title{
+		line-height: 48px;
+	}
+	.service-tags span{
+		font-size: 120px;
+		line-height: 120px;
+	}
+	.b-scheme-item h3{
+	    font-size: 16px;
+        padding-top: 20px;
+        line-height: 18px;
+	}
+	.b-scheme-item p{
+	    font-size: 12px;
+    	line-height: 16px;
+	}
+	.b-scheme-item:nth-child(1){
+	    top: 30px;
+	    left: 330px;
+	    width: 230px;
+	}
+		.b-scheme-item:nth-child(1):before{
+		    left: 229px;
+	   		top: 16px;
+		}
+	.b-scheme-item:nth-child(2){
+	    top: 130px;
+	    right: 50px;
+	    width: 200px;
+	}
+		.b-scheme-item:nth-child(2) span{
+		    padding-right: 60px;
+		}
+		.b-scheme-item:nth-child(2):before{
+		    right: -42px;
+    		bottom: -33px;
+		}
+   	.b-scheme-item:nth-child(3){
+   		    width: 207px;
+		    bottom: 428px;
+		    right: 56px;
+   	}
+   		.b-scheme-item:nth-child(3) h3{
+		    padding-top: 15px;
+   		}
+   		.b-scheme-item:nth-child(3):before{
+		    bottom: -82px;
+    		left: 46px;
+   		}
 }
