@@ -195,6 +195,20 @@ input.error,textarea.error{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.whatsapp{
+	content: url(../i/whatsapp-icon.svg);
+	width: 29px;
+	left: 7px;
+    top: 0px;
+    position: absolute;
+}
+.telegram-small-icon{
+	content: url(../i/telegram-icon.svg);
+	width: 28px;
+	top: 1px;
+    left: 7px;
+    position: absolute;
+}
 h2.b-title{
 	font-size: 48px;
 	font-family: 'GothamProBlack';
@@ -1798,6 +1812,9 @@ form#b-calc-form .b-calc-item span:before{
 		text-align: left;
 		vertical-align: top;
 	}
+	.service-item-sections.strait{
+		max-width: 922px;
+	}
 	.service-item#tender{
 		background: #013c6e; /* Для старых браузров */
 		background: linear-gradient(to right, #013c6e, #146cb6);
@@ -1845,9 +1862,11 @@ form#b-calc-form .b-calc-item span:before{
 				}	
 				#tender .b-block-before h2.service-left{
 					font-size: 64px;
+					color: #0c4f88;
+					padding-top: 78px;
 				}
 		.service-item .b-block h2{
-			padding-right: 180px;
+			max-width: 800px;
 			line-height: 54px;
 			letter-spacing: 0.01em;
 		}
@@ -1855,9 +1874,9 @@ form#b-calc-form .b-calc-item span:before{
 				font-family: GothamProMedium;
 				font-size: 24px;
 				line-height: 30px;
-				padding-right: 80px;
+				max-width: 970px;
 				letter-spacing: 0.01em;
-				padding-top: 8px;
+				padding-top: 19px;
 			}
 			.service-item-sections{
 				padding-top: 50px;
@@ -1865,7 +1884,7 @@ form#b-calc-form .b-calc-item span:before{
 			}
 				.service-item-section{
 					display: inline-table;
-					width: calc(100%/2 - 42px);
+					width: calc(100%/2 - 45px);
 					vertical-align: middle;
 				}	
 				.service-item-section .service-item-text a{
@@ -1904,7 +1923,7 @@ form#b-calc-form .b-calc-item span:before{
 							font-size: 24px;
 							line-height: 30px;
 							text-decoration: underline;
-							/* letter-spacing: 0px; */
+							display: inline-block;
 						}
 						.service-item-section a:hover{
 							text-decoration: none;
@@ -1924,10 +1943,11 @@ form#b-calc-form .b-calc-item span:before{
 				font-family: GothamProMedium;
 			    padding-top: 12px;
     			padding-bottom: 108px;
-    			padding-right: 300px;
+    			max-width: 800px;
 			}
 				.service-bottom-text a{
 					text-decoration: underline;
+					color: #44adea;
 				}
 				.service-bottom-text a:hover{
 					text-decoration: none;
@@ -1938,10 +1958,23 @@ form#b-calc-form .b-calc-item span:before{
 				padding-top: 29px;
 				padding-bottom: 53px;
 				max-width: 980px;
+				width: 100%;
 			}
 				.service-link{
 					display: inline-table;
 					vertical-align: top;
+				}
+				.service-link:nth-child(1) img{
+					height: 21px;
+				}
+				.service-link:nth-child(2) img{
+					height: 18px;
+				}
+				.service-link:nth-child(3) img{
+					height: 22px;
+				}
+				.service-link:nth-child(4) img{
+					height: 24px;
 				}
 				.service-link:not(:first-child){
 					margin-left: 50px;
@@ -1983,7 +2016,7 @@ form#b-calc-form .b-calc-item span:before{
 			color: #d5d1d1;
 		}
 			#bank-guarantees .b-block-before h2.service-left{
-				top: -30px;
+				top: -60px;
 				line-height: 81px;
 				letter-spacing: 0.01em;
 			}
@@ -2054,7 +2087,7 @@ form#b-calc-form .b-calc-item span:before{
 			#leasing .b-block-before h2.service-left{
 				font-size: 100px;
 				line-height: 110px;
-				padding-top: 58px;
+				padding-top: 78px;
 				left: 43%;
 			}
 		#leasing .b-block-after{
@@ -2087,12 +2120,15 @@ form#b-calc-form .b-calc-item span:before{
 			color: #3797d8;
 		}
 			#smallbusines .b-block-before h2.service-left{
-				font-size: 100px;
+				font-size: 90px;
 				line-height: 110px;
-				padding-top: 5px;
+				padding-top: 72px;
 				padding-bottom: 0;
 				left: 43%;
 			}
+		#smallbusines.service-item .b-block h2.b-title{
+			max-width: 900px;
+		}
 		#smallbusines .b-block-after{
 			right: 5px;
 			bottom: 87px;
@@ -2116,14 +2152,18 @@ form#b-calc-form .b-calc-item span:before{
 }
 	.guarantee-info h2.b-title{
 		line-height: 54px;
-		padding-right: 360px;
+		max-width: 650px;
 		padding-bottom: 22px;
 	}
 	.guarantee-info h3{
 		font-size: 24px;
 		line-height: 36px;
-	    padding-right: 440px;
+	    max-width: 660px;
 	}
+		.guarantee-info a{
+		    padding-left: 42px;
+    		position: relative;
+		}
 .project-scheme{
 	background-color: #f5f3f3;
     padding-top: 38px;
@@ -2751,27 +2791,75 @@ input[name="MAIL"]{
 	    max-width: 100%;
 	}
 	/*services*/
+	#tender .b-block-before h2.service-left{
+	    font-size: 58px;
+	    line-height: 64px;
+	}
+	#bank-guarantees .b-block-before h2.service-left{
+	    top: 0;
+	    line-height: 70px;
+	    font-size: 64px;
+	    padding-top: 80px;
+	    padding-bottom: 90px;
+	}
+	#leasing .b-block-before h2.service-left{
+		font-size: 90px;
+	    padding-top: 120px;
+	}
+	#insurance .b-block-before h2.service-left{
+	    top: 0;
+	    font-size: 64px;
+	    line-height: 70px;
+	    padding-bottom: 70px;
+	    padding-top: 80px;
+	}
+	#smallbusines .b-block-before h2.service-left{
+	    font-size: 85px;
+	}
+	#smallbusines .b-block-after a{
+		font-size: 58px;
+	}
 	.service-item .b-block h2{
-		padding-right: 0;
+		max-width: 650px;
 		line-height: 48px;
 	}
 	.service-item h3{
 		font-size: 18px;
 		line-height: 24px;
+		max-width: 730px;
+	}
+	.service-item-section{
+	    width: calc(100%/2 - 20px);
+	}
+	.service-item-section:nth-child(2n){
+		margin-left: 35px;
+	}
+	.service-item-sections.strait{
+		max-width: 750px;
 	}
 	.service-item-section a{
 		font-size: 18px;
 		line-height: 24px;
 	}
+	.service-link a{
+		font-size: 16px;
+		line-height: 20px;
+	}
 	.service-link div:last-child{
 		padding-left: 8px;
 	}
 	.service-link:not(:first-child){
-		margin-left: 0;
+		margin-left: 25px;
 	}
 	.b-block-after a{
 		font-size: 30px;
 		line-height: 36px;
+	}
+	.service-mark img{
+		width: 27px;
+	}
+	.service-mark div:last-child{
+		padding-left: 15px;
 	}
 	.service-mark p{
 		font-size: 16px;
@@ -2783,12 +2871,28 @@ input[name="MAIL"]{
 	.guarantee-info h2.b-title{
 		line-height: 48px;
 	}
+	.guarantee-info h3{
+		max-width: 540px;
+	}
+	.guarantee-info a{
+		padding-left: 34px;
+	}
+	.whatsapp{
+		width: 22px;
+	}
+	.telegram-small-icon{
+		width: 23px;
+	}
 	.service-tags span{
 		font-size: 120px;
 		line-height: 120px;
 	}
+	.service-tags li{
+		font-size: 26px;
+	}
 	.scheme{
 		height: 860px;
+		margin-top: 20px;
 	}
 	.b-scheme-item h3{
 	    font-size: 16px;
@@ -2874,5 +2978,11 @@ input[name="MAIL"]{
 	.b-scheme-logo{
 	    top: 390px;
 		left: 305px;
+	}
+	.b-base-item{
+	    width: calc(100%/3 - 10px);
+	}
+	.b-base-item:not(:last-child){
+		margin-right: 15px;
 	}
 }

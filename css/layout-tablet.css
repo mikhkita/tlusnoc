@@ -48,7 +48,7 @@ body {
     overflow-x: unset;
     position: relative;
     height: 100%;
-    margin-top: 49px;
+    margin-top: 30px;
 }
 .b-scheme-item{
 	position: relative;
@@ -383,12 +383,25 @@ body {
 	    font-size: 36px;
     	line-height: 42px;
 	}
+	.service-item-sections, .service-item-sections.strait{
+	    max-width: 500px;
+	}
 	.guarantee-info h2.b-title,.service-item .b-block h2{
 		line-height: 42px;
+	    max-width: 590px;
 	}
 	.guarantee-info h3{
 		font-size: 20px;
 		line-height: 24px;
+	}
+	.guarantee-info a{
+		padding-left: 33px;
+	}
+	.whatsapp{
+		width: 22px;
+	}
+	.telegram-small-icon{
+		width: 23px;
 	}
 	.b-special-item{
 		width: 100%;
