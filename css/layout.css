@@ -2688,8 +2688,7 @@ input[name="MAIL"]{
 	    margin-bottom: 16px;
         font-size: 16px;
 		padding: 14px 20px 15px;
-		border-style: unset;
-		box-shadow: unset;
+		-webkit-appearance: none;
 	}
 	.right-block form textarea{
 	    font-size: 16px;
