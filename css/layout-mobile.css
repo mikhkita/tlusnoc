@@ -88,6 +88,7 @@ body {
     font-family: 'GothamProMedium';
     color: #828282;
     background-color: #fff;
+    border-radius: unset;
 }
 .jq-selectbox__select{
 	display: none;
