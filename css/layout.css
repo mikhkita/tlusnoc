@@ -2575,7 +2575,7 @@ input[name="MAIL"]{
 	    font-size: 16px;
 	}
 }
-@media only screen and (min-width: 1150px) and (max-width: 1440px){
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
 	.b-block{
 		width: 860px;
 	}
@@ -2900,7 +2900,27 @@ input[name="MAIL"]{
 		height: 1110px;
 		margin-top: 20px;
 	}
-	/*.b-scheme-item h3{
+	.b-base-item{
+	    width: calc(100%/3 - 10px);
+	}
+	.b-base-item:not(:last-child){
+		margin-right: 15px;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1150px){
+	.b-block-before, .b-block-after{
+		display: none;
+	}
+	.project-scheme .b-block{
+		width: 860px;
+	}
+	.project-scheme h2.b-title{
+		padding-left: 0;
+	}
+	.scheme{
+		height: 860px;
+	}
+	.b-scheme-item h3{
 	    font-size: 16px;
         padding-top: 20px;
         line-height: 18px;
@@ -2984,11 +3004,5 @@ input[name="MAIL"]{
 	.b-scheme-logo{
 	    top: 390px;
 		left: 305px;
-	}*/
-	.b-base-item{
-	    width: calc(100%/3 - 10px);
-	}
-	.b-base-item:not(:last-child){
-		margin-right: 15px;
 	}
 }

@@ -79,6 +79,15 @@ body {
 }
 
 /*-----------------------*/
+.b-btn{
+    padding: 23px 40px 21px 40px;
+}
+.b-about .b-btn-more{
+    padding: 23px 20px 25px 21px;
+}
+.b-about .b-btn-more:after{
+	bottom: 26px;
+}
 .b-btn-center{
 	display: block;
 	float: none;
@@ -103,6 +112,7 @@ body {
 }
 .b-services h2{
 	width: 100%;
+	margin-bottom: 0;
 }
 .b-services .b-choice-item h3.b-title{
 	width: 100%;
@@ -116,14 +126,14 @@ body {
 .b-services .choice-block div:nth-child(2n), .b-services-menu .choice-block div:nth-child(2n){
 	margin-left: 0;
 }
-.b-services .choice-block div:nth-child(n+1), .b-services-menu .choice-block div:nth-child(n+1){
+.b-services .choice-block div:nth-child(n+2), .b-services-menu .choice-block div:nth-child(n+1){
 	margin-top: 19px;
 }
 .white-block{
 	height: auto;
 }
 .left-block .b-btn-more{
-	padding: 19px 60px 21px;
+	padding: 19px 40px 21px 20px;
 }
 
 form#b-calc-form{
@@ -188,9 +198,11 @@ form#b-calc-form{
 }
 .icon-arrow-right{
 	right: 15px;
+	top: 50%;
 }
 .icon-arrow-left{
 	left: 15px;
+	top: 50%;
 }
 
 /*services*/
@@ -225,6 +237,7 @@ form#b-calc-form{
 	}
 	.choice-block a{
 		width: 100%;
+	    padding: 5px 0px 5px 0px;
 	}
 	.choice-block a:nth-child(2n){
 		margin-left: 0;
@@ -281,8 +294,8 @@ form#b-calc-form{
     	line-height: 32px;
 	}
 	.b-index h3{
-		font-size: 20px;
-	    line-height: 24px;
+		font-size: 18px;
+	    line-height: 22px;
 	}
 	.b-index ul{
 		width: 100%;
@@ -299,9 +312,6 @@ form#b-calc-form{
 	}
 	.right-block .input-string:nth-child(2){
 		width: 100%;
-	}
-	.right-block .input-string:nth-child(1) input, .right-block .input-string:nth-child(2) input{
-		margin-bottom: 24px;
 	}
 	.right-block .text-center-block{
 		display: block;
@@ -367,7 +377,7 @@ form#b-calc-form{
 		margin-top: 0;
 	}
 	.citate-block{
-	    padding: 32px 30px 44px 35px;
+	    padding: 32px 10px 44px 25px;
 	}
 	.b-services .citate-block p{
 	    padding-top: 15px;
@@ -423,7 +433,7 @@ form#b-calc-form{
 		.guarantee-info h2.b-title, .service-item .b-block h2{
 			font-family: GothamProMedium;
 		    font-size: 20px;
-    		line-height: 20px;
+    		line-height: 24px;
 		}
 		.service-bottom-text{
 			font-size: 14px;
@@ -524,10 +534,27 @@ form#b-calc-form{
 		.b-scheme-item:nth-child(6):before{
 		    left: 60px;
 		}
-		.b-base-item span{
-			line-height: 16px;
+		.base-block{
+		    padding-top: 30px;
+   			padding-bottom: 50px;
 		}
-		
+			.b-base-list{
+			    padding-bottom: 25px;
+			}
+			.b-base-item span{
+				line-height: 16px;
+			}	
+		.b-footer{
+		    padding-top: 40px;
+		    padding-bottom: 40px;
+		}
+		.b-footer p{
+		    font-size: 16px;
+   			line-height: 20px;
+		}
+		.b-footer-column p{
+			margin-top: 12px;
+		}
 	}
 	@media screen and (max-width: 350px){
 		#b-popup-call{
