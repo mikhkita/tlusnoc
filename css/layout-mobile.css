@@ -87,6 +87,7 @@ body {
     border:none;
     font-family: 'GothamProMedium';
     color: #828282;
+    background-color: #fff;
 }
 .jq-selectbox__select{
 	display: none;
