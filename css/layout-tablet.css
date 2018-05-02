@@ -274,11 +274,14 @@ body {
 		    width: calc(50% - 10px);
 		}
 		.right-block .input-string:nth-child(1) input, .right-block .input-string:nth-child(2) input{
-			margin-bottom: 6px;
+			margin-bottom: 0px;
 		}
 		.right-block .input-string:nth-child(2){
 			display: inline-block;
 		    width: calc(50% - 10px);
+		}
+		.right-block form input{
+			margin-bottom: 14px;
 		}
 		.right-block .text-center-block{
 		    display: inline-block;

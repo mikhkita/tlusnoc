@@ -79,6 +79,14 @@ body {
 }
 
 /*-----------------------*/
+.b-calc-item select{
+	display: block;
+    -webkit-appearance: none;
+    padding: 20px 0px 20px 19px;
+}
+.jq-selectbox__select{
+	display: none;
+}
 .b-btn{
     padding: 23px 40px 21px 40px;
 }
@@ -378,6 +386,7 @@ form#b-calc-form{
 	}
 	.citate-block{
 	    padding: 32px 10px 44px 25px;
+	    margin-bottom: 30px;
 	}
 	.b-services .citate-block p{
 	    padding-top: 15px;
