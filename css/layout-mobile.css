@@ -110,13 +110,13 @@ body {
 .b-services .b-choice-item p{
 	width: 100%;
 }
-.b-services .choice-block div{
+.b-services .choice-block div, .b-services-menu .choice-block div{
 	width: calc(100%);
 }
-.b-services .choice-block div:nth-child(2n){
+.b-services .choice-block div:nth-child(2n), .b-services-menu .choice-block div:nth-child(2n){
 	margin-left: 0;
 }
-.b-services .choice-block div:nth-child(n+1){
+.b-services .choice-block div:nth-child(n+1), .b-services-menu .choice-block div:nth-child(n+1){
 	margin-top: 19px;
 }
 .white-block{
@@ -191,6 +191,16 @@ form#b-calc-form{
 }
 .icon-arrow-left{
 	left: 15px;
+}
+
+/*services*/
+
+.b-base-item{
+	width: 100%;
+}
+.b-base-item:nth-child(2n){
+	margin-left: 0;
+	margin-top: 20px;
 }
 @media screen and (max-width: 600px){
 	.b-menu-down li{
@@ -311,6 +321,9 @@ form#b-calc-form{
 		font-size: 24px;
     	line-height: 32px;
 	}
+	.guarantee-info h2.b-title, .service-item .b-block h2{
+		line-height: 32px;
+	}
 	.b-special h3.b-title{
 	    font-size: 20px;
    		line-height: 24px;
@@ -365,6 +378,15 @@ form#b-calc-form{
 	    bottom: -33px;
 	    right: 10px;
 	}
+
+	/*services*/
+
+	.service-link{
+		width: 100%;
+	}
+	.service-link:not(:first-child){
+	    margin-top: 20px;
+	}
 	@media screen and (max-width: 500px){
 		.b-calc-item input{
 			font-size: 16px;
@@ -387,6 +409,28 @@ form#b-calc-form{
 		.b-calc .icon-rub-medium:before{
 			font-size: 12px;
 			bottom: 3px;
+		}
+		/*services*/
+		.scheme{
+			margin-top: 28px;
+		}
+		.b-scheme-item{
+			padding-left: 60px;
+			padding-right: 24px;
+		}
+		.b-scheme-item:after{
+		    left: 20px;
+		}
+		.b-scheme-item span.scheme-num:before{
+			left: 12px;
+		}
+		.b-scheme-item:nth-child(1):before,
+		.b-scheme-item:nth-child(2):before,
+		.b-scheme-item:nth-child(3):before,
+		.b-scheme-item:nth-child(4):before,
+		.b-scheme-item:nth-child(5):before,
+		.b-scheme-item:nth-child(6):before{
+		    left: 60px;
 		}
 		
 	}
