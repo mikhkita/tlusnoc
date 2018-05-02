@@ -15,7 +15,7 @@ body {
 	line-height: 18px;
 }
 .b-block{
-    max-width: calc(100% - 16px);
+    max-width: calc(100% - 32px);
 }
 .b-thanks.b-popup{
     padding: 40px 20px 28px;
@@ -332,6 +332,9 @@ form#b-calc-form{
 	.b-special h4.item-title{
 	    font-size: 18px;
 	}
+	.b-special-item{
+		margin-right: 0;
+	}
 	.b-special-item ul > li{
 		padding-bottom: 10px;
 	}
@@ -411,6 +414,50 @@ form#b-calc-form{
 			bottom: 3px;
 		}
 		/*services*/
+		.service-item{
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.guarantee-info h2.b-title, .service-item .b-block h2{
+			font-family: GothamProMedium;
+		    font-size: 20px;
+    		line-height: 20px;
+		}
+
+		.service-item h3{
+			font-family: GothamProRegular;
+		    font-size: 14px;
+    		line-height: 18px;
+    		padding-top: 14px;
+		}
+		.service-item-sections{
+		    padding-top: 30px;
+   			padding-bottom: 40px;
+		}
+			.service-item-section a{
+				font-size: 14px;
+	    		line-height: 18px;
+			}
+			.service-item-section:not(:first-child){
+				margin-top: 25px;
+			}
+		.service-links{
+			padding-bottom: 29px;
+		}
+			.service-link:last-child div:first-child{
+				left: 5px;
+			}
+			.service-link div:first-child{
+				position: absolute;
+				padding-left: 0;
+			}
+			.service-link div:last-child{
+				padding-left: 40px;
+			}
+			.service-link a{
+				font-size: 14px;
+				line-height: 18px;
+			}
 		.scheme{
 			margin-top: 28px;
 		}
@@ -437,6 +484,12 @@ form#b-calc-form{
 	@media screen and (max-width: 350px){
 		#b-popup-call{
 		    width: 100%;
+		}
+		.b-logo{
+		    width: 208px;
+		}
+		.burger-menu{
+			margin-top: 35px;
 		}
 	}
 }
