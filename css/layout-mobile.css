@@ -83,6 +83,10 @@ body {
 	display: block;
     -webkit-appearance: none;
     padding: 20px 0px 20px 19px;
+    width: 100%;
+    border:none;
+    font-family: 'GothamProMedium';
+    color: #828282;
 }
 .jq-selectbox__select{
 	display: none;
