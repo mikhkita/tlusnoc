@@ -415,8 +415,8 @@ form#b-calc-form{
 		}
 		/*services*/
 		.service-item{
-			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-top: 40px;
+			padding-bottom: 40px;
 		}
 		.guarantee-info h2.b-title, .service-item .b-block h2{
 			font-family: GothamProMedium;
@@ -428,21 +428,26 @@ form#b-calc-form{
 			font-family: GothamProRegular;
 		    font-size: 14px;
     		line-height: 18px;
-    		padding-top: 14px;
+    		padding-top: 18px;
 		}
 		.service-item-sections{
-		    padding-top: 30px;
-   			padding-bottom: 40px;
+		    padding-top: 20px;
+   			padding-bottom: 20px;
 		}
+			.service-item-section img{
+			    padding-right: 0;
+    			width: 65px;
+			}
 			.service-item-section a{
 				font-size: 14px;
 	    		line-height: 18px;
 			}
 			.service-item-section:not(:first-child){
-				margin-top: 25px;
+				margin-top: 16px;
 			}
 		.service-links{
-			padding-bottom: 29px;
+		    padding-top: 20px;
+   			padding-bottom: 20px;
 		}
 			.service-link:last-child div:first-child{
 				left: 5px;
