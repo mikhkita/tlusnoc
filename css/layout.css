@@ -2588,6 +2588,7 @@ input[name="MAIL"]{
     display: inline-block;
     background-color: #1b82c7;
     color: #FFF;
+    border-style: unset;
 }
 #b-popup-call{
 	background-color: #013c6e;
@@ -2687,11 +2688,12 @@ input[name="MAIL"]{
 	    margin-bottom: 16px;
         font-size: 16px;
 		padding: 14px 20px 15px;
-		box-shadow: unset;
+		border-style: unset;
 	}
 	.right-block form textarea{
 	    font-size: 16px;
 		padding: 14px 21px 40px;
+		border-style: unset;
 	}
 	.b-btn{
 		padding: 18px 91px 18px 90px;
