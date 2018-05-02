@@ -2890,11 +2890,17 @@ input[name="MAIL"]{
 	.service-tags li{
 		font-size: 26px;
 	}
+	.project-scheme .b-block{
+		width: 1110px;
+	}
+	.project-scheme h2.b-title{
+		padding-left: 125px;
+	}
 	.scheme{
-		height: 860px;
+		height: 1110px;
 		margin-top: 20px;
 	}
-	.b-scheme-item h3{
+	/*.b-scheme-item h3{
 	    font-size: 16px;
         padding-top: 20px;
         line-height: 18px;
@@ -2978,7 +2984,7 @@ input[name="MAIL"]{
 	.b-scheme-logo{
 	    top: 390px;
 		left: 305px;
-	}
+	}*/
 	.b-base-item{
 	    width: calc(100%/3 - 10px);
 	}

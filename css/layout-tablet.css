@@ -22,7 +22,9 @@ body {
 }
 
 /*services*/
-
+.service-mark img{
+	width: 27px;
+}
 .service-item .b-block h2{
 	padding-right: 0;
 }

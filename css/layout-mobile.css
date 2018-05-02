@@ -194,7 +194,9 @@ form#b-calc-form{
 }
 
 /*services*/
-
+.b-services-menu{
+	display: none;
+}
 .b-base-item{
 	width: 100%;
 }
@@ -423,7 +425,10 @@ form#b-calc-form{
 		    font-size: 20px;
     		line-height: 20px;
 		}
-
+		.service-bottom-text{
+			font-size: 14px;
+    		line-height: 18px;
+		}
 		.service-item h3{
 			font-family: GothamProRegular;
 		    font-size: 14px;
@@ -445,6 +450,10 @@ form#b-calc-form{
 			.service-item-section:not(:first-child){
 				margin-top: 16px;
 			}
+			.service-item-section .service-item-text, .service-item-section .service-item-text a{
+				font-size: 14px;
+	    		line-height: 18px;
+			}
 		.service-links{
 		    padding-top: 20px;
    			padding-bottom: 20px;
@@ -463,6 +472,37 @@ form#b-calc-form{
 				font-size: 14px;
 				line-height: 18px;
 			}
+		.service-marks{
+			padding-top: 20px;
+   			padding-bottom: 20px;
+		}
+		.service-marks .service-mark:nth-child(n+2){
+			margin-top: 15px;
+		}
+			.service-mark div:last-child{
+			    padding-left: 15px;
+			}
+			.service-mark p{
+				font-size: 14px;
+				line-height: 18px;
+			}
+		.guarantee-info{
+			padding-top: 40px;
+   			padding-bottom: 40px;
+		}
+		.guarantee-info h3{
+			font-size: 14px;
+			line-height: 18px;
+		}
+		.guarantee-info a{
+			padding-left: 29px;
+		}
+		.whatsapp{
+			width: 16px;
+		}
+		.telegram-small-icon{
+			width: 17px;
+		}
 		.scheme{
 			margin-top: 28px;
 		}
@@ -483,6 +523,9 @@ form#b-calc-form{
 		.b-scheme-item:nth-child(5):before,
 		.b-scheme-item:nth-child(6):before{
 		    left: 60px;
+		}
+		.b-base-item span{
+			line-height: 16px;
 		}
 		
 	}
