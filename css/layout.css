@@ -1881,17 +1881,17 @@ form#b-calc-form .b-calc-item span:before{
 	}
 		.b-block-before,.b-block-after{
 			position: absolute;
-			width: calc((100% - 1110px)/2 - 5px);
 		}
 		.b-block-before{
-			height: 100%;
+			/*height: 100%;
 		    top: 0px;
     		padding-top: 40px;
-		    padding-bottom: 40px;
+		    padding-bottom: 40px;*/
+			text-align:  left;
 		}
 		#tender .b-block-after{
-		    right: 9px;
-   			bottom: 79px;
+		    right: -420px;
+		    bottom: -2px;
 		}
 		.b-block-after{
 			vertical-align: bottom;
@@ -1899,34 +1899,28 @@ form#b-calc-form .b-calc-item span:before{
 		}
 			#tender .b-block-before{
 				color: #318fdd;
+				left: -630px;
+				top: 270px;
 			}
 				.b-block-before h2.service-left{
 					font-family: UbuntuBold;
-					display:  inline;
-					font-size: 72px;
-					line-height: 90px;
-					writing-mode: tb-rl;
-					-webkit-transform: translateX(-50%) rotate(180deg);
-					   -moz-transform: translateX(-50%) rotate(180deg);
-					     -o-transform: translateX(-50%) rotate(180deg);
-					    	transform: translateX(-50%) rotate(180deg);
-					text-align: left;
-					text-transform: uppercase;
-					height: 100%;
-					position: absolute;
-					top: 0;
-					padding-top: 20px;
-					padding-bottom: 20px;
-					left: 50%;
+					display: block;
+					
+					-
+					rl;
+					
+					*/
 					letter-spacing: 0.01em;
+					transform: rotate(270deg);
+					text-transform:  uppercase;
 				}	
 				#tender .b-block-before h2.service-left{
-					font-size: 64px;
+					font-size: 58px;
+					line-height: 64px;
 					color: #0c4f88;
-					padding-top: 78px;
+					max-width: 740px;
 				}
 		.service-item .b-block h2{
-			max-width: 800px;
 			line-height: 54px;
 			letter-spacing: 0.01em;
 		}
@@ -2074,15 +2068,18 @@ form#b-calc-form .b-calc-item span:before{
 	}
 		#bank-guarantees .b-block-before{
 			color: #d5d1d1;
+			left: -713px;
+			top: 297px;
 		}
 			#bank-guarantees .b-block-before h2.service-left{
-				top: -60px;
-				line-height: 81px;
+				font-size: 72px;
+				line-height: 80px;
 				letter-spacing: 0.01em;
+				max-width: 950px;
 			}
 		#bank-guarantees .b-block-after{
-		    right: 9px;
-			bottom: 79px;
+		    right: -332px;
+		    bottom: -4px;
 		}
 			#bank-guarantees .b-block-after a{
 				color:#d8d6d6;
@@ -2093,16 +2090,20 @@ form#b-calc-form .b-calc-item span:before{
 	}
 		#insurance .b-block-before{
 			color: #1b8158;
+			left: -626px;
+			top: 350px;
 		}
 			#insurance .b-block-before h2.service-left{
-				top: -70px;
 				font-size:  65px;
+				max-width: 800px;
 				line-height:  80px;
 				letter-spacing: 0.01em;
 			}
 		#insurance .b-block-after{
-		    right: 9px;
-   			bottom: 79px;
+		    right: -435px;
+		    bottom: -2px;
+		    /* right: -332px; */
+		    /* bottom: -4px; */
 		}
 		#insurance .b-block-after a{
 			color: #1b8158;
@@ -2120,7 +2121,7 @@ form#b-calc-form .b-calc-item span:before{
 				vertical-align: top;
 			}
 			.service-marks .service-mark:not(:first-child){
-				margin-left: 12px;
+				margin-left: 11px;
 			}
 				.service-mark div{
 				    display: table-cell;
@@ -2143,16 +2144,16 @@ form#b-calc-form .b-calc-item span:before{
 	}
 		#leasing .b-block-before{
 			color: #d5d1d1;
+			left: -636px;
+			top: 315px;
 		}
 			#leasing .b-block-before h2.service-left{
 				font-size: 100px;
 				line-height: 110px;
-				padding-top: 78px;
-				left: 43%;
 			}
 		#leasing .b-block-after{
-			right: 27px;
-			top: 129px;
+			right: -310px;
+			top: 53px;
 		}
 		#leasing .b-block-after a{
 			color: #d5d1d1;
@@ -2178,20 +2179,19 @@ form#b-calc-form .b-calc-item span:before{
 	}
 		#smallbusines .b-block-before{
 			color: #3797d8;
+			left: -670px;
+			top: 340px;
 		}
 			#smallbusines .b-block-before h2.service-left{
 				font-size: 90px;
 				line-height: 110px;
-				padding-top: 72px;
-				padding-bottom: 0;
-				left: 43%;
 			}
 		#smallbusines.service-item .b-block h2.b-title{
 			max-width: 900px;
 		}
 		#smallbusines .b-block-after{
-			right: 5px;
-			bottom: 87px;
+			right: -314px;
+			bottom: 0;
 		}
 			#smallbusines .b-block-after a{
 				color: #2d90d1;
@@ -2626,7 +2626,49 @@ input[name="MAIL"]{
 	vertical-align: top;
 }
 
-
+@media only screen and (min-width: 1024px) and (max-width: 1765px){
+	#tender .b-block-before{
+		left: -480px;
+	}
+	#tender .b-block-after{
+	    right: -270px;
+	}
+	#bank-guarantees .b-block-before{
+		left: -573px;
+	}
+	#bank-guarantees .b-block-after{
+    	right: -182px;
+	}
+	#insurance .b-block-before{
+		left: -496px;
+	}
+	#insurance .b-block-after{
+	    right: -258px;
+	}
+	#leasing .b-block-before{
+		left: -486px;
+	}
+	.service-tags li{
+		font-size: 26px;
+	}
+	.service-tags span{
+		font-size: 130px;
+    	line-height: 110px;
+	}
+	#leasing .b-block-after{
+	    right: -120px;
+	}
+	#smallbusines .b-block-before{
+		left: -520px;
+	}
+	#smallbusines .b-block-after{
+	    right: -184px;
+	}
+	.b-block-after a{
+		font-size: 36px;
+		line-height: 48px;
+	}
+}
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	
@@ -2641,8 +2683,37 @@ input[name="MAIL"]{
 		width: 860px;
 	}
 	.b-block-before, .b-block-after{
-	    width: calc((100% - 860px)/2 - 5px);
+
 	}
+
+	#tender .b-block-after{
+	    right: -320px;
+	}
+	#bank-guarantees .b-block-before{
+	    left: -533px;
+	}
+	#bank-guarantees .b-block-after{
+	    right: -232px;
+	}
+	#bank-guarantees .b-block-before h2.service-left{
+	    max-width: 850px;
+	}
+	#insurance .b-block-after{
+	    right: -310px;
+	}
+	#leasing .b-block-before{
+	    left: -454px;
+	}
+	#leasing .b-block-after{
+		right: -200px;
+	}
+	#smallbusines .b-block-after{
+		right: -260px;
+	}
+	#smallbusines .b-block-before{
+	    left: -500px;
+	}
+
 	.b-block-before h2.service-left{
 		padding-right: 0;
 	}
@@ -2861,22 +2932,15 @@ input[name="MAIL"]{
 	    line-height: 64px;
 	}
 	#bank-guarantees .b-block-before h2.service-left{
-	    top: 0;
 	    line-height: 70px;
 	    font-size: 64px;
-	    padding-top: 80px;
-	    padding-bottom: 90px;
 	}
 	#leasing .b-block-before h2.service-left{
 		font-size: 90px;
-	    padding-top: 120px;
 	}
 	#insurance .b-block-before h2.service-left{
-	    top: 0;
 	    font-size: 64px;
 	    line-height: 70px;
-	    padding-bottom: 70px;
-	    padding-top: 80px;
 	}
 	#smallbusines .b-block-before h2.service-left{
 	    font-size: 85px;
@@ -2884,7 +2948,7 @@ input[name="MAIL"]{
 	#smallbusines .b-block-after a{
 		font-size: 58px;
 	}
-	.service-item .b-block h2{
+	.service-item .b-block h2.b-title{
 		max-width: 650px;
 		line-height: 48px;
 	}
@@ -2970,11 +3034,6 @@ input[name="MAIL"]{
 	}
 	.b-base-item:not(:last-child){
 		margin-right: 15px;
-	}
-}
-@media only screen and (min-width: 1024px) and (max-width: 1150px){
-	.b-block-before, .b-block-after{
-		display: none;
 	}
 	.project-scheme .b-block{
 		width: 860px;
@@ -3069,5 +3128,10 @@ input[name="MAIL"]{
 	.b-scheme-logo{
 	    top: 390px;
 		left: 305px;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1150px){
+	.b-block-before, .b-block-after{
+		display: none;
 	}
 }
