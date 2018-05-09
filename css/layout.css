@@ -265,6 +265,27 @@ text-align: center;
     left: 7px;
     position: absolute;
 }
+ul.b-breadcrumbs{
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.01px;
+	color: #fff;
+}
+ul.b-breadcrumbs li{
+	display: inline;
+	font-family: 'GothamProRegular';
+}
+ul.b-breadcrumbs li:not(:first-child):before{
+	content: url(../i/arrow-left.svg);
+	position: absolute;
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+		 -o-transform: rotate(180deg);
+ 			transform: rotate(180deg);
+}
+ul.b-breadcrumbs li:not(:first-child){
+	padding-left: 20px;
+}
 h2.b-title{
 	font-size: 48px;
 	font-family: 'GothamProBlack';
@@ -922,13 +943,13 @@ background-color: #013c6e;
 		line-height: 34px;
 		padding-bottom: 10px;
 	}
-	.b-special h4.item-title{
+	h4.item-title{
 		text-align: center;
 		font-size: 20px;
 		font-family: 'GothamProBlack';
 		line-height: 20px;
 		padding-bottom: 15px;
-	    width: 289px;
+	    max-width: 289px;
     	margin: 0 auto;
 	}
 	.b-special .form-center p{
@@ -966,7 +987,7 @@ background-color: #013c6e;
 		    position: absolute;
 		    font-size: 17px;
 		}
-		.b-special-item:last-child{
+		.b-special-item:nth-child(3n){
 		    margin-right:0px;
 		}
 .white-block{
@@ -1883,10 +1904,6 @@ form#b-calc-form .b-calc-item span:before{
 			position: absolute;
 		}
 		.b-block-before{
-			/*height: 100%;
-		    top: 0px;
-    		padding-top: 40px;
-		    padding-bottom: 40px;*/
 			text-align:  left;
 		}
 		#tender .b-block-after{
@@ -1989,7 +2006,6 @@ form#b-calc-form .b-calc-item span:before{
 				.service-item .b-btn{
 					padding: 21px 27px 20px 27px;
 					letter-spacing:  0.01em;
-					/* font-size: 20px; */
 				}
 			.service-bottom-text{
 				font-size: 20px;
@@ -2102,8 +2118,6 @@ form#b-calc-form .b-calc-item span:before{
 		#insurance .b-block-after{
 		    right: -435px;
 		    bottom: -2px;
-		    /* right: -332px; */
-		    /* bottom: -4px; */
 		}
 		#insurance .b-block-after a{
 			color: #1b8158;
@@ -2331,7 +2345,6 @@ form#b-calc-form .b-calc-item span:before{
 			.b-scheme-item span.scheme-num{
 				font-size: 66px;
 				font-family: 'UbuntuBold';
-				/* margin-bottom: 40px; */
 			}
 			.b-scheme-item:nth-child(1) span.scheme-num, 
 			.b-scheme-item:nth-child(4) span.scheme-num{
@@ -2434,6 +2447,83 @@ form#b-calc-form .b-calc-item span:before{
 	    padding: 20px 52px 20px;
    		border: 2px solid;
 	}
+/*--------О компании--------*/
+.about-container{
+	background: #013c6e; /* Для старых браузров */
+	background: linear-gradient(to right, #013c6e, #146cb6);
+	overflow-x: hidden;
+    padding-top: 105px;
+    padding-bottom: 111px;
+}
+	.about-container h2.b-title{
+		letter-spacing: 0.05px;
+	}
+	.b-text p{
+		font-size: 16px;
+		line-height: 18px;
+		font-family: 'GothamProRegular';
+		letter-spacing: 0.01px;
+		padding-bottom: 20px;
+	}
+		.b-text img{
+			float: right;
+		}
+		.about-container .b-special-list{
+			padding-bottom: 50px;
+		}
+			.about-container .b-special-item{
+				box-shadow:	unset;
+			}
+			.about-container .b-special-item.deactive{
+				color: #bcbcbc;
+			}
+			.about-container .b-special-item ul{
+				padding-right: 0;
+			}
+			.b-special-item:nth-child(n+4){
+				margin-top: 30px;
+			}
+				.about-container .b-special-item .white-block div{
+					text-align: center;
+				}
+					.about-container .b-special-item span{
+					    font-size: 12px;
+					    line-height: 18px;
+					    letter-spacing: 0.01px;
+					    font-family: 'GothamProMedium';
+					    display: inline-block;
+					    max-width: 250px;
+					}
+					.about-container .b-special-item.deactive h4.item-title{
+						font-family: 'GothamProRegular';
+					}
+					.about-container .b-special-item.deactive .icon-mark:before{
+						color: unset;
+					}
+					.about-container .b-special-item.deactive h4.item-title:after{
+						content: 'скоро';
+						display: block;
+						font-size: 14px;
+						font-family: 'UbuntuRegular';
+						padding: 0px 4px;
+						width: 51px;
+						height: 21px;
+						background-color: #d1d1d1;
+						color: #2c5b83;
+						text-transform: lowercase;
+				    	margin: 0 auto;
+			    	    margin-top: 5px;
+					}
+
+
+
+
+
+
+
+
+
+
 input::-webkit-input-placeholder {
 	color: #828282;
 }
@@ -2801,7 +2891,7 @@ input[name="MAIL"]{
 	    line-height: 30px;
 	    padding-bottom: 0; 
 	}
-	.b-special h4.item-title{
+	h4.item-title{
 		width: 100%;
 		font-size: 18px;
 	}
@@ -2926,7 +3016,7 @@ input[name="MAIL"]{
 	.b-info-partners-list img{
 	    max-width: 100%;
 	}
-	/*services*/
+	/*----------services----------*/
 	#tender .b-block-before h2.service-left{
 	    font-size: 58px;
 	    line-height: 64px;
