@@ -300,7 +300,18 @@ $(document).ready(function(){
             },
         ]
     });
-
+    $('.partner-list').slick({
+        dots: false,
+        arrows: true,
+        nextArrow: '<div class="icon-arrow-right b-slider-arrows" aria-hidden="true"></div>',
+        prevArrow: '<div class="icon-arrow-left b-slider-arrows" aria-hidden="true"></div>',
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        speed: 600,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    });
      periodInDays = 30;
 
      $('.period-items a').on('click', function(event){
