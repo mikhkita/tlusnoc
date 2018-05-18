@@ -43,52 +43,20 @@
         return false;
     }
 
-function WhiteBlockHeight(){
+function LineBlockHeight(block){
 
-    $(".white-block").removeAttr( 'style' );
+    $(block).css("height","");
 
-    var maxHeight = $(".white-block").height();
+    var maxHeight = $(block).height();
 
-    $(".white-block").each(function(){
+    $(block).each(function(){
       if ( $(this).height() > maxHeight ) 
       { 
         maxHeight = $(this).height();
       }
     });
      
-    $(".white-block").height(maxHeight);
-
-}
-
-function ServiceItemBlockHeight(){
-
-    $(".item-service").css("height","");
-
-    var maxHeight = $(".item-service").height();
-
-    $(".item-service").each(function(){
-      if ( $(this).height() > maxHeight ) 
-      { 
-        maxHeight = $(this).height();
-      }
-    });
-     
-    $(".item-service").height(maxHeight);
-}
-function AboutItemBlockHeight(){
-
-    $(".b-about-blocks-item").css("height","");
-
-    var maxHeight = $(".b-about-blocks-item").height();
-
-    $(".b-about-blocks-item").each(function(){
-      if ( $(this).height() > maxHeight ) 
-      { 
-        maxHeight = $(this).height();
-      }
-    });
-     
-    $(".b-about-blocks-item").height(maxHeight);
+    $(block).height(maxHeight);
 }
 
 $(document).ready(function(){	
@@ -138,11 +106,13 @@ $(document).ready(function(){
 
     $(window).resize(function() {
         if (!isMobile) {
-            WhiteBlockHeight();
-            ServiceItemBlockHeight();
-            AboutItemBlockHeight();
+            LineBlockHeight(".competence-item");
+            LineBlockHeight(".white-block");
+            LineBlockHeight(".item-service");
+            LineBlockHeight(".b-about-blocks-item");
         }
         else{
+            $(".competence-item").css("height","auto");
             $(".white-block").css("height","auto");
             $(".item-service").css("height","auto");
             $(".b-about-blocks-item").css("height","auto");
@@ -617,8 +587,9 @@ $(window).on('load', function(){
     }
 
     if (!isMobile) {
-        WhiteBlockHeight();
-        ServiceItemBlockHeight();
-        AboutItemBlockHeight();
+        LineBlockHeight(".competence-item");
+        LineBlockHeight(".white-block");
+        LineBlockHeight(".item-service");
+        LineBlockHeight(".b-about-blocks-item");
     }
 });
