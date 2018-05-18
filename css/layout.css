@@ -268,9 +268,9 @@ text-align: center;
 a.pdf-doc:before{
 	content: url(../i/pdf-doc.svg);
 	width: 28px;
-	top: 1px;
-    left: 7px;
-    position: absolute;
+	bottom: -10px;
+	left: 2px;
+	position: absolute;
 }
 ul.b-breadcrumbs{
 	font-size: 14px;
@@ -306,7 +306,7 @@ h2.b-title{
 h3.b-title{
 	font-size: 20px;
 	font-family: "UbuntuMedium", Sans-Serif;
-	margin-bottom: 14px;
+	margin-bottom: 9px;
 	color: #1b1b1b;
 	line-height: 20px;
 	letter-spacing: 0.5px;
@@ -1273,9 +1273,12 @@ h4 .icon-rub-medium:before{
 		
 	}
 	.citate-block a.pdf-doc{
+		display:  block;
 		text-decoration: underline;
 		position: relative;
 		padding-left: 40px;
+		padding-top: 40px;
+		font-size: 16px;
 	}
 	.citate-block a:hover{
 		text-decoration: none;
@@ -1461,10 +1464,10 @@ form#b-calc-form{
 	}
 	.citate-block p{
 		text-align: left;
-		padding-top: 23px;
+		padding-top: 22px;
 		font-family: 'GothamProMedium';
-	    font-size: 16px;
-	    line-height: 22px;
+		font-size: 16px;
+		line-height: 22px;
 	}
 form#b-calc-form .b-calc-sum:before{
 	font-family: 'GothamProRegular';
@@ -2465,11 +2468,14 @@ form#b-calc-form .b-calc-item span:before{
 	background: linear-gradient(to right, #013c6e, #146cb6);
 	overflow-x: hidden;
 	padding-top: 26px;
-	padding-bottom: 111px;
+	padding-bottom: 22px;
 }
 	.about-container h2.b-title{
 		letter-spacing: 2px;
 		padding-bottom: 25px;
+	}
+	.b-text{
+		position: relative;
 	}
 	.b-text p{
 		font-size: 16px;
@@ -2479,11 +2485,20 @@ form#b-calc-form .b-calc-item span:before{
 		padding-bottom: 17px;
 		max-width: 542px;
 	}
+		.about-img{
+			width: 50%;
+			height: 392px;
+			float: right;
+			background-size: cover;
+	    	background-repeat: no-repeat;
+    	    background-position: 50% 50%;
+    	    margin-left: 15px;
+		}
 		.b-text img{
 			float: right;
 		}
 		.about-container .b-special-list{
-			padding-bottom: 50px;
+			padding-bottom: 30px;
 			padding-top: 37px;
 		}
 			.about-container .b-special-item{
@@ -2499,10 +2514,11 @@ form#b-calc-form .b-calc-item span:before{
 				margin-top: 30px;
 			}
 			.about-container .b-special-item .white-block{
-				
+				padding-top: 33px;
 			}
 				.about-container .b-special-item .white-block div{
 					text-align: center;
+					padding-bottom: 12px;
 				}
 					.about-container .b-special-item span{
 					    font-size: 12px;
@@ -2511,6 +2527,7 @@ form#b-calc-form .b-calc-item span:before{
 					    font-family: 'GothamProMedium';
 					    display: inline-block;
 					    max-width: 250px;
+					    margin-top:  -7px;
 					}
 					.about-container .b-special-item.deactive h4.item-title{
 						font-family: 'GothamProRegular';
@@ -2529,30 +2546,31 @@ form#b-calc-form .b-calc-item span:before{
 						background-color: #d1d1d1;
 						color: #2c5b83;
 						text-transform: lowercase;
-				    	margin: 0 auto;
-			    	    margin-top: 5px;
+						margin: 0 auto;
+						margin-top: 14px;
 					}
 .about-scheme{
 	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 82px;
 }
 	.about-scheme-container{
 		display: inline-block;
-		padding: 30px 0px;
+		padding: 19px 0px;
 	}
 		.about-scheme-item{
 			display: inline-block;
 			width: calc(100%/4);
-			padding:0 17px;
-			height: 266px;
+			padding: 0 18px;
+			padding-bottom: 15px;
 			vertical-align: top;
-			padding-top: 80px;
+			padding-top: 75px;
 			position: relative;
 		}
 		.about-scheme-item h3{
 			font-family: 'GothamProBold';
 			font-size: 24px;
-			line-height: 24px;
+			line-height: 20px;
+			padding-bottom: 10px;
 		}
 		.about-scheme-item:nth-child(1){
 			background-color: #1b82c6;
@@ -2568,12 +2586,12 @@ form#b-calc-form .b-calc-item span:before{
 			}
 			.about-scheme-item:nth-child(1):after{
 				position: absolute;
-				content: "1";
+				content: "01";
 				font-size: 48px;
 				font-family: "GothamProBold";
 				color: #0e456f;
-				right:17px;
-			    top:20px;
+				right: 2px;
+				top: 28px;
 			}
 		.about-scheme-item:nth-child(2){
 			background-color: #15563c;
@@ -2581,20 +2599,20 @@ form#b-calc-form .b-calc-item span:before{
 		}
 			.about-scheme-item:nth-child(2):before{
 				position: absolute;
-			    content: url(../i/scheme-icon-2.svg);
-			    width: 32px;
-			    height: 33px;
-			    left:17px;
-			    top:20px;
+				content: url(../i/scheme-icon-2.svg);
+				width: 32px;
+				height: 33px;
+				left: 24px;
+				top:20px;
 			}
 			.about-scheme-item:nth-child(2):after{
 				position: absolute;
-				content: "2";
+				content: "02";
 				font-size: 48px;
 				font-family: "GothamProBold";
 				color: #05311f;
-				right:17px;
-			    top:20px;
+				right: 2px;
+				top: 27px;
 			}
 		.about-scheme-item:nth-child(3){
 			background-color: #013b6d;
@@ -2602,20 +2620,20 @@ form#b-calc-form .b-calc-item span:before{
 		}
 			.about-scheme-item:nth-child(3):before{
 				position: absolute;
-			    content: url(../i/scheme-icon-3.svg);
-			    width: 33px;
-			    height: 39px;
-			    left:17px;
-			    top:20px;
+				content: url(../i/scheme-icon-3.svg);
+				width: 33px;
+				height: 39px;
+				left: 19px;
+				top: 18px;
 			}
 			.about-scheme-item:nth-child(3):after{
 				position: absolute;
-				content: "3";
+				content: "03";
 				font-size: 48px;
 				font-family: "GothamProBold";
 				color: #1b82c6;
-				right:17px;
-			    top:20px;
+				right: 5px;
+				top: 30px;
 			}
 		.about-scheme-item:nth-child(4){
 			background-color: #1b82c6;
@@ -2623,20 +2641,20 @@ form#b-calc-form .b-calc-item span:before{
 		}
 			.about-scheme-item:nth-child(4):before{
 				position: absolute;
-			    content: url(../i/scheme-icon-4.svg);
-			    width: 31px;
-			    height: 37px;
-			    left:17px;
-			    top:20px;
+				content: url(../i/scheme-icon-4.svg);
+				width: 31px;
+				height: 37px;
+				left: 20px;
+				top: 18px;
 			}
 			.about-scheme-item:nth-child(4):after{
 				position: absolute;
-				content: "4";
+				content: "04";
 				font-size: 48px;
 				font-family: "GothamProBold";
 				color: #032747;
-				right:17px;
-			    top:20px;
+				right: 1px;
+				top: 30px;
 			}
 			.about-scheme-item p{
 				font-family: 'GothamProRegular';
@@ -2661,17 +2679,24 @@ form#b-calc-form .b-calc-item span:before{
 .competence-centers{
 	background: #1b82c7;
 	background: linear-gradient(to right, #1b82c7, #4ca7e3);
-	padding-top: 70px;
+	padding-top: 67px;
 	padding-bottom: 70px;
 }
 	.competence-list{
 
-	}
+padding-top: 19px;
+
+}
 		.competence-item{
 			background: #fff;
 			display: inline-block;
 			width: calc(100%/3 - 20px);
-			padding: 20px 20px;
+			padding-top:  40px;
+			padding-left:  33px;
+			padding-right: 20px;
+			padding-bottom: 35px;
+			/* padding: 40px 33px; */
+			/* opacity: 0; */
 			vertical-align: top;
 		}
 		.competence-item:not(:first-child){
@@ -2721,42 +2746,55 @@ form#b-calc-form .b-calc-item span:before{
 				font-family: "GothamProMedium";
 				font-size: 16px;
 				line-height: 22px;
+				padding-top: 18px;
+				padding-bottom: 13px;
 			}
 			.competence-item p{
 				font-size: 14px;
 				font-family: "GothamProMedium";
 			}
 			.competence-item ul{
-				padding: 20px 0;
+				padding-top:  13px;
+				padding-bottom: 18px;
 				font-family: "GothamProMedium";
 			}
 				.competence-item li{
 					margin-left: 18px;
+					padding-bottom: 2px;
 					list-style: disc;
 				}
 .team-block{
 	background: #f5f3f3;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 66px;
+	padding-bottom: 85px;
 }
-	.b-team-list{
-
+	.b-team-photo{
+		background-position: 50% 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-top: 20px;
+		height: 582px;
 	}
+	.b-team-list{
+		padding-top: 23px;
+		}
 		.b-team-item{
-			display: inline-block;
-			width: calc(100%/4 - 14px);
-			padding: 20px 20px;
-			background:  #fff;
+		    display: inline-block;
+		    width: calc(100%/4 - 25px);
+		    padding: 17px 17px 13px 17px;
+		    background: #fff;
+		    vertical-align: top;
 		}
 		.b-team-item:not(:last-child){
-			margin-right: 15px;
+			margin-right: 30px;
 		}
 			.b-team-item-photo{
 				background: #e1e1e1;
 				height:  223px;
-				margin-bottom: 20px;
-			    background-size: cover;
-   				background-repeat: no-repeat;
+				margin-bottom: 17px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
 			}
 			.man-photo{
 				background-image: url(../i/team-man.svg);
@@ -2770,6 +2808,10 @@ form#b-calc-form .b-calc-item span:before{
 			    background-size: 100px;
 			    background-position: 50% 50%;
 			}
+			.b-team-item a{
+			    padding-top: 18px;
+    			display: block;
+			}
 			.b-team-item a:after{
 			    text-decoration: none;
 			    position: absolute;
@@ -2779,27 +2821,33 @@ form#b-calc-form .b-calc-item span:before{
 			}
 
 .review-block{
-	padding-top: 50px;
+	padding-top: 67px;
 	padding-bottom: 50px;
 }
 	.review-list{
-		padding: 20px 20px;
+		padding: 28px 30px;
+		margin-top: 21px;
 		margin-bottom: 20px;
 		background: #ebebeb;
 	}
 		.review-item{
-			width: calc(100%/2 - 15px);
+			width: calc(100%/2 - 16px);
 			display: inline-block;
 			background: #fff;
-			padding: 20px 20px;
+			padding: 12px 17px;
+		    padding-bottom: 23px;
 			vertical-align: top;
-			
 		}
 		.review-item:nth-child(2n){
-			margin-left: 15px;
+			margin-left: 27px;
 		}
+			.review-item div{
+			    padding-bottom: 10px;
+			    padding-top: 8px;
+			}
 			.review-logo{
 				filter: grayscale(1);
+				padding-bottom: 6px;
 			}
 		a.arrow-down{
 			position: relative;
@@ -2808,10 +2856,10 @@ form#b-calc-form .b-calc-item span:before{
 			position: absolute;
 			content: url(../i/small-arrow-down.svg);
 			width: 12px;
-			right: -20px;
+			right: -14px;
 		}
 		a.icon-small-doc{
-			padding-left: 20px;
+			padding-left: 24px;
 			position: relative;
 			text-decoration: underline;
 			font-family: 'GothamProMedium';
@@ -2822,19 +2870,21 @@ form#b-calc-form .b-calc-item span:before{
 		a.icon-small-doc:before{
 			position: absolute;
 			content: url(../i/icon-small-doc.svg);
-			width: 15px;
-			left: 0;
+			width: 14px;
+			left: 1px;
 		}
 	.review-block .b-btn{
 		border: 2px solid;
 	}
 .partner-block{
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 84px;
 }
 	.partner-list{
 
-	}
+margin-top: 15px;
+
+}
 		.partner-item{
 			display: inline-block;
 			text-align: center;
@@ -3543,6 +3593,32 @@ input[name="MAIL"]{
 	    top: 390px;
 		left: 305px;
 	}
+	/* О компании */
+
+	.about-img{
+		width: 38%;
+	}
+		.about-scheme-item h3{
+			font-size: 20px;
+			line-height: 18px;
+		}
+	.competence-item{
+		width: calc(100%/3 - 7px);
+		padding-top: 30px;
+  		padding-left: 25px;
+	}
+		.competence-item:not(:first-child){
+			margin-left: 10px;
+		}
+	.b-team-photo{
+		height: 455px;
+	}
+	.b-team-item h3.b-title{
+		font-size: 16px;
+	}
+		.b-team-item-photo{
+			height: 185px;
+		}
 }
 @media only screen and (min-width: 1024px) and (max-width: 1150px){
 	.b-block-before, .b-block-after{

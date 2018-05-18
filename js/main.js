@@ -106,6 +106,7 @@ $(document).ready(function(){
 
     $(window).resize(function() {
         if (!isMobile) {
+            LineBlockHeight(".about-scheme-item");
             LineBlockHeight(".competence-item");
             LineBlockHeight(".white-block");
             LineBlockHeight(".item-service");
@@ -281,6 +282,32 @@ $(document).ready(function(){
         speed: 600,
         autoplay: true,
         autoplaySpeed: 3000,
+        responsive: [
+            {
+              breakpoint: 1440,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 1
+              }
+            },
+        ]
     });
      periodInDays = 30;
 
@@ -587,6 +614,7 @@ $(window).on('load', function(){
     }
 
     if (!isMobile) {
+        LineBlockHeight(".about-scheme-item");
         LineBlockHeight(".competence-item");
         LineBlockHeight(".white-block");
         LineBlockHeight(".item-service");
