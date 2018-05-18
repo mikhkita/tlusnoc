@@ -277,6 +277,7 @@ ul.b-breadcrumbs{
 	line-height: 18px;
 	letter-spacing: 0.01px;
 	color: #fff;
+	padding-bottom: 38px;
 }
 ul.b-breadcrumbs li{
 	display: inline;
@@ -2463,24 +2464,27 @@ form#b-calc-form .b-calc-item span:before{
 	background: #013c6e; /* Для старых браузров */
 	background: linear-gradient(to right, #013c6e, #146cb6);
 	overflow-x: hidden;
-    padding-top: 105px;
-    padding-bottom: 111px;
+	padding-top: 26px;
+	padding-bottom: 111px;
 }
 	.about-container h2.b-title{
-		letter-spacing: 0.05px;
+		letter-spacing: 2px;
+		padding-bottom: 25px;
 	}
 	.b-text p{
 		font-size: 16px;
 		line-height: 18px;
 		font-family: 'GothamProRegular';
-		letter-spacing: 0.01px;
-		padding-bottom: 20px;
+		letter-spacing: 0.1px;
+		padding-bottom: 17px;
+		max-width: 542px;
 	}
 		.b-text img{
 			float: right;
 		}
 		.about-container .b-special-list{
 			padding-bottom: 50px;
+			padding-top: 37px;
 		}
 			.about-container .b-special-item{
 				box-shadow:	unset;
@@ -2493,6 +2497,9 @@ form#b-calc-form .b-calc-item span:before{
 			}
 			.b-special-item:nth-child(n+4){
 				margin-top: 30px;
+			}
+			.about-container .b-special-item .white-block{
+				
 			}
 				.about-container .b-special-item .white-block div{
 					text-align: center;
