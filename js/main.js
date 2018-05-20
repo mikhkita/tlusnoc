@@ -42,6 +42,16 @@
             return true;
         return false;
     }
+function TeamPhotoHeight(){
+    var photoWidth = $(".team-block .b-team-photo").width();
+    var photoHeight = photoWidth / 1.9;
+    $(".team-block .b-team-photo").height(photoHeight);
+}
+function TwoBlockHeight(firstBlock, secondBlock){
+
+    var firstBlockHeight = $(firstBlock).height();
+    $(secondBlock).height(firstBlockHeight);
+}
 
 function LineBlockHeight(block){
 
@@ -60,7 +70,6 @@ function LineBlockHeight(block){
 }
 
 $(document).ready(function(){	
-
     $(window).resize(resize);
     resize();
 
@@ -105,7 +114,9 @@ $(document).ready(function(){
     }
 
     $(window).resize(function() {
+        TeamPhotoHeight();
         if (!isMobile) {
+            TwoBlockHeight(".about-container .b-text", ".about-img");
             LineBlockHeight(".about-scheme-item");
             LineBlockHeight(".competence-item");
             LineBlockHeight(".white-block");
@@ -113,11 +124,17 @@ $(document).ready(function(){
             LineBlockHeight(".b-about-blocks-item");
         }
         else{
+            $(".about-img").css("height","");
             $(".competence-item").css("height","auto");
+            $(".about-scheme-item").css("height","auto");
             $(".white-block").css("height","auto");
             $(".item-service").css("height","auto");
             $(".b-about-blocks-item").css("height","auto");
         }
+        if (myWidth > 767 && myWidth < 960) {
+            $(".competence-item").css("height","auto");
+        }
+
     });
     
 
@@ -205,6 +222,7 @@ $(document).ready(function(){
     //     }
         
     // }
+
 
     $('.b-slider').slick({
         dots: false,
@@ -309,6 +327,28 @@ $(document).ready(function(){
             },
         ]
     });
+    // $('.review-list').slick({
+    //     dots: false,
+    //     arrows: false,
+    //     infinite: true,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     speed: 600,
+    //     adaptiveHeight: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 3000,
+    //     responsive: [
+    //         {
+    //           breakpoint: 768,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             arrows: true,
+    //             nextArrow: '<div class="icon-arrow-right b-slider-arrows" aria-hidden="true"></div>',
+    //             prevArrow: '<div class="icon-arrow-left b-slider-arrows" aria-hidden="true"></div>'
+    //           }
+    //         }
+    //     ]
+    // });
      periodInDays = 30;
 
      $('.period-items a').on('click', function(event){
@@ -614,10 +654,17 @@ $(window).on('load', function(){
     }
 
     if (!isMobile) {
+        TwoBlockHeight(".about-container .b-text", ".about-img");
         LineBlockHeight(".about-scheme-item");
         LineBlockHeight(".competence-item");
         LineBlockHeight(".white-block");
         LineBlockHeight(".item-service");
         LineBlockHeight(".b-about-blocks-item");
+    }
+    if (isMobile) {
+        TeamPhotoHeight();
+    }
+    if (myWidth > 767 && myWidth < 960) {
+         $(".competence-item").css("height","auto");
     }
 });
