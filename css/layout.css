@@ -1146,6 +1146,10 @@ h4 .icon-rub-medium:before{
 		width: 100%;
 		padding: 5px 0px 16px 0px;
 	}
+	.choice-block .active{
+		color: #1b82c7;
+    	border-bottom: 4px solid #1b82c7;
+	}
 	.b-services .choice-block div:nth-child(n+4), .b-services-menu .choice-block div:nth-child(n+4){
 		margin-top: 55px;
 	}
@@ -2900,8 +2904,155 @@ margin-top: 15px;
 	.partner-list .icon-arrow-left,.partner-list .icon-arrow-right{
 		top: 50%;
 	}
+#career-page{
+	background-color: #f5f3f3;
+	padding: 26px 0;
+}
+#career-page ul.b-breadcrumbs, #career-page ul.b-breadcrumbs a, #career-page ul.b-breadcrumbs li.icon-right-arrow:before{
+	color: #000;
+}
+#career-page .jq-selectbox{
+	position: relative;
+	max-width: 331px;
+}
+#career-page .jq-selectbox:after{
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+    	 -o-transform: translateY(-50%);
+     		transform: translateY(-50%);
+    right: 20px;
+    bottom: unset;
+}
+#career-page .jq-selectbox.opened:after{
+    -webkit-transform: translateY(-50%) rotate(180deg);
+       -moz-transform: translateY(-50%) rotate(180deg);
+    	-ms-transform: translateY(-50%) rotate(180deg);
+    	 -o-transform: translateY(-50%) rotate(180deg);
+    		transform: translateY(-50%) rotate(180deg);
+}
+#career-page .jq-selectbox__select{
+	padding: 21px 0px 24px 24px;
+}
+.country-choise{
+	margin-bottom: 26px;
+	margin-top: 20px;
+}
+	.b-wrap-input{
+		margin-bottom: 65px;
+	}
+	.country-choise a{
+		padding-top: 8px;
+		padding-bottom: 9px;
+		text-align: center;
+		font-family: 'GothamProMedium';
+		font-size: 19px;
+		text-transform: uppercase;
+		border-radius: 5px;
+		display: inline-block;
+		border: 2px solid #1b82c7;
+		color: #1b1b1b;
+		min-width: 67px;
+	}
 
-
+	.country-choise a.active{
+		color: #FFF;
+		background-color: #1b82c7;
+	}
+	.country-choise a.active:hover{
+		background-color: #1b82c7;
+	}
+	.country-choise a:hover{
+		background-color: #136aa424;
+	}
+	.country-choise a:last-child{
+		margin-left: 10px;
+	}
+	select.vacancy-select{
+		display: none;
+	}
+	.vacancy-city h3.b-title{
+		font-size: 34px;
+		font-family: 'GothamProBold';
+		text-transform: uppercase;
+	    margin-bottom: 41px;
+	}
+	.vacancy-item{
+		padding-bottom: 20px;
+	}
+	.vacancy-link p{
+		padding-left: 13px;
+		font-size: 24px;
+		line-height: 30px;
+		font-family: 'GothamProMedium';
+		color: #000;
+		text-decoration: underline;
+		display: inline;
+	}
+		.vacancy-link p:hover{
+			text-decoration: none;
+		}
+		.vacancy-link span{
+		    border: 1px solid;
+		    border-radius: 20px;
+		    padding: 3px 8px;
+		    font-size: 14.63px;
+		    line-height: 29.25px;
+		    font-family: 'UbuntuMedium';
+		}
+		.vacancy-link.active p{
+			color: #1b82c7;
+		}
+		.vacancy-link.active span{
+			background: #1b82c7;
+			color: #fff;
+			border-color: #1b82c7;
+		}
+	.vacancy-info{
+	    background: #fff;
+	    padding: 27px 0px 40px 30px;
+	    margin-top: 33px;
+	    margin-left: 10px;
+	    margin-right: -10px;
+	}
+		.vacancy-info div{
+			display: inline-block;
+			width: 50%;
+			vertical-align: top;
+			padding-right: 70px;
+		}
+			.vacancy-info h3.b-title{
+				font-size: 20px;
+				line-height: 34px;
+				font-family: 'GothamProMedium';
+				margin-bottom: 10px;
+			}
+			.vacancy-info ul > li{
+				font-size: 16px;
+				line-height: 22px;
+				font-family: 'GothamProRegular';
+				position: relative;
+				padding-bottom: 22px;
+				padding-left: 30px;
+			}
+			.vacancy-info ul > li:before{
+				position:  absolute;
+				content: "\e910";
+				color: #1b82c7;
+				font-size: 18px;
+				left: 1px;
+				top: 6px;
+			}
+			.vacancy-info a{
+				font-size: 16px;
+				line-height: 16px;
+				text-decoration: underline;
+				display:  block;
+				padding-top: 22px;
+			}
+			.vacancy-info a:hover{
+				text-decoration: none;
+			}
 
 input::-webkit-input-placeholder {
 	color: #828282;

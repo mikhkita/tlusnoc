@@ -113,6 +113,59 @@ $(document).ready(function(){
         });
     }
 
+    $(".choice-about a").on('click', function(event){
+        $(".choice-about a").removeClass("active");
+        $(this).addClass("active");
+        var choiceItem = $(this).attr("href");
+        $("#about-page, #career-page, #project-page").addClass("hide");
+        $(choiceItem).removeClass("hide");
+    })
+    $('.country-choise a').on('click', function(){
+        toggleBlock($(this));
+        $('.vacancy-select').change();
+    });
+    $('.vacancy-link').on('click', function(){
+        $(this).siblings('.vacancy-info').slideToggle(300);
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        }
+        else{
+            $(this).addClass("active");
+        }
+    });
+
+    $('select.vacancy-select').styler();
+
+    function toggleBlock($this){
+        $this.siblings(".choice-item").each(function(){
+            var block = $(this).attr("data-block");
+            $('.'+block).addClass("hide");
+            $(this).removeClass("active");
+        });
+        var block = $this.attr("data-block");
+        $('.'+block).removeClass("hide");
+        $this.addClass("active");
+        if(!!$this.attr("id") && $this.attr("data-hash") === "true"){
+            if(history.pushState) {
+                history.pushState(null, null, "#"+$this.attr("id"));
+            }else{
+                location.hash = "#"+$this.attr("id");
+            } 
+        }
+    }
+
+    $('.vacancy-select').on('change', function(){
+        var city = $(this).find('option:selected').attr("data-city");
+        var country = $(this).attr("data-country");
+        $('.'+country+' '+'.vacancy-city').each(function(){
+            $(this).find(".vacancy-info").each(function(){
+                $(this).slideUp(0);
+            });
+            $(this).addClass("hide");
+        });
+        $('.'+city).removeClass("hide");
+    });
+
     $(window).resize(function() {
         TeamPhotoHeight();
         if (!isMobile) {
