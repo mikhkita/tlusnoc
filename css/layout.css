@@ -487,6 +487,7 @@ h3.b-title{
 
 				.cabinet-bubble .b-btn{
 					margin-bottom: 14px;
+					width: 100%;
 				}
 
 				.restore-password{
@@ -2811,6 +2812,10 @@ padding-top: 19px;
 			.b-team-item a{
 			    padding-top: 18px;
     			display: block;
+    			text-decoration: underline;
+			}
+			.b-team-item a:hover{
+				text-decoration: none;
 			}
 			.b-team-item a:after{
 			    text-decoration: none;
@@ -3083,6 +3088,43 @@ input[name="MAIL"]{
     border-bottom: 0px;
     margin-bottom: 21px;
 }
+#b-popup-app{
+    width: 100%;
+    max-width: 290px;
+    padding: 25px 35px 40px;
+}
+#b-popup-app h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-family: 'GothamProBold';
+}
+#b-popup-app input, #b-popup-app textarea{
+	margin-bottom: 22px;
+    resize: none;
+}
+#b-popup-app input[type="checkbox"]{
+	position: absolute;
+}
+#b-popup-app input[type="checkbox"]+ label{
+    position: relative;
+    padding-left: 25px;
+    min-width: 31px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+#b-popup-app .b-btn{
+	width: 100%;
+    padding: 20px 0;
+}
+#b-popup-app a.underline:hover{
+	text-decoration: none;
+}
+
+
 .big-arrow-right:after{
 	content: url(../i/big-arrow-right.svg);
 }

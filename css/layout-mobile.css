@@ -184,10 +184,6 @@ ul.b-breadcrumbs{
 .review-block{
 	padding-bottom: 0;
 }
-	.about-scheme span{
-		font-size: 12px;
-		line-height: 16px;
-	}
 .about-img{
 	width: 100%;
 	float: none;
@@ -215,8 +211,16 @@ ul.b-breadcrumbs{
 	.about-container .b-special-item span{
 		max-width: none;
 	}
+	.about-container .b-special-item ul > li{
+		font-size: 14px;
+	}
+
 .about-scheme-item{
 	width: 100%;
+}
+.about-scheme span{
+	font-size: 12px;
+	line-height: 16px;
 }
 .b-team-item{
     width: calc(100%/2 - 11px);

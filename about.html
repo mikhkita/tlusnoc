@@ -209,7 +209,7 @@
 			<div class="about-scheme-container">
 				<div class="about-scheme-item">
 					<h3 class="white">Обращение</h3>
-					<p class="white"><a href="#">Оставьте заявку</a> или <a href="#">позвоните</a></p>
+					<p class="white"><a href="#b-popup-app" class="fancy">Оставьте заявку</a> или <a href="tel:+74995515463">позвоните</a></p>
 				</div><!-- 
 				 --><div class="about-scheme-item">
 					<h3 class="white">Обработка обращения</h3>
@@ -380,6 +380,24 @@
 </div>
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+		<div class="b-popup" id="b-popup-app" style="display: inline-block;">
+			<h2 class="b-title">Отправить заявку</h2>
+			<form id="b-popup-app-form" class="b-popup-app-form" method="post" action="/new-app.php" novalidate="novalidate" data-goal="NEW_ABOUT_APP">
+				<input type="text" name="name" placeholder="Ваше имя" required="">
+				<input type="text" name="email" placeholder="Ваш E-mail" required="">
+				<textarea name="message" required="" rows="1" placeholder="Ваше сообщение" style="overflow-x: hidden; word-wrap: break-word; overflow-y: visible;"></textarea>
+				<div class="clearfix">
+				<div class="b-wrap-input" style="width: 100%">
+					<input id="personal" type="checkbox" name="personal" required="">
+					<label for="personal">Я согласен на <a href="/politics" class="underline">обработку персональных данных</a></label>
+				</div>
+				<input type="text" name="MAIL">
+				</div>
+				<a href="#" class="b-btn b-btn-blue ajax">Отправить</a>
+				<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+			</form>
+			<button data-fancybox-close="" class="fancybox-close-small"></button>
+		</div>
 		<div class="b-popup" id="b-popup-1">
 			<h3>Оставьте заявку</h3>
 			<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
