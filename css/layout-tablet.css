@@ -376,6 +376,20 @@ body {
 	.b-services-menu .choice-block div:nth-child(n+3){
 		margin-top: 43px;
 	}
+	.choice-about{
+		text-align: left;
+		padding-bottom: 20px;
+   		padding-top: 10px;
+	}
+		.b-services-menu .choice-block.choice-about div{
+			width: unset;
+			height: unset;
+			margin-left: 0;
+		}
+		.b-services-menu .choice-block.choice-about div:nth-child(n+2){
+			margin-left: 37px;
+		}
+	
 	.b-choice-item .item-service{
 		width: 100%;
 	}
@@ -453,7 +467,18 @@ body {
 			width: calc(100% - 42px);
 		}
 	/* О компании */
-
+	.choice-about a{
+		position: relative;
+	}
+	.choice-about div{
+		width: unset;
+		height: unset;
+	}
+	.choice-about{
+		text-align: left;
+		padding-bottom: 20px;
+   		padding-top: 10px;
+	}
 	.about-container .b-special-item{
 		margin: 0;
 		width: calc(100%/2 - 10px);
@@ -500,7 +525,7 @@ body {
 	    font-size: 36px;
     	line-height: 42px;
 	}
-	h2.b-title{
+	h1.b-title, h2.b-title{
 	    font-size: 36px;
     	line-height: 42px;
 	}
@@ -599,11 +624,20 @@ body {
 }
 
 /*О компании*/
-
-
-
-
+.choice-about a{
+		position: relative;
+	}
+	.choice-about div{
+		width: unset;
+		height: unset;
+	}
+	.choice-about{
+		text-align: left;
+		padding-bottom: 20px;
+   		padding-top: 10px;
+	}
 .b-team-photo {
     height: 415px;
 }
+
 }

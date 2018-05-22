@@ -133,7 +133,10 @@ $(document).ready(function(){
             $(this).addClass("active");
         }
     });
-
+    $(".review-item a").on('click', function(){
+        $(".review-item p.hide").removeClass("hide");
+        $(this).addClass("hide");
+    });
     $('select.vacancy-select').styler();
 
     function toggleBlock($this){
