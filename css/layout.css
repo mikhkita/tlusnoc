@@ -303,7 +303,7 @@ h3.b-title{
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 100;
+	z-index: 1000;
 }
 	.b-top .b-wide-block {
 	    background-color: #e1e1e1;
@@ -1905,6 +1905,7 @@ form#b-calc-form .b-calc-item span:before{
 					display:  inline;
 					font-size: 72px;
 					line-height: 90px;
+					-webkit-writing-mode: tb-rl;
 					writing-mode: tb-rl;
 					-webkit-transform: translateX(-50%) rotate(180deg);
 					   -moz-transform: translateX(-50%) rotate(180deg);
