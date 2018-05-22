@@ -249,6 +249,39 @@ ul.b-breadcrumbs{
 .review-block .b-btn{
     padding: 18px 30px 16px 30px;
 }
+.b-services-menu.about-menu{
+	display: block;
+}
+.b-services-menu.about-menu .choice-block div{
+	margin: 0;
+}
+.b-wrap-input{
+	margin-bottom: 30px;
+}
+.vacancy-info{
+    margin-left: 0;
+    margin-right: 0;
+}
+.vacancy-info div{
+    display: block;
+    width: 100%;
+    padding-right: 30px;
+}
+.vacancy-city h3.b-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.vacancy-info h3.b-title{
+    font-size: 20px;
+}
+.vacancy-link p{
+    font-size: 20px;
+    line-height: 24px;
+}
+select.vacancy-select{
+	display: block;
+}
+
 @media screen and (max-width: 600px){
 	.b-menu-down li{
 		width: calc(100%/2 - 3px);

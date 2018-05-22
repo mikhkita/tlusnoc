@@ -117,7 +117,7 @@ $(document).ready(function(){
         $(".choice-about a").removeClass("active");
         $(this).addClass("active");
         var choiceItem = $(this).attr("href");
-        $("#about-page, #career-page, #project-page").addClass("hide");
+        $(".about-tab").addClass("hide");
         $(choiceItem).removeClass("hide");
     })
     $('.country-choise a').on('click', function(){

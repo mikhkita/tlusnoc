@@ -3001,32 +3001,42 @@ margin-top: 15px;
 	}
 	select.vacancy-select{
 		display: none;
+	    -webkit-appearance: none;
+	    padding: 20px 0px 20px 19px;
+	    width: 100%;
+	    border: none;
+	    font-family: 'GothamProMedium';
+	    background-color: #fff;
+	    border-radius: unset;
+	    font-size: 19px;
 	}
 	.vacancy-city h3.b-title{
 		font-size: 34px;
 		font-family: 'GothamProBold';
 		text-transform: uppercase;
 	    margin-bottom: 41px;
+	    line-height: 30px;
 	}
 	.vacancy-item{
 		padding-bottom: 20px;
 	}
 	.vacancy-link p{
-		padding-left: 13px;
+		padding-left: 40px;
 		font-size: 24px;
 		line-height: 30px;
 		font-family: 'GothamProMedium';
 		color: #000;
 		text-decoration: underline;
-		display: inline;
+		/* display: inline; */
 	}
 		.vacancy-link p:hover{
 			text-decoration: none;
 		}
 		.vacancy-link span{
+		    position:  absolute;
 		    border: 1px solid;
 		    border-radius: 20px;
-		    padding: 3px 8px;
+		    padding: 0px 10px;
 		    font-size: 14.63px;
 		    line-height: 29.25px;
 		    font-family: 'UbuntuMedium';
@@ -3083,6 +3093,19 @@ margin-top: 15px;
 			}
 			.vacancy-info a:hover{
 				text-decoration: none;
+			}
+		.document-link{
+			margin-top:20px;
+		    font-size: 16px;
+		    text-decoration: underline;
+		}
+			.document-link span{
+			    font-size: 16px;
+			    text-decoration: underline;
+			    padding-left: 10px;
+			}
+			.document-link .b-table-cell{
+				vertical-align: middle;
 			}
 
 input::-webkit-input-placeholder {
