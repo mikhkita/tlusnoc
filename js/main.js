@@ -42,57 +42,34 @@
             return true;
         return false;
     }
+function TeamPhotoHeight(){
+    var photoWidth = $(".team-block .b-team-photo").width();
+    var photoHeight = photoWidth / 1.9;
+    $(".team-block .b-team-photo").height(photoHeight);
+}
+function TwoBlockHeight(firstBlock, secondBlock){
 
-function WhiteBlockHeight(){
-
-    $(".white-block").removeAttr( 'style' );
-
-    var maxHeight = $(".white-block").height();
-
-    $(".white-block").each(function(){
-      if ( $(this).height() > maxHeight ) 
-      { 
-        maxHeight = $(this).height();
-      }
-    });
-     
-    $(".white-block").height(maxHeight);
-
+    var firstBlockHeight = $(firstBlock).height();
+    $(secondBlock).height(firstBlockHeight);
 }
 
-function ServiceItemBlockHeight(){
+function LineBlockHeight(block){
 
-    $(".item-service").css("height","");
+    $(block).css("height","");
 
-    var maxHeight = $(".item-service").height();
+    var maxHeight = $(block).height();
 
-    $(".item-service").each(function(){
+    $(block).each(function(){
       if ( $(this).height() > maxHeight ) 
       { 
         maxHeight = $(this).height();
       }
     });
      
-    $(".item-service").height(maxHeight);
-}
-function AboutItemBlockHeight(){
-
-    $(".b-about-blocks-item").css("height","");
-
-    var maxHeight = $(".b-about-blocks-item").height();
-
-    $(".b-about-blocks-item").each(function(){
-      if ( $(this).height() > maxHeight ) 
-      { 
-        maxHeight = $(this).height();
-      }
-    });
-     
-    $(".b-about-blocks-item").height(maxHeight);
+    $(block).height(maxHeight);
 }
 
 $(document).ready(function(){	
-
     $(window).resize(resize);
     resize();
 
@@ -136,17 +113,81 @@ $(document).ready(function(){
         });
     }
 
-    $(window).resize(function() {
-        if (!isMobile) {
-            WhiteBlockHeight();
-            ServiceItemBlockHeight();
-            AboutItemBlockHeight();
+    $(".choice-about a").on('click', function(event){
+        $(".choice-about a").removeClass("active");
+        $(this).addClass("active");
+        var choiceItem = $(this).attr("href");
+        $("#about-page, #career-page, #project-page").addClass("hide");
+        $(choiceItem).removeClass("hide");
+    })
+    $('.country-choise a').on('click', function(){
+        toggleBlock($(this));
+        $('.vacancy-select').change();
+    });
+    $('.vacancy-link').on('click', function(){
+        $(this).siblings('.vacancy-info').slideToggle(300);
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
         }
         else{
+            $(this).addClass("active");
+        }
+    });
+
+    $('select.vacancy-select').styler();
+
+    function toggleBlock($this){
+        $this.siblings(".choice-item").each(function(){
+            var block = $(this).attr("data-block");
+            $('.'+block).addClass("hide");
+            $(this).removeClass("active");
+        });
+        var block = $this.attr("data-block");
+        $('.'+block).removeClass("hide");
+        $this.addClass("active");
+        if(!!$this.attr("id") && $this.attr("data-hash") === "true"){
+            if(history.pushState) {
+                history.pushState(null, null, "#"+$this.attr("id"));
+            }else{
+                location.hash = "#"+$this.attr("id");
+            } 
+        }
+    }
+
+    $('.vacancy-select').on('change', function(){
+        var city = $(this).find('option:selected').attr("data-city");
+        var country = $(this).attr("data-country");
+        $('.'+country+' '+'.vacancy-city').each(function(){
+            $(this).find(".vacancy-info").each(function(){
+                $(this).slideUp(0);
+            });
+            $(this).addClass("hide");
+        });
+        $('.'+city).removeClass("hide");
+    });
+
+    $(window).resize(function() {
+        TeamPhotoHeight();
+        if (!isMobile) {
+            TwoBlockHeight(".about-container .b-text", ".about-img");
+            LineBlockHeight(".about-scheme-item");
+            LineBlockHeight(".competence-item");
+            LineBlockHeight(".white-block");
+            LineBlockHeight(".item-service");
+            LineBlockHeight(".b-about-blocks-item");
+        }
+        else{
+            $(".about-img").css("height","");
+            $(".competence-item").css("height","auto");
+            $(".about-scheme-item").css("height","auto");
             $(".white-block").css("height","auto");
             $(".item-service").css("height","auto");
             $(".b-about-blocks-item").css("height","auto");
         }
+        if (myWidth > 767 && myWidth < 960) {
+            $(".competence-item").css("height","auto");
+        }
+
     });
     
 
@@ -235,6 +276,7 @@ $(document).ready(function(){
         
     // }
 
+
     $('.b-slider').slick({
         dots: false,
         arrows: true,
@@ -300,7 +342,66 @@ $(document).ready(function(){
             },
         ]
     });
-
+    $('.partner-list').slick({
+        dots: false,
+        arrows: true,
+        nextArrow: '<div class="icon-arrow-right b-slider-arrows" aria-hidden="true"></div>',
+        prevArrow: '<div class="icon-arrow-left b-slider-arrows" aria-hidden="true"></div>',
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        speed: 600,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+              breakpoint: 1440,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 1
+              }
+            },
+        ]
+    });
+    // $('.review-list').slick({
+    //     dots: false,
+    //     arrows: false,
+    //     infinite: true,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     speed: 600,
+    //     adaptiveHeight: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 3000,
+    //     responsive: [
+    //         {
+    //           breakpoint: 768,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             arrows: true,
+    //             nextArrow: '<div class="icon-arrow-right b-slider-arrows" aria-hidden="true"></div>',
+    //             prevArrow: '<div class="icon-arrow-left b-slider-arrows" aria-hidden="true"></div>'
+    //           }
+    //         }
+    //     ]
+    // });
      periodInDays = 30;
 
      $('.period-items a').on('click', function(event){
@@ -606,8 +707,17 @@ $(window).on('load', function(){
     }
 
     if (!isMobile) {
-        WhiteBlockHeight();
-        ServiceItemBlockHeight();
-        AboutItemBlockHeight();
+        TwoBlockHeight(".about-container .b-text", ".about-img");
+        LineBlockHeight(".about-scheme-item");
+        LineBlockHeight(".competence-item");
+        LineBlockHeight(".white-block");
+        LineBlockHeight(".item-service");
+        LineBlockHeight(".b-about-blocks-item");
+    }
+    if (isMobile) {
+        TeamPhotoHeight();
+    }
+    if (myWidth > 767 && myWidth < 960) {
+         $(".competence-item").css("height","auto");
     }
 });

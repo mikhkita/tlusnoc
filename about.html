@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<!-- <link rel="stylesheet" href="css/jquery.formstyler.css" type="text/css"> -->
+	
+
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 1023px)" href="css/layout-tablet.css">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+</head>
+<body>
+<div id="mobile-menu" class="mobile-menu hide">
+	<ul>
+		<h2 class="b-title">Меню</h2>
+		<li><a href="index.html" class="active">Главная</a></li>
+		<li><a href="services.html">Услуги и продукты</a></li>
+		<li><a href="about.html">О компании</a></li>
+		<li><a href="cooperation.html">Сотрудничество</a></li>
+		<li><a href="documents.html">Документация</a></li>
+		<li><a href="contacts.html" class="contact-info">Контакты</a></li>
+	</ul>
+	<div class="social-icons">
+		<a href="#" class="icon-facebook"></a>
+		<a href="#" class="icon-vk"></a>
+		<a href="#" class="icon-instagram"></a>
+	</div>
+</div>
+<div id="panel-page">
+	<div class="b b-top">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<ul class="b-top-content">
+					<li>
+						<a href="https://t.me/EAconsbot" class="contact-info telegram">
+							<img src="i/telegram.svg" class="telegram">@EAConsBot
+						</a>
+					</li>
+					<li>
+						<a href="#" class="contact-info">Контактная информация</a>
+					</li>
+					<li>
+						<div class="social-icons">
+							<a href="#" class="icon-facebook" target="_blank"></a>
+							<a href="#" class="icon-vk" target="_blank"></a>
+							<a href="#" class="icon-instagram" target="_blank"></a>
+							<a href="#" class="icon-twitter" target="_blank"></a>
+						</div>
+					</li>
+					<li>
+						<a href="tel:+74991100046" class="phone">+7 499 110 00 46</a>
+					</li>
+					<li class="cabinet-cont">
+						<a href="#" class="cabinet" onclick="return false;"><span class="icon-cabinet"></span>Кабинет</a>
+						<div class="cabinet-bubble">
+							<div class="cabinet-bubble-wrap">
+								<h3 class="b-title">Войти</h3>
+								<form id="b-login-form" class="b-login-form" method="post" action="action.php">
+									<input type="text" name="email" placeholder="E-mail" required>
+									<input type="password" name="password" placeholder="Пароль" required>
+									<a href="#" class="b-btn b-btn-blue ajax" onclick="$('#b-login-form').submit(); return false;">Войти</a>
+								</form>
+								<a href="#" class="b-btn b-btn-transparent">Регистрация</a>
+								<a href="#" class="restore-password">Восстановить пароль</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="b b-menu">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<div class="b-logo">
+					<a href="index.html">
+						<img src="i/logo.png" data-retina-src="i/logo@2x.png">
+					</a>
+				</div>
+				<ul class="b-menu-items">
+					<li><a href="services.html">Услуги и продукты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Вики</a></li>
+					<li><a href="documents.html">Блог</a></li>
+				</ul>
+				<div id="burger-menu" class="burger-menu icon-menu">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-services-menu">
+		<div class="b-block">
+			<div class="choice-block choice-about"><!-- 
+				 --><div><a href="#about-page" class="active">О нас</a></div><!-- 
+				 --><div><a href="#career-page" class="">Карьера</a></div><!-- 
+				 --><div><a href="#project-page" class="">Проекты EA&nbsp;Consult</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="about-page">
+		<div class="about-container">
+			<div class="b-block">
+				<ul class="b-breadcrumbs">
+					<li><a href="index.html">Главная</a></li>
+					<li class="icon-right-arrow"><span>О компании</span></li>
+				</ul>
+				<h2 class="b-title white">О нас</h2>
+				<div class="b-text white">
+					<div class="about-img" style="background-image: url(i/about-1.jpg);"></div>
+					<p>Компания EA Consult основана в 2017 году группой единомышленников 
+					с целью представить рынку свое видение и подход к организации тендерного сопровождения и закупочных процедур, профессионального консалтинга 
+					и финансового обеспечения деятельности коммерческих компаний. Данные направления выбраны не случайно. Наблюдая стремительно возрастающую роль тендерных продаж в современном российском бизнесе, увеличение количества коммерческих электронных торговых площадок и повышение прозрачности закупочных процедур — эти и другие рыночные факторы привели нас к четкому пониманию, что наша команда может привнести в этот тренд свой вклад, позитивное влияние, представить рынку свои идеи, разработки и экспертизу.</p>
+
+					<p>В первую очередь мы ориентируемся на ценностный подход, и строго убеждены, что в текущей конъюнктуре услуг нашего направления, особую ценность для клиента могут представлять только комплексные решения, сбалансированный пакет услуг и продуктов, ответственность подрядчика 
+					за весь бизнес-процесс или за его большую часть.</p>
+				</div>
+				<div class="b-special-list">
+					<div class="b-special-item">
+						<div class="white-block">
+							<h4 class="item-title">Тендерный консалтинг</h4>
+							<ul>
+								<li class="icon-mark">работа с электронным документооборотом и торговыми площадками</li>
+								<li class="icon-mark">анализ, поиск и подбор закупочных процедур</li>
+								<li class="icon-mark">сопровождение любых конкурсных процедур</li>
+								<li class="icon-mark">аутсорсинг тендерных отделов под ключ </li>
+							</ul>
+						</div>
+					</div>
+					<div class="b-special-item">
+						<div class="white-block">
+							<h4 class="item-title">Консалтинг и поддержка малого и среднего бизнеса</h4>
+							<ul>
+								<li class="icon-mark">взаимодействие с организациями инфраструктуры поддержки МСП</li>
+								<li class="icon-mark">инвестиционный, финансовый, налоговый консалтинг</li>
+								<li class="icon-mark">подготовка документов заявок на кредитные/инвест комитеты</li>
+							</ul>
+						</div>
+					</div>
+					<div class="b-special-item">
+						<div class="white-block">
+							<h4 class="item-title">Финансовые продукты</h4>
+							<div><span>содействие в подборе и получении продуктов в организациях-партнерах EA&nbsp;Consult</span></div>
+							<ul>
+								<li class="icon-mark">банковские гарантии и тендерные кредиты</li>
+								<li class="icon-mark">страховые продукты для бизнеса</li>
+								<li class="icon-mark">лизинг</li>		
+							</ul>
+						</div>
+					</div>
+					<div class="b-special-item deactive">
+						<div class="white-block">
+							<h4 class="item-title">Обучение и сертификация </h4>
+							<ul>
+								<li class="icon-mark">44-фз и 223-фз для поставщиков/для заказчиков</li>
+								<li class="icon-mark">проектное управление: классика и Agile/Scrum</li>
+								<li class="icon-mark">бухгалтерский учет и налоговая оптимизация</li>
+								<li class="icon-mark">Soft skills </li>
+							</ul>
+						</div>
+					</div>
+					<div class="b-special-item deactive">
+						<div class="white-block">
+							<h4 class="item-title">Блокчейн-практика (юридический и финансовый консалтинг в блокчейн)</h4>
+							<ul>
+								<li class="icon-mark">юридическая поддержка операций</li>
+								<li class="icon-mark">разработка нормативной документации по направлению, в том числе смарт-контракты</li>
+								<li class="icon-mark">консалтинг и аналитика</li>
+							</ul>
+						</div>
+					</div>
+					<div class="b-special-item deactive">
+						<div class="white-block">
+							<h4 class="item-title">Лицензии и СРО</h4>
+							<ul>
+								<li class="icon-mark">МЧС, ФСБ, ФСТЭК, Минкультуры</li>
+								<li class="icon-mark">СРО проектировщиков, строителей, изыскателей </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="citate-block">
+					<p>Наша цель — повысить эффективность тендерной деятельности, предложить и обеспечить пути осмысленного развития тендерных продаж вашей компании. Каждый день мы делаем нашу работу, чтобы ваши компании достигали больших результатов вместе с нами.</p>
+
+					<p>Каждый день мы ищем пути стать еще лучше и еще эффективнее – ведем собственные разработки в области машинного обучения и развития аналитического программного обеспечения, повышаем компетенции наших специалистов и экспертов, изучаем международную практику, чтобы дать вам самые актуальные решения.</p>
+
+					<p>Оставайтесь с нами, и мы превзойдем ваши ожидания!</p>
+					<a href="#" class="pdf-doc">Скачать презентацию компании</a>
+				</div>
+			</div>
+		</div>
+		<div class="about-scheme">
+			<div class="b-block">
+				<h2 class="b-title">Схема работы</h2>
+				<div class="about-scheme-container">
+					<div class="about-scheme-item">
+						<h3 class="white">Обращение</h3>
+						<p class="white"><a href="#b-popup-app" class="fancy">Оставьте заявку</a> или <a href="tel:+74995515463">позвоните</a></p>
+					</div><!-- 
+					 --><div class="about-scheme-item">
+						<h3 class="white">Обработка обращения</h3>
+						<p class="white">Уточним необходимые детали и сформируем предложение</p>
+					</div><!-- 
+					 --><div class="about-scheme-item">
+						<h3 class="white">Договор и исполнение</h3>
+						<p class="white">Подпишем <a href="#">договор</a> и исполним все предусмотренные договором обязательства</p>
+					</div><!-- 
+					 --><div class="about-scheme-item">
+						<h3 class="white">Отчет</h3>
+						<p class="white">По завершении работ предоставим <a href="#">отчет о проделанной работе</a> и уточним пожелания для улучшения качества нашей работы</p>
+					</div>
+				</div>
+				<span>Данная схема иллюстрирует общий подход к предоставлению решений и услуг компании, тогда как схемы  по отдельным продуктам могут быть более детальными и предусматривать большее количество шагов. Общее операционное управление осуществляется в соответствии с методологией проектного управления (PM BOOK + Agile) а также в соответствии с требованиями ISO 9001 менеджмент качества.</span>
+			</div>
+		</div>
+		<div class="competence-centers">
+			<div class="b-block">
+				<h2 class="b-title white">ЦЕНТРЫ КОМПЕТЕНЦИЙ</h2>
+				<div class="competence-list">
+					<div class="competence-item">
+						<div class="competence-img"></div>
+						<h4>Юридический консалтинг</h4>
+						<p>	Мы собрали команду юристов по ключевым направлениям практики:</p>
+						<ul>
+							<li>тендерная деятельность </li>
+							<li>корпоративное право</li>
+						</ul>
+							<p>Данное подразделение для вас решает задачи в области закупок, анализирует и подбирает конкурсные процедуры, обеспечивает участие и стабильный процент побед, сопровождает любые тендерные активности, выступает от вашего лица в ФАС, судах, прокуратуре и иных инстанциях. Также в рамках данного направления в 2018 году стартует блок услуг по оформлению лицензий, допусков и СРО</p>
+					</div><!-- 
+				 --><div class="competence-item">
+						<div class="competence-img"></div>
+						<h4>Финансовый консалтинг</h4>
+						<p>Важнейшее направление в консалтинге. Специалисты данного направления решают вопросы, связанные с оценкой финансового состояния компаний клиентов, подбирают финансовые продукты - банковские, страховые, лизинговые, готовят документы для подачи в организации-партнеры, взаимодействуют с государственными органами власти, организациями инфраструктуры поддержки малого и среднего бизнеса а также участвуют в решении любых вспомогательных задач финансового характера. </p>
+					</div><!-- 
+				 --><div class="competence-item">
+						<div class="competence-img"></div>
+						<h4>Образовательный блок</h4>
+						<p>Специалисты данного направления проектируют образовательный процесс, разрабатывают курсы, тренинги и семинары, обеспечивают развитие компетенций ваших сотрудников по таким направлениям как: закупки, управление проектами, налоговое право и бухгалтерский учет а также "софт скиллс". В рамках направления развивается участок дистанционного обучения и сертификации. Ознакомиться подробнее можно по <a href="#">ссылке.</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team-block">
+			<div class="b-block">
+				<h2 class="b-title">Команда</h2>
+				<div class="b-team-photo" style="background-image:url('i/team-photo.jpg')"></div>
+				<div class="b-team-list">
+					<div class="b-team-item">
+						<div class="b-team-item-photo" style="background-image:url('i/team-photo-1.jpg')"></div>
+						<h3 class="b-title">Бубенцов Егор Николаевич</h3>
+						<p>Генеральный директор</p>
+						<a href="#">О Егоре</a>
+					</div>
+					<div class="b-team-item">
+						<div class="b-team-item-photo" style="background-image:url('i/team-photo-2.jpg')"></div>
+						<h3 class="b-title">Бубенцова Ольга Александровна</h3>
+						<p>Директор по кадрам</p>
+						<a href="#">Об Ольге</a>
+					</div>
+					<div class="b-team-item">
+						<div class="b-team-item-photo man-photo"></div>
+						<h3 class="b-title">Оника Сергей Владимирович</h3>
+						<p>Партнёр</p>
+						<a href="#">О Сергее</a>
+					</div>
+					<div class="b-team-item">
+						<div class="b-team-item-photo woman-photo"></div>
+						<h3 class="b-title">Нахмедова Алина Эльдаровна</h3>
+						<p>Адвокат</p>
+						<a href="#">Об Алине</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="review-block">
+			<div class="b-block">
+				<h2 class="b-title">Отзывы клиентов</h2>
+				<div class="review-list">
+					<div class="review-item">
+						<img src="i/absolut-bank-logo.png" class="review-logo">
+						<p>Выражаю слова благодарности команде EA Consult. Необходимая была гарантия на выполнения контракта с определенными требованиями к банкам-гарантам. В итоге гарантию получили, более того, был открыт лимит по Банковским Гарантиям в этом же Банке.</p>
+						<div>
+							<a href="#" onclick="return false;" data-hide="Свернуть отзыв" data-show="Развернуть отзыв" class="arrow-down">Развернуть
+								<div class="icon-arrow-down"></div>
+							</a>
+						</div>
+						<a href="#" class="fancy-img icon-small-doc">Смотреть оригинал</a>
+					</div>
+					<div class="review-item">
+						<img src="i/logo-loko-bank.png" class="review-logo">
+						<p>Нам очень был нужен займ для участия в тендере. Компанию EA&nbsp;Consult знаем не по наслышке, удалось достаточно времени поработать, ребята доказали, что являются профессионалами своего дела. Трудность заключалась в следующем - у нас был заблокирован счет в обслуживающем банке, ребята договорились с кредитующей организацией о получении одобрения по заявке.</p>
+						<div>
+							<a href="#" onclick="return false;" data-hide="Свернуть отзыв" data-show="Развернуть отзыв" class="hide">Развернуть
+								<div class="icon-arrow-down"></div>
+							</a>
+						</div>
+						<a href="#" class="fancy-img icon-small-doc">Смотреть оригинал</a>
+					</div>
+				</div>
+				<div class="text-center-block">
+					<div class="form-center">
+						<a href="#" class="b-btn">Ещё отзывы</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="partner-block">
+			<div class="b-block">
+				<h2 class="b-title">Партнёры</h2>
+				<div class="partner-list">
+					<div class="partner-item">
+						<img src="i/partner-zhilfinans.png">
+					</div>
+					<div class="partner-item">
+						<img src="i/partner-derjavabank.png">
+					</div>
+					<div class="partner-item">
+						<img src="i/partner-okbank.png">
+					</div>
+					<div class="partner-item">
+						<img src="i/partner-unimatic.png">
+					</div>
+					<div class="partner-item">
+						<img src="i/partner-gruzprofi.png">
+					</div>
+					<div class="partner-item">
+						<img src="i/partner-zhilfinans.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="career-page">
+		<div class="b-block">
+			<ul class="b-breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li class="icon-right-arrow"><span>О нас</span></li>
+				<li class="icon-right-arrow"><span>Карьера</span></li>
+			</ul>
+			<h2 class="b-title">Вакансии</h2>
+			<div class="country-choise">
+				<a href="#" data-block="RF-block" class="choice-item active" onclick="return false;">РФ</a>
+				<a href="#" data-block="CIS-block" class="choice-item" onclick="return false;">СНГ</a>
+			</div>
+			<div class="RF-block">
+				<div class="b-wrap-input">
+					<div class="select-wrapper icon-arrow-down">
+						<select class="chosen-select vacancy-select" data-country="RF-block">
+							<option value="1" data-city="city-Moscow">Москва</option>
+							<option value="2" data-city="city-Tomsk">Томск</option>
+							<option value="3" data-city="city-Vladivostok">Владивосток</option>
+						</select>
+					</div>
+				</div>
+				<div class="city-Moscow vacancy-city">
+					<h3 class="b-title">Вакансии в Москве</h3>
+					<ul class="mark-numbers mark-numbers-blue vacancy-list">
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>1</span>
+								<p>Менеджер по работе с клиентами</p>
+							</a>
+							<div class="vacancy-info b-text" style="display: none;">
+								<div>
+									<h3 class="b-title">Обязанности:</h3>
+									<ul>
+										<li class="icon-mark">выполнение плановых показателей по продажам банковских продуктов;</li>
+										<li class="icon-mark">привлечение клиентов;</li>
+										<li class="icon-mark">aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+										<li class="icon-mark">проведение презентаций, BTL-акций по продуктам Банка;</li>
+										<li class="icon-mark">прием и обработка заявок на банковские продукты;</li>
+										<li class="icon-mark">своевременное предоставление отчетов о проделанной работе.</li>
+									</ul>
+								</div><!-- 
+								 --><div>
+									<h3 class="b-title">Требования:</h3>
+									<ul>
+										<li class="icon-mark">высшее образование (экономическое, финансы);</li>
+										<li class="icon-mark">опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+										<li class="icon-mark">ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+										<li class="icon-mark">лидерство, ориентация на результат.</li>
+									</ul>
+									<h3 class="b-title">Тип занятости:</h3>
+									<ul>	
+										<li class="icon-mark">Полная занятость, полный день.</li>
+									</ul>
+								</div>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>2</span>
+								<p>Аналитик</p>
+							</a>
+							<div class="vacancy-info b-text" style="display: none;">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>3</span>
+								<p>Интернет-маркетолог</p>
+							</a>
+							<div class="vacancy-info b-text" style="display: none;">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>4</span>
+								<p>Системный администратор (возможно)</p>
+							</a>
+							<div class="vacancy-info b-text" style="display: none;">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="city-Tomsk vacancy-city hide">
+					<h3 class="b-title">Вакансии в Томске</h3>
+					<ul class="mark-numbers mark-numbers-blue vacancy-list">
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>1</span>
+								<p>Менеджер по работе с клиентами</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>2</span>
+								<p>Аналитик</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="city-Vladivostok vacancy-city hide">
+					<h3 class="b-title">Вакансии во Владивостоке</h3>
+					<ul class="mark-numbers mark-numbers-blue vacancy-list">
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>1</span>
+								<p>Интернет-маркетолог</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>2</span>
+								<p>Системный администратор (возможно)</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="document-link">
+					<a href="#" class="b-table">
+						<img class="b-table-cell-middle" src="i/career-1.png" data-retina-src="i/career-1@2x.png">
+						<span class="b-table-cell-middle">EA Consult на HH.RU</span>
+					</a>
+				</div>
+			</div>
+			<div class="CIS-block hide">
+				<div class="b-wrap-input">
+					<div class="select-wrapper icon-arrow-down">
+						<select class="chosen-select vacancy-select" data-country="CIS-block">
+							<option value="1" data-city="city-Minsk">Беларусь (Минск)</option>
+							<option value="2" data-city="city-Astana">Казахстан (Астана)</option>
+							<option value="3" data-city="city-Kiev">Украина (Киев)</option>
+						</select>
+					</div>
+				</div>
+				<div class="city-Minsk vacancy-city">
+					<h3 class="b-title">Вакансии в Минске</h3>
+					<ul class="mark-numbers mark-numbers-blue vacancy-list">
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>1</span>
+								<p>Менеджер по работе с клиентами</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>2</span>
+								<p>Аналитик</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>3</span>
+								<p>Интернет-маркетолог</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>4</span>
+								<p>Системный администратор (возможно)</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="city-Astana vacancy-city hide">
+					<h3 class="b-title">Вакансии в Астане</h3>
+					<ul class="mark-numbers mark-numbers-blue vacancy-list">
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>1</span>
+								<p>Менеджер по работе с клиентами</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>2</span>
+								<p>Аналитик</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="city-Kiev vacancy-city hide">
+					<h3 class="b-title">Вакансии во Киеве</h3>
+					<ul class="mark-numbers mark-numbers-blue vacancy-list">
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>1</span>
+								<p>Интернет-маркетолог</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+						<li class="vacancy-item">
+							<a href="#" class="vacancy-link" onclick="return false;">
+								<span>2</span>
+								<p>Системный администратор (возможно)</p>
+							</a>
+							<div class="vacancy-info b-text">
+								<h3 class="b-title">Обязанности:</h3>
+								<ul>
+									<li>выполнение плановых показателей по продажам банковских продуктов;</li>
+									<li>привлечение клиентов;</li>
+									<li>aктивные продажи кредитных продуктов действующим и потенциальным клиентам Банка;</li>
+									<li>проведение презентаций, BTL-акций по продуктам Банка;</li>
+									<li>прием и обработка заявок на банковские продукты;</li>
+									<li>своевременное предоставление отчетов о проделанной работе.</li>
+								</ul>
+								<h3 class="b-title">Требования:</h3>
+								<ul>
+									<li>высшее образование (экономическое, финансы);</li>
+									<li>опыт личных продаж от 1 года, опыт проведения переговоров и презентаций;</li>
+									<li>ориентация на клиента, высокие стандарты клиентского сервиса;</li>
+									<li>лидерство, ориентация на результат.</li>
+								</ul>
+								<h3 class="b-title">Тип занятости:</h3>
+								<p>Полная занятость, полный день.</p>
+								<a href="#">Откликнуться на вакансию на HH.RU</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="document-link">
+					<a href="#" class="b-table">
+						<img class="b-table-cell-middle" src="i/career-1.png" data-retina-src="i/career-1@2x.png">
+						<span class="b-table-cell-middle">EA Consult на HH.RU</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="project-page">
+		
+	</div>
+	<div class="b-footer">
+		<div class="b-block">
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Сотрудничество</a></li>
+					<li><a href="cooperation.html#career">Карьера</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">Тендерное сопровождение</a></li>
+					<li><a href="#">Банковские гарантии и&nbsp;тендерный&nbsp;кредит</a></li>
+					<li><a href="#">Обучение и сертификация</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">44-ФЗ</a></li>
+					<li><a href="#">223-ФЗ</a></li>
+					<li><a href="#">Список электронных торговых&nbsp;площадок</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<a href="tel:+74995515463" class="phone">+7 499 551 54 63</a>
+				<p>Москва, Новодмитровская улица 2к2, этаж 3, офис 22</p>
+				<p><a href="mailto:info@eaconsult.ru">info@eaconsult.ru</a></p>
+			</div>
+			<div class="b-bottom">
+				<p>© 2012 — 2017 «EA CONSULT»</p>
+			</div>
+		</div>
+	</div>
+	<div class="b-menu-overlay" id="b-menu-overlay" style="display: none;"></div>
+</div>
+	<div style="display:none;">
+		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+		<div class="b-popup" id="b-popup-app" style="display: inline-block;">
+			<h2 class="b-title">Отправить заявку</h2>
+			<form id="b-popup-app-form" class="b-popup-app-form" method="post" action="/new-app.php" novalidate="novalidate" data-goal="NEW_ABOUT_APP">
+				<input type="text" name="name" placeholder="Ваше имя" required="">
+				<input type="text" name="email" placeholder="Ваш E-mail" required="">
+				<textarea name="message" required="" rows="1" placeholder="Ваше сообщение" style="overflow-x: hidden; word-wrap: break-word; overflow-y: visible;"></textarea>
+				<div class="clearfix">
+				<div class="b-wrap-input" style="width: 100%">
+					<input id="personal" type="checkbox" name="personal" required="">
+					<label for="personal">Я согласен на <a href="/politics" class="underline">обработку персональных данных</a></label>
+				</div>
+				<input type="text" name="MAIL">
+				</div>
+				<a href="#" class="b-btn b-btn-blue ajax">Отправить</a>
+				<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+			</form>
+			<button data-fancybox-close="" class="fancybox-close-small"></button>
+		</div>
+		<div class="b-popup" id="b-popup-1">
+			<h3>Оставьте заявку</h3>
+			<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
+			<form action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-1">
+				<div class="b-popup-form">
+					<label for="name">Введите Ваше имя</label>
+					<input type="text" id="name" name="name" required/>
+					<label for="tel">Введите Ваш номер телефона</label>
+					<input type="text" id="tel" name="phone" required/>
+					<label for="tel">Введите Ваш E-mail</label>
+					<input type="text" id="tel" name="email" required/>
+					<input type="hidden" name="subject" value="Заказ"/>
+					<input type="submit" style="display:none;">
+					<a href="#" class="b-btn b-blue-btn ajax">Заказать</a>
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+				</div>
+			</form>
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-success">
+			<h3>Спасибо!</h3>
+			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-error">
+			<h3>Ошибка отправки!</h3>
+			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<!-- <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script> -->
+	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/slideout.min.js"></script>
+	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+</body>
+</html>

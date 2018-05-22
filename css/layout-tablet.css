@@ -20,6 +20,63 @@ body {
 	max-width: calc(100% - 48px);
 	margin: 0 auto;
 }
+/*-----------Slideout-----------*/
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.b-menu-overlay{
+	display: none;
+    /*-webkit-transition: opacity 150ms ease-out;
+    -moz-transition: opacity 150ms ease-out;
+    -ms-transition: opacity 150ms ease-out;
+    -o-transition: opacity 150ms ease-out;
+    transition: opacity 150ms ease-out;*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/*-----------------------*/
 
 /*services*/
 .service-mark img{
@@ -231,6 +288,17 @@ body {
 	.service-link:not(:first-child){
 		margin-left: 0;
 	}
+
+	/* О компании */
+
+	.competence-item{
+		width: calc(100%/3 - 7px);
+		padding-top: 30px;
+  		padding-left: 25px;
+	}
+		.competence-item:not(:first-child){
+			margin-left: 10px;
+		}
 }
 @media screen and (max-width: 960px){
 	.b-btn-center{
@@ -300,6 +368,12 @@ body {
 	}
 	.b-services .choice-block div:nth-child(2n), .b-services-menu .choice-block div:nth-child(2n){
 		margin-left: 37px;
+		margin-top: 43px;
+	}
+	.b-services-menu .choice-block div:nth-child(2n){
+		margin-top: 0;
+	}
+	.b-services-menu .choice-block div:nth-child(n+3){
 		margin-top: 43px;
 	}
 	.b-choice-item .item-service{
@@ -378,6 +452,48 @@ body {
 		.service-mark div:last-child{
 			width: calc(100% - 42px);
 		}
+	/* О компании */
+
+	.about-container .b-special-item{
+		margin: 0;
+		width: calc(100%/2 - 10px);
+	}
+		.about-container .b-special-item:nth-child(2n){
+			margin-left: 15px;
+		}
+		.about-container .b-special-item:nth-child(n+3){
+			margin-top: 15px;
+		}
+	.about-scheme-item h3{
+	    font-size: 20px;
+    	line-height: 18px;
+	}
+	.b-team-photo{
+		height: 455px;
+	}
+	.b-team-item{
+	    width: calc(100%/3 - 15px);
+	    margin: 0;
+	}
+		.b-team-item:not(:last-child){
+			margin-right: 0;
+		}
+		.b-team-item:not(:nth-child(3n)){
+			margin-right: 18px;
+		}
+		.b-team-item:nth-child(n+4){
+			margin-top: 18px;
+		}
+	.competence-item{
+		width: 100%;
+	}
+	.competence-item:not(:first-child){
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.about-scheme-item{
+		width: calc(100%/2);
+	}
 
 @media screen and (max-width: 844px){
 	.b-index h2.b-title{
@@ -455,7 +571,7 @@ body {
 		display: none;
 	}
 
-	/*services*/
+	/*Услуги*/
 
 .service-item h3{
 	font-size: 18px;
@@ -480,5 +596,14 @@ body {
 }
 .b-base-item:nth-child(n+3){
 	margin-top: 20px;
+}
+
+/*О компании*/
+
+
+
+
+.b-team-photo {
+    height: 415px;
 }
 }
