@@ -133,7 +133,7 @@ $(document).ready(function(){
             $(this).addClass("active");
         }
     });
-    $(".review-item a").on('click', function(){
+    $(".review-item a.arrow-down").on('click', function(){
         $(".review-item p.hide").removeClass("hide");
         $(this).addClass("hide");
     });
