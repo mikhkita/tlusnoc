@@ -335,7 +335,7 @@ h3.b-title{
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1000;
+	z-index: 900;
 }
 	.b-top .b-wide-block {
 	    background-color: #e1e1e1;
@@ -1944,43 +1944,6 @@ form#b-calc-form .b-calc-item span:before{
 			}
 				.b-block-before h2.service-left{
 					font-family: UbuntuBold;
-<<<<<<< .mine
-					display:  inline;
-					font-size: 72px;
-					line-height: 90px;
-					-webkit-writing-mode: tb-rl;
-					writing-mode: tb-rl;
-					-webkit-transform: translateX(-50%) rotate(180deg);
-					   -moz-transform: translateX(-50%) rotate(180deg);
-					     -o-transform: translateX(-50%) rotate(180deg);
-					    	transform: translateX(-50%) rotate(180deg);
-					text-align: left;
-					text-transform: uppercase;
-					height: 100%;
-					position: absolute;
-					top: 0;
-					padding-top: 20px;
-					padding-bottom: 20px;
-					left: 50%;
-=======
-					display: block;
-					
-					-
-					rl;
-					
-					*/
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> .theirs
 					letter-spacing: 0.01em;
 					transform: rotate(270deg);
 					text-transform:  uppercase;
@@ -2909,6 +2872,11 @@ padding-top: 19px;
 			content: url(../i/small-arrow-down.svg);
 			width: 12px;
 			right: -14px;
+		    top: 50%;
+			-webkit-transform: translateY(-50%);
+			   -moz-transform: translateY(-50%);
+				 -o-transform: translateY(-50%);
+			 		transform: translateY(-50%);
 		}
 		a.icon-small-doc{
 			padding-left: 24px;

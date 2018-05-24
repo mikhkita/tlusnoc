@@ -113,13 +113,6 @@ $(document).ready(function(){
         });
     }
 
-    $(".choice-about a").on('click', function(event){
-        $(".choice-about a").removeClass("active");
-        $(this).addClass("active");
-        var choiceItem = $(this).attr("href");
-        $(".about-tab").addClass("hide");
-        $(choiceItem).removeClass("hide");
-    })
     $('.country-choise a').on('click', function(){
         toggleBlock($(this));
         $('.vacancy-select').change();
