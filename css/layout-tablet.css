@@ -262,6 +262,9 @@ body {
 .b-scheme-logo{
 	display: none;
 }
+.about-img{
+    width: 38%;
+}
 @media screen and (max-width: 1120px){
 	.b-special h4.item-title{
 		width: 100%;
