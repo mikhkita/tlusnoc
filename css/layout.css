@@ -1781,7 +1781,7 @@ form#b-calc-form .b-calc-item span:before{
 	margin-right: 22px;
 }
 .icon-arrow-left{
-	z-index: 999;
+	z-index: 899;
 	cursor: pointer;
 	position: absolute;
 	width: 31px;
@@ -1795,7 +1795,7 @@ form#b-calc-form .b-calc-item span:before{
 	transform: translateY(-50%);
 }
 .icon-arrow-right{
-	z-index: 999;
+	z-index: 899;
 	cursor: pointer;
 	position: absolute;
 	width: 31px;
