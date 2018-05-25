@@ -43,7 +43,7 @@ body {
     padding: 23px 30px 25px 30px;
 }
 .b-about .b-btn-more:after{
-	bottom: 26px;
+	top: 48%;
 }
 .b-btn-center{
 	display: block;

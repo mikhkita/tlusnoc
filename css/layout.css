@@ -156,6 +156,9 @@ input.error,textarea.error{
 .underline{
 	text-decoration: underline;
 }
+.underline:hover{
+	text-decoration: none;
+}
 .white{
 	color: #FFF;
 }
@@ -268,7 +271,11 @@ text-align: center;
 a.pdf-doc:before{
 	content: url(../i/pdf-doc.svg);
 	width: 28px;
-	bottom: -10px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+    	 -o-transform: translateY(-50%);
+     		transform: translateY(-50%);
 	left: 2px;
 	position: absolute;
 }
@@ -1282,7 +1289,7 @@ h4 .icon-rub-medium:before{
 		text-decoration: underline;
 		position: relative;
 		padding-left: 40px;
-		padding-top: 40px;
+		margin-top: 40px;
 		font-size: 16px;
 	}
 	.citate-block a:hover{
@@ -1578,7 +1585,11 @@ form#b-calc-form .b-calc-item span:before{
 	    max-width: 350px;
 	}
 	.b-about .b-btn-more:after{
-		bottom: 29px;
+		top: 58%;
+		-webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+    		 -o-transform: translateY(-50%);
+     			transform: translateY(-50%);
 	}
 	.b-about h2.b-title{
 	    padding-bottom: 13px;
@@ -2472,7 +2483,7 @@ form#b-calc-form .b-calc-item span:before{
 	padding-top: 26px;
 	padding-bottom: 22px;
 }
-	.about-container h2.b-title{
+	.about-container h1.b-title{
 		letter-spacing: 2px;
 		padding-bottom: 25px;
 	}
@@ -2488,13 +2499,13 @@ form#b-calc-form .b-calc-item span:before{
 		max-width: 542px;
 	}
 		.about-img{
-			width: 50%;
+			width: 540px;
 			height: 392px;
 			float: right;
 			background-size: cover;
 	    	background-repeat: no-repeat;
     	    background-position: 50% 50%;
-    	    margin-left: 15px;
+    	    margin-left: 25px;
 		}
 		.b-text img{
 			float: right;
@@ -2769,7 +2780,16 @@ padding-top: 19px;
 				.competence-item li{
 					margin-left: 18px;
 					padding-bottom: 2px;
-					list-style: disc;
+					list-style: none;
+					position: relative;
+				}
+				.competence-item li:before{
+				    content: ".";
+				    font-size: 31px;
+				    font-family: UbuntuBold;
+				    top: -8px;
+				    left: -20px;
+				    position: absolute;
 				}
 .team-block{
 	background: #f5f3f3;
@@ -2817,8 +2837,9 @@ padding-top: 19px;
 			    background-position: 50% 50%;
 			}
 			.b-team-item a{
-			    padding-top: 18px;
+			    margin-top: 18px;
     			display: block;
+    			position: relative;
     			text-decoration: underline;
 			}
 			.b-team-item a:hover{
@@ -2827,6 +2848,11 @@ padding-top: 19px;
 			.b-team-item a:after{
 			    text-decoration: none;
 			    position: absolute;
+			    top: 41%;
+				-webkit-transform: translateY(-50%);
+				   -moz-transform: translateY(-50%);
+					 -o-transform: translateY(-50%);
+				 		transform: translateY(-50%);
 			    content: url(../i/blue-arrow-right.svg);
 			    width: 17px;
 			    padding-left: 7px;
@@ -3081,11 +3107,15 @@ margin-top: 15px;
 		.document-link{
 			margin-top:20px;
 		    font-size: 16px;
-		    text-decoration: underline;
 		}
+			.document-link a{
+				text-decoration: underline;
+			}
+			.document-link a:hover{
+				text-decoration: none;
+			}
 			.document-link span{
 			    font-size: 16px;
-			    text-decoration: underline;
 			    padding-left: 10px;
 			}
 			.document-link .b-table-cell{
