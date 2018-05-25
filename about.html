@@ -376,13 +376,13 @@
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-app" style="display: inline-block;">
 			<h2 class="b-title">Отправить заявку</h2>
-			<form id="b-popup-app-form" class="b-popup-app-form" method="post" action="/new-app.php" novalidate="novalidate" data-goal="NEW_ABOUT_APP">
+			<form id="b-popup-app-form" class="b-popup-app-form" method="post" action="kitsend.php" novalidate="novalidate">
 				<input type="text" name="name" placeholder="Ваше имя" required="">
 				<input type="text" name="email" placeholder="Ваш E-mail" required="">
 				<textarea name="message" required="" rows="1" placeholder="Ваше сообщение" style="overflow-x: hidden; word-wrap: break-word; overflow-y: visible;"></textarea>
 				<div class="clearfix">
-				<div class="b-wrap-input" style="width: 100%">
-					<input id="personal" type="checkbox" name="personal" required="">
+				<div style="width: 100%">
+					<input id="personal" type="checkbox" name="personal" required checked>
 					<label for="personal">Я согласен на <a href="/politics" class="underline">обработку персональных данных</a></label>
 				</div>
 				<input type="text" name="MAIL">

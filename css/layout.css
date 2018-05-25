@@ -3308,6 +3308,7 @@ input[name="MAIL"]{
     margin-bottom: 21px;
 }
 #b-popup-app{
+	overflow: hidden;
     width: 100%;
     max-width: 290px;
     padding: 25px 35px 40px;
