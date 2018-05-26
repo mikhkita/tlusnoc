@@ -281,6 +281,21 @@ ul.b-breadcrumbs{
 select.vacancy-select{
 	display: block;
 }
+/*------Сопровождение конкурсных процедур-------*/
+
+.maintenance-container{
+	padding-bottom: 40px;
+}
+.maintenance-reasons{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.b-maintenance-scheme{
+	padding-top: 40px;
+}
+.help-form-block .input-string{
+	max-width: 100%;
+}
 
 @media screen and (max-width: 600px){
 	.b-menu-down li{
@@ -376,7 +391,17 @@ select.vacancy-select{
 	.b-text p{
 		font-size: 14px;
 	}
+	/*------Сопровождение конкурсных процедур-------*/
 
+	.maintenance-reasons ul li{
+		font-size: 16px;
+	}
+	.maintenance-reasons p{
+		font-size: 14px;
+	}
+	.maintenance-text ul li{
+		font-size: 14px;
+	}
 }
 @media screen and (max-width: 500px){
 	.b-index h2.b-title{
@@ -397,11 +422,16 @@ select.vacancy-select{
 	.b-index ul li.icon-mark:before{
 		font-size: 20px;
 	}
+	.right-block .input-string{
+		display: block !important;
+	}
 	.right-block .input-string:nth-child(1){
 		width: 100%;
+		margin-bottom: 14px;
 	}
 	.right-block .input-string:nth-child(2){
 		width: 100%;
+		margin-bottom: 14px;
 	}
 	.right-block .text-center-block{
 		display: block;
@@ -656,6 +686,23 @@ select.vacancy-select{
 			.b-team-item:nth-child(n+2){
 				margin-top: 15px;
 			}
+		/*------Сопровождение конкурсных процедур-------*/
+		.maintenance-container h1.b-title{
+			font-size: 24px;
+			line-height: 28px;
+		}
+		.maintenance-reasons h3.b-title{
+	    	line-height: 28px;
+	    	font-size: 20px;
+		}
+		.help-form-block h3.b-title{
+			font-size: 20px;
+			margin-bottom: 10px;
+			line-height: 24px;
+		}
+		#maintenance-page .help-form-container{
+		    padding-bottom: 50px;
+		}
 	}
 	@media screen and (max-width: 350px){
 		#b-popup-call{

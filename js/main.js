@@ -68,6 +68,21 @@ function LineBlockHeight(block){
      
     $(block).height(maxHeight);
 }
+function SchemeLine(){
+    $('.b-maintenance-scheme-list').each(function(){
+        var heightLine,
+            top;
+        top = $(this).children(".b-maintenance-scheme-header").outerHeight() / 2;
+        heightLine = $(this).outerHeight() - top - $(this).children(".b-maintenance-scheme-item:last-child").outerHeight() / 2;
+         $(this).find('.main-line').css({
+            "top" : top,
+            "height" : heightLine,
+        });
+         $(this).find('.main-line-inner').css({
+            "height" : heightLine
+        });
+    });
+}
 
 $(document).ready(function(){	
     $(window).resize(resize);
@@ -164,6 +179,7 @@ $(document).ready(function(){
 
     $(window).resize(function() {
         TeamPhotoHeight();
+        SchemeLine();
         if (!isMobile) {
             TwoBlockHeight(".about-container .b-text", ".about-img");
             LineBlockHeight(".about-scheme-item");
@@ -251,7 +267,8 @@ $(document).ready(function(){
         return false;
     });
     $('.b-calc-item select').styler();
-    
+
+    SchemeLine();
 
     // function toggleBlock($this){
     //     $this.siblings(".choice-item").each(function(){

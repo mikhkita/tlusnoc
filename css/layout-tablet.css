@@ -291,7 +291,105 @@ body {
 	.service-link:not(:first-child){
 		margin-left: 0;
 	}
-
+	/*services*/
+.b-services-menu{
+	padding-top: 0;
+}
+.service-link{
+	width: calc(50% - 4px);
+}
+.service-link:nth-child(n+3){
+	margin-top: 20px;
+}
+	.service-link div{
+		display: inline-block;
+	}	
+.service-bottom-text{
+	padding-right: 0;
+	padding-bottom: 35px;
+}
+.service-item-section{
+	width: 100%;
+	max-width: 700px;
+}
+.service-item-section:not(:first-child){
+	margin-top: 42px;
+}
+.service-item-section:nth-child(2n){
+	margin-left: 0;
+}
+.service-marks{
+	padding-bottom: 35px;
+}
+	.service-marks .service-mark{
+		width: 100%;
+	}
+	.service-marks .service-mark:not(:first-child){
+		margin-left: 0;
+	}
+	.service-marks .service-mark:nth-child(n+2){
+		margin-top: 20px;
+	}
+		.service-mark div{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.service-mark div:last-child{
+			width: calc(100% - 42px);
+		}
+	/* О компании */
+	.choice-about a{
+		position: relative;
+	}
+	.choice-about div{
+		width: unset;
+		height: unset;
+	}
+	.choice-about{
+		text-align: left;
+		padding-bottom: 20px;
+   		padding-top: 10px;
+	}
+	.about-container .b-special-item{
+		margin: 0;
+		width: calc(100%/2 - 10px);
+	}
+		.about-container .b-special-item:nth-child(2n){
+			margin-left: 15px;
+		}
+		.about-container .b-special-item:nth-child(n+3){
+			margin-top: 15px;
+		}
+	.about-scheme-item h3{
+	    font-size: 20px;
+    	line-height: 18px;
+	}
+	.b-team-photo{
+		height: 455px;
+	}
+	.b-team-item{
+	    width: calc(100%/3 - 15px);
+	    margin: 0;
+	}
+		.b-team-item:not(:last-child){
+			margin-right: 0;
+		}
+		.b-team-item:not(:nth-child(3n)){
+			margin-right: 18px;
+		}
+		.b-team-item:nth-child(n+4){
+			margin-top: 18px;
+		}
+	.competence-item{
+		width: 100%;
+	}
+	.competence-item:not(:first-child){
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.about-scheme-item{
+		width: calc(100%/2);
+	}
 	/* О компании */
 
 	.competence-item{
@@ -302,6 +400,30 @@ body {
 		.competence-item:not(:first-child){
 			margin-left: 10px;
 		}
+/*------Сопровождение конкурсных процедур-------*/
+	.maintenance-container h1.b-title{
+		line-height: 48px;
+		font-size: 40px;
+		padding-top: 0;
+	}
+	.maintenance-reasons p{
+		line-height: 22px;
+	}
+	.maintenance-reasons ul li{
+		line-height: 22px;
+	}
+	.help-form-block .input-string{
+	    width: calc(100%/3 - 9px);
+	}
+		.input-string:not(:first-child){
+			margin-left: 10px;
+		}
+	.help-form-block .b-btn{
+	    padding: 23px 43px 21px;
+	}
+	.help-form-block .b-btn-center{
+		float: none;
+	}
 }
 @media screen and (max-width: 960px){
 	.b-btn-center{
@@ -421,108 +543,17 @@ body {
 	.b-info-partners h2.b-title{
 	    width: 100%;
 	}
-}
+/*------Сопровождение конкурсных процедур-------*/
 
-/*services*/
-.b-services-menu{
-	padding-top: 0;
-}
-.service-link{
-	width: calc(50% - 4px);
-}
-.service-link:nth-child(n+3){
-	margin-top: 20px;
-}
-	.service-link div{
-		display: inline-block;
-	}	
-.service-bottom-text{
-	padding-right: 0;
-	padding-bottom: 35px;
-}
-.service-item-section{
+.help-form-block .input-string{
 	width: 100%;
-	max-width: 700px;
+	max-width: 70%;
 }
-.service-item-section:not(:first-child){
-	margin-top: 42px;
-}
-.service-item-section:nth-child(2n){
-	margin-left: 0;
-}
-.service-marks{
-	padding-bottom: 35px;
-}
-	.service-marks .service-mark{
-		width: 100%;
-	}
-	.service-marks .service-mark:not(:first-child){
-		margin-left: 0;
-	}
-	.service-marks .service-mark:nth-child(n+2){
-		margin-top: 20px;
-	}
-		.service-mark div{
-			display: inline-block;
-			vertical-align: middle;
-		}
-		.service-mark div:last-child{
-			width: calc(100% - 42px);
-		}
-	/* О компании */
-	.choice-about a{
-		position: relative;
-	}
-	.choice-about div{
-		width: unset;
-		height: unset;
-	}
-	.choice-about{
-		text-align: left;
-		padding-bottom: 20px;
-   		padding-top: 10px;
-	}
-	.about-container .b-special-item{
-		margin: 0;
-		width: calc(100%/2 - 10px);
-	}
-		.about-container .b-special-item:nth-child(2n){
-			margin-left: 15px;
-		}
-		.about-container .b-special-item:nth-child(n+3){
-			margin-top: 15px;
-		}
-	.about-scheme-item h3{
-	    font-size: 20px;
-    	line-height: 18px;
-	}
-	.b-team-photo{
-		height: 455px;
-	}
-	.b-team-item{
-	    width: calc(100%/3 - 15px);
-	    margin: 0;
-	}
-		.b-team-item:not(:last-child){
-			margin-right: 0;
-		}
-		.b-team-item:not(:nth-child(3n)){
-			margin-right: 18px;
-		}
-		.b-team-item:nth-child(n+4){
-			margin-top: 18px;
-		}
-	.competence-item{
-		width: 100%;
-	}
-	.competence-item:not(:first-child){
+	.input-string:not(:first-child){
 		margin-left: 0;
 		margin-top: 15px;
 	}
-	.about-scheme-item{
-		width: calc(100%/2);
-	}
-
+}
 @media screen and (max-width: 844px){
 	.b-index h2.b-title{
 	    font-size: 36px;
@@ -642,5 +673,15 @@ body {
 .b-team-photo {
     height: 415px;
 }
+/*------Сопровождение конкурсных процедур-------*/
+.maintenance-container h1.b-title{
+	line-height: 42px;
+	font-size: 36px;
+	padding-top: 0;
+}
+.maintenance-reasons h3.b-title{
+	line-height: 36px;
+}
+
 
 }

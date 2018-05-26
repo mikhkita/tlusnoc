@@ -140,6 +140,9 @@ li{
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
 }
+b{
+	font-family: 'GothamProBold';
+}
 label.error{
 	display: none !important;
 }
@@ -2496,6 +2499,8 @@ form#b-calc-form .b-calc-item span:before{
 		font-family: 'GothamProRegular';
 		letter-spacing: 0.1px;
 		padding-bottom: 17px;
+	}
+	.about-container .b-text p{
 		max-width: 542px;
 	}
 		.about-img{
@@ -3121,6 +3126,262 @@ margin-top: 15px;
 			.document-link .b-table-cell{
 				vertical-align: middle;
 			}
+/*------Сопровождение конкурсных процедур-------*/
+.maintenance-container{
+	background: #f3f0f0;
+	padding-top: 25px;
+	padding-bottom: 60px;
+}
+	.maintenance-container .b-breadcrumbs li, .maintenance-container .b-breadcrumbs a{
+		color: #000;
+	}
+	.maintenance-container ul.b-breadcrumbs li.icon-right-arrow:before{
+		color: #000;
+	}
+	.maintenance-container h1.b-title{
+		max-width: 700px;
+		line-height: 54px;
+		padding-top: 10px;
+		padding-bottom: 21px;
+	}
+	.maintenance-container p{
+		max-width: 910px;
+		line-height: 22px;
+		letter-spacing: 0.1px;
+		padding-bottom: 22px;
+	}
+.maintenance-reasons{
+	padding-top: 76px;
+	padding-bottom: 76px;
+}
+	.maintenance-reasons h3.b-title{
+		font-size: 30px;
+		font-family: 'GothamProBlack';
+		line-height: 50px;
+		padding-left: 48px;
+		position: relative;
+		text-transform: uppercase;
+		margin-bottom: 28px;
+	}
+		.maintenance-reasons h3.b-title:before{
+			content: url(../i/doc-cross.svg);
+			width: 40px;
+			position: absolute;
+			left: 0px;
+			top: 6px;
+		}
+	.maintenance-reasons ul li{
+		font-size: 18px;
+		line-height: 25px;
+		font-family: 'GothamProMedium';
+		position: relative;
+		padding-left: 48px;
+		max-width: 680px;
+		letter-spacing:  0.1px;
+	}
+	.maintenance-reasons ul li:not(:last-child){
+		margin-bottom: 24px;
+	}
+		.maintenance-reasons ul li:before{
+			width: 35px;
+			content: url(../i/icon-cross.svg);
+			position: absolute;
+			left: 0;
+			top: 50%;
+		    -webkit-transform: translateY(-50%);
+		       -moz-transform: translateY(-50%);
+		    	 -o-transform: translateY(-50%);
+		     		transform: translateY(-50%);
+		}
+	.maintenance-reasons p{
+		padding-top: 28px;
+		font-size: 16px;
+		line-height: 25px;
+		max-width: 890px;
+		letter-spacing: 0.1px;
+		font-family: 'GothamProRegular';
+	}
+.b-maintenance-scheme{
+	padding-top: 83px;
+	padding-bottom: 47px;
+	background-color: #f3f0f0;
+}
+	.b-maintenance-scheme .b-block{
+		background: #fff;
+		padding: 37px 30px 43px 30px;
+	}
+	.b-maintenance-scheme-list{
+		position: relative;
+	}	
+		.main-line{
+			position: absolute;
+			top: 10px;
+			left: 0;
+			display: inline-block;
+			width: 15px;
+			overflow: hidden;
+		}
+			.main-line-inner{
+				position: absolute;
+				width: 40px;
+				border-radius: 100px;
+				border: 1px solid #999;
+			}
+		.b-maintenance-scheme-header{
+			color: #FFF;
+			font-family: 'GothamProMedium';
+			background-color: #1b82c7;
+			font-size: 16px;
+			border-radius: 5px;
+			padding: 16px 22px 16px 16px;
+			margin-left: 15px;
+			margin-bottom: 21px;
+		}
+
+			.b-maintenance-scheme-header .item-text{
+				padding-left: 10px;
+			}
+		.b-maintenance-scheme-item{
+			position: relative;
+			margin-bottom: 11px;
+		}
+		.b-maintenance-scheme-item:last-child{
+			margin-bottom: 0;
+		}
+
+		.b-maintenance-scheme-item .item-line{
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			width: 15px;
+			height: 50%;
+			overflow: hidden;
+		}
+		.b-maintenance-scheme-item:last-child .item-line{
+			display: none;
+		}
+
+			.b-maintenance-scheme-item .item-line .item-line-inner{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 40px;
+				height: 200%;
+				border-radius: 100px;
+				border: 1px solid #999;
+			}
+
+		.b-maintenance-scheme-item .item-text-cont{
+			font-family: 'GothamProRegular';
+			font-size: 14px;
+			line-height: 16px;
+			margin-left: 15px;
+			background-color: #eaeaea;
+			border-radius: 5px;
+			padding: 8px 8px 8px 14px;
+			max-width: 720px;
+		}
+
+		.b-maintenance-scheme-header img{
+			height: 24px;
+		}
+
+		.b-maintenance-scheme-item .item-text-cont img{
+			width: 24px;
+			height: 22px;
+		}
+
+		.b-maintenance-scheme-item .item-text{
+			width: 100%;
+			padding-left: 4px;
+		}
+.maintenance-text.b-text{
+	background: #f3f0f0;
+	padding-bottom: 29px;
+}
+	.maintenance-text.b-text p{
+		line-height: 22px;
+		padding-bottom: 22px;
+	}
+	.maintenance-text ul{
+
+	}
+	.maintenance-text ul li{
+		position: relative;
+		padding-left: 32px;
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing:  0.1px;
+		font-family: 'GothamProRegular';
+		max-width: 870px;
+		padding-bottom: 22px;
+	}
+		.maintenance-text ul li:before{
+		    content: "\e910";
+		    left: 1px;
+		    top: 3px;
+		    position: absolute;
+		    color: #1b82c7;
+		    padding-right: 0;
+		    font-size: 19px;
+		}
+#maintenance-page .help-form-container{
+	background: #f3f0f0;
+	padding-bottom: 84px;
+}
+.help-form-block{
+	background: #013c6e; /* Для старых браузров */
+	background: linear-gradient(to right, #013c6e, #146cb6);
+	padding-top: 39px;
+	padding: 39px 24px 42px 26px;
+	text-align: center;
+}
+	.help-form-block h3.b-title{
+		color: white;
+		font-family: 'GothamProBlack';
+		font-size: 30px;
+		line-height: 34px;
+		text-transform: uppercase;
+		margin-bottom: 28px;
+	}
+	.help-form-block p{
+		font-size: 14px;
+		line-height: 19px;
+		font-family: 'GothamProRegular';
+		max-width: 1020px;
+		letter-spacing: 0.1px;
+		display: inline-block;
+		padding-bottom: 25px;
+	}
+	.help-form-block .input-string{
+		width: calc(100%/3 - 24px);
+		display: inline-block;
+		background: #fff;
+	}
+		.input-string:not(:first-child){
+			margin-left: 23px;
+		}
+		.help-form-block .input-string input{
+			border: none;
+			padding: 22px 19px;
+			font-family: 'GothamProRegular';
+		}
+		.help-form-block .input-string input::-webkit-input-placeholder, .help-form-block .input-string input:-moz-placeholder{
+			color: #000;
+		}
+	.help-form-block .b-btn-center{
+		margin-top: 34px;
+	}
+		.help-form-block .b-btn{
+			background: #1b82c7;
+			color: #fff;
+			padding: 23px 64px 21px;
+		}
+#help-form-container .partner-block{
+    padding-top: 68px;
+    padding-bottom: 92px;
+}
 
 input::-webkit-input-placeholder {
 	color: #828282;
@@ -3148,6 +3409,10 @@ textarea:-moz-placeholder {
 }
 .b-table-row{
 	display: table-row;
+}
+.b-table-cell-middle{
+	display: table-cell;
+	vertical-align: middle;
 }
 .b-btn{
 	text-align: center;
@@ -3881,6 +4146,24 @@ input[name="MAIL"]{
 		.b-team-item-photo{
 			height: 185px;
 		}
+	/*------Сопровождение конкурсных процедур-------*/
+.maintenance-container h1.b-title{
+	line-height: 48px;
+	padding-top: 0;
+}
+.help-form-block .input-string{
+    width: calc(100%/3 - 9px);
+}
+	.input-string:not(:first-child){
+		margin-left: 10px;
+	}
+.help-form-block .b-btn{
+    padding: 23px 43px 21px;
+}
+
+
+
+
 }
 @media only screen and (min-width: 1024px) and (max-width: 1150px){
 	.b-block-before, .b-block-after{
