@@ -296,6 +296,53 @@ select.vacancy-select{
 .help-form-block .input-string{
 	max-width: 100%;
 }
+/*------Мониторинг, обработка и анализ информации о закупках-------*/
+.monitoring-container{
+    padding-bottom: 30px;
+}
+.monitoring-howto-block{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.monitoring-body{
+    padding-top: 50px;
+}
+.monitoring-howto-block h4{
+	margin-bottom: 30px;
+}
+.monitoring-howto-block .citate-block{
+	padding: 40px;
+}
+.monitoring-scheme-item{
+	width: 100%;
+}
+	.monitoring-scheme-item:nth-child(2n){
+		margin-left: 0;
+	}
+	.monitoring-scheme-bottom{
+		padding-top: 10px;
+	}
+.monitoring-scheme-item:not(:first-child){
+	margin-top: 15px;
+}
+.monitoring-tabs .choice-block{
+	padding-top: 10px;
+}
+	.monitoring-tabs .choice-block div{
+		width: 100%;
+		margin: 0;
+		display: block;
+	}
+	.monitoring-tabs .choice-block div:not(:last-child){
+		margin-bottom: 15px;
+		margin-left: 0;
+	}
+	.monitoring-tabs .choice-block div:nth-child(n+3){
+		margin-top: 0;
+	}
+	.monitoring-tabs .choice-block div:nth-child(2n){
+		margin-left: 0;
+	}
 
 @media screen and (max-width: 600px){
 	.b-menu-down li{
@@ -391,8 +438,13 @@ select.vacancy-select{
 	.b-text p{
 		font-size: 14px;
 	}
+	.b-text li{
+		font-size: 14px;
+	}
+	.b-text li.icon-mark{
+	    padding-bottom: 15px;
+	}
 	/*------Сопровождение конкурсных процедур-------*/
-
 	.maintenance-reasons ul li{
 		font-size: 16px;
 	}
@@ -703,6 +755,17 @@ select.vacancy-select{
 		#maintenance-page .help-form-container{
 		    padding-bottom: 50px;
 		}
+		/*------Сопровождение конкурсных процедур-------*/
+		.monitoring-container h1.b-title{
+			line-height: 32px;
+		}
+		.monitoring-tab h2.b-title{
+			line-height: 32px;
+		    font-size: 22px;
+		}
+		.monitoring-howto-block .citate-block{
+			padding: 30px 20px;
+		}
 	}
 	@media screen and (max-width: 350px){
 		#b-popup-call{
@@ -713,6 +776,10 @@ select.vacancy-select{
 		}
 		.burger-menu{
 			margin-top: 35px;
+		}
+		/*------Сопровождение конкурсных процедур-------*/
+		.monitoring-tabs .choice-block div:not(:last-child){
+			margin-bottom: 15px;
 		}
 	}
 }

@@ -188,6 +188,10 @@ input.error,textarea.error{
 .b-btn-center{
 text-align: center;
 }
+.blue-gradient{
+	background: #013c6e; /* Для старых браузров */
+	background: linear-gradient(to right, #013c6e, #146cb6);
+}
 /*checkbox*/
 	.custom-checkbox {
 		position: relative;
@@ -2500,6 +2504,31 @@ form#b-calc-form .b-calc-item span:before{
 		letter-spacing: 0.1px;
 		padding-bottom: 17px;
 	}
+	.b-text p > b{
+		display: inline;
+	}
+		.b-text li{
+			font-size: 16px;
+		    line-height: 18px;
+		    font-family: 'GothamProRegular';
+		    padding-bottom: 4px;
+		    position: relative;
+		}
+		.b-text li.icon-mark{
+			padding-left: 30px;
+			padding-bottom: 28px;
+			max-width: 860px;
+		}
+		.b-text li.icon-mark:before{
+			content: "\e910";
+			position: absolute;
+			color: #1b82c7;
+			left: 0;
+		}
+		.b-text li:before{
+			content: "—";
+			padding-right: 5px;
+		}
 	.about-container .b-text p{
 		max-width: 542px;
 	}
@@ -3359,7 +3388,7 @@ margin-top: 15px;
 		display: inline-block;
 		background: #fff;
 	}
-		.input-string:not(:first-child){
+		.help-form-block .input-string:not(:first-child){
 			margin-left: 23px;
 		}
 		.help-form-block .input-string input{
@@ -3382,6 +3411,212 @@ margin-top: 15px;
     padding-top: 68px;
     padding-bottom: 92px;
 }
+/*------Мониторинг, обработка и анализ информации о закупках-------*/
+
+.monitoring-container{
+	background: #f3f0f0;
+	padding-top: 25px;
+	padding-bottom: 56px;
+}
+	.monitoring-container .b-breadcrumbs li, .monitoring-container .b-breadcrumbs a{
+			color: #000;
+		}
+		.monitoring-container ul.b-breadcrumbs li.icon-right-arrow:before{
+			color: #000;
+		}
+		.monitoring-container h1.b-title{
+			max-width: 710px;
+			line-height: 51px;
+			padding-top: 9px;
+			padding-bottom: 21px;
+		}
+		.monitoring-container p{
+			max-width: 908px;
+			line-height: 22px;
+			letter-spacing: 0.1px;
+			padding-bottom: 23px;
+		}
+.monitoring-howto-block{
+	padding-top: 80px;
+	padding-bottom: 28px;
+}
+	.monitoring-howto-block h3.b-title{
+		color: #fff;
+		font-size: 30px;
+		line-height: 34px;
+		letter-spacing: 1.7px;
+		margin-bottom: 23px;
+	}
+	.monitoring-howto-block h4{
+		font-size: 16px;
+		line-height: 22px;
+		max-width: 600px;
+		letter-spacing: 1.1px;
+		margin-bottom: 60px;
+	}
+	.monitoring-scheme{
+		margin-bottom: 39px;
+	}
+		.monitoring-scheme-item{
+			display: inline-block;
+			vertical-align: top;
+			width: calc(100%/3 - 22px);
+		}
+			.monitoring-scheme-top div:first-child{
+				height: 50px;
+				background: #1b82c7;
+				border-radius: 4px;
+				padding: 0 11px;
+				font-family: 'GothamProBlack';
+				font-size: 24px;
+				line-height: 22px;
+			}
+			.monitoring-scheme-top div:last-child{
+				padding-left: 19px;
+				max-width: 275px;
+				font-family: 'GothamProMedium';
+				font-size: 16px;
+				line-height: 22px;
+			}
+			.monitoring-scheme-bottom{
+				font-size: 14px;
+				line-height: 19px;
+				padding-top: 18px;
+				letter-spacing: 0.1px;
+				font-family: 'GothamProRegular';
+			}
+		.monitoring-scheme-item:not(:nth-child(3n)){
+			margin-right: 28px;
+		}
+		.monitoring-scheme-item:nth-child(n+4){
+			margin-top: 71px;
+		}
+	.monitoring-howto-block .citate-block{
+		background: #114e81; /* Для старых браузров */
+		background: linear-gradient(to right, #114e81, #1d6cae);
+		border: 1px solid #3f78aa;
+		text-align: center;
+		padding: 33px 82px 32px 80px;
+	}
+		.monitoring-howto-block .citate-block p{
+		    font-size: 14px;
+		    line-height: 19px;
+		    text-align: center;
+		    padding-top:  0;
+		    letter-spacing: 0.1px;
+		}
+		.monitoring-howto-block .citate-block span{
+		    font-size: 14px;
+		    line-height: 19px;
+		    font-family: 'GothamProRegular';
+		    padding-top: 3px;
+		    display:  block;
+		    letter-spacing: 0.1px;
+		}
+	.monitoring-howto-block .citate-block:before{
+		width: 21px;
+		top: 2px;
+		left: 7px;
+	}
+	.monitoring-howto-block .citate-block:after{
+		width: 21px;
+		height:  21px;
+		bottom: 12px;
+		right: 13px;
+	}
+.monitoring-body{
+	padding-top: 67px;
+}
+	.monitoring-tabs{
+
+	}
+		.monitoring-tabs h2.b-title{
+		    letter-spacing: 0.8px;
+		}
+		.monitoring-tabs .choice-block{
+			padding-top: 39px;
+		}
+			.monitoring-tabs .choice-block div{
+				width: calc(100%/4 - 18px);
+			}
+			.monitoring-tabs .choice-block div:not(:first-child){
+				margin-left: 24px;
+			}
+	.monitoring-tab{
+		padding-top: 54px;
+	}
+	.monitoring-tab h2.b-title{
+		letter-spacing: 0.8px;
+		max-width: 760px;
+		line-height: 50px;
+	}
+	.monitoring-tab .b-text{
+		padding-top: 25px;
+	}
+		.monitoring-tab .b-text p{
+			line-height: 22px;
+			max-width: 930px;
+		    padding-bottom: unset;
+		}
+		.monitoring-tab .b-text b{
+		    font-size: 16px;
+		    letter-spacing: 0.1px;
+		    line-height: 22px;
+		}
+#monitoring-page .help-form-block{
+    margin-bottom: 85px;
+    margin-top: 23px;
+}
+.block-line{
+	width: 900px;
+	margin-top: 15px;
+	margin-bottom: 41px;
+	border-bottom: 1px solid #000;
+}
+#analysis-block .b-text{
+    padding-top: 49px;
+}
+#analysis-block .monitoring-scheme{
+	max-width: 900px;
+	margin-bottom: 43px;
+}
+	#analysis-block .monitoring-scheme-item{
+	    width: calc(100%/3 - 25px);
+	}
+		#analysis-block .monitoring-scheme-top div:first-child{
+		    background: unset;
+		    padding: unset;
+		}
+		#analysis-block .monitoring-scheme-top div:last-child{
+			max-width: 170px;
+		}
+			#analysis-block .monitoring-scheme-top:nth-child(1) img{
+				width: 46px;
+				height: 45px;
+			}
+			#analysis-block .monitoring-scheme-top:nth-child(2) img{
+				width: 35px;
+				height: 40px;
+			}
+			#analysis-block .monitoring-scheme-top:nth-child(3) img{
+				width: 42px;
+				height: 42px;
+			}
+		#analysis-block .monitoring-scheme-bottom{
+			padding-top: 13px;
+		}
+		#analysis-block .monitoring-scheme-item:not(:nth-child(3n)){
+			margin-right: 22px;
+		}
+
+
+
+
+
+
+
+
+
 
 input::-webkit-input-placeholder {
 	color: #828282;
@@ -4154,15 +4389,26 @@ input[name="MAIL"]{
 .help-form-block .input-string{
     width: calc(100%/3 - 9px);
 }
-	.input-string:not(:first-child){
+	.help-form-block .input-string:not(:first-child){
 		margin-left: 10px;
 	}
 .help-form-block .b-btn{
     padding: 23px 43px 21px;
 }
-
-
-
+/*------Мониторинг, обработка и анализ информации о закупках-------*/
+.monitoring-scheme-item{
+     width: calc(100%/3 - 10px);
+}
+	.monitoring-scheme-item:not(:nth-child(3n)){
+		margin-right: 10px;
+	}
+	.monitoring-scheme-item:nth-child(n+4){
+	    margin-top: 30px;
+	}
+.monitoring-tabs .choice-block a{
+	font-size: 16px;
+    line-height: 20px;
+}
 
 }
 @media only screen and (min-width: 1024px) and (max-width: 1150px){

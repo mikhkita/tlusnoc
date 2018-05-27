@@ -270,6 +270,13 @@ $(document).ready(function(){
 
     SchemeLine();
 
+    $('.monitoring-tabs .choice-block a').on('click', function() {
+        $('.monitoring-tabs .choice-block a').removeClass('active');
+        $(this).addClass('active');
+        $("div .monitoring-tab").addClass("hide");
+        var thisAttr = $(this).attr('data-block');
+        $("div " + thisAttr).removeClass("hide");
+      });
     // function toggleBlock($this){
     //     $this.siblings(".choice-item").each(function(){
     //         var block = $(this).attr("data-block");

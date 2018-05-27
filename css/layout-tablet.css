@@ -265,6 +265,28 @@ body {
 .about-img{
     width: 38%;
 }
+/*------Мониторинг, обработка и анализ информации о закупках-------*/
+.monitoring-scheme-item{
+     width: calc(100%/3 - 10px);
+}
+	.monitoring-scheme-item:not(:nth-child(3n)){
+		margin-right: 10px;
+	}
+	.monitoring-scheme-item:nth-child(n+4){
+	    margin-top: 30px;
+	}
+.monitoring-tabs .choice-block div{
+	width: calc(100%/2 - 18px);
+}
+	.monitoring-tabs .choice-block div:not(:first-child){
+		margin-left: 0;
+	}
+	.monitoring-tabs .choice-block div:nth-child(2n){
+		margin-left: 15px;
+	}
+	.monitoring-tabs .choice-block div:nth-child(n+3){
+		margin-top: 25px;
+	}
 @media screen and (max-width: 1120px){
 	.b-special h4.item-title{
 		width: 100%;
@@ -415,7 +437,7 @@ body {
 	.help-form-block .input-string{
 	    width: calc(100%/3 - 9px);
 	}
-		.input-string:not(:first-child){
+		.help-form-block .input-string:not(:first-child){
 			margin-left: 10px;
 		}
 	.help-form-block .b-btn{
@@ -549,10 +571,29 @@ body {
 	width: 100%;
 	max-width: 70%;
 }
-	.input-string:not(:first-child){
+	.help-form-block .input-string:not(:first-child){
 		margin-left: 0;
 		margin-top: 15px;
 	}
+/*------Мониторинг, обработка и анализ информации о закупках-------*/
+.monitoring-scheme-item{
+     width: calc(100%/2 - 10px);
+}
+	.monitoring-scheme-item:not(:nth-child(3n)){
+		margin-right: 0px;
+	}
+	.monitoring-scheme-item:nth-child(n+4){
+	    margin-top: 0px;
+	}
+	.monitoring-scheme-item:nth-child(n+3){
+	    margin-top: 20px;
+	}
+	.monitoring-scheme-item:nth-child(2n){
+		margin-left: 15px;
+	}
+#analysis-block .monitoring-scheme-item:nth-child(n+3){
+	margin-top: 0;
+}
 }
 @media screen and (max-width: 844px){
 	.b-index h2.b-title{
@@ -682,6 +723,21 @@ body {
 .maintenance-reasons h3.b-title{
 	line-height: 36px;
 }
+/*------Мониторинг, обработка и анализ информации о закупках-------*/
+#analysis-block .monitoring-scheme-item{
+	width: 100%;
+	max-width: 500px;
+	margin:0;
+}
+	#analysis-block .monitoring-scheme-item:not(:first-child){
+		margin-top: 20px;
+	}
+
+
+
+
+
+
 
 
 }
