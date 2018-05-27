@@ -147,8 +147,7 @@ label.error{
 	display: none !important;
 }
 input.error,textarea.error{
-	border: 1px solid #F00 !important;
-	box-shadow: 0 0px 0px 1px #F00;
+	box-shadow: 0 0px 0px 2px #F00;
 }
 .fancybox-inner{
 	overflow: visible !important;
@@ -297,6 +296,9 @@ ul.b-breadcrumbs li{
 	display: inline;
 	font-family: 'GothamProRegular';
 }
+ul.b-breadcrumbs li:not(:first-child){
+	padding-left: 5px;
+}
 ul.b-breadcrumbs a{
 	color: #fff;
 	text-decoration: underline;
@@ -304,12 +306,20 @@ ul.b-breadcrumbs a{
 ul.b-breadcrumbs a:hover{
 	text-decoration: none;
 }
-ul.b-breadcrumbs li.icon-right-arrow:before {
+ul.b-breadcrumbs li a.icon-right-arrow{
+	padding-right: 18px;
+	position: relative;
+}
+ul.b-breadcrumbs.black, ul.b-breadcrumbs.black li a.icon-right-arrow, ul.b-breadcrumbs.black li a.icon-right-arrow:before{
+	color: #000;
+}
+ul.b-breadcrumbs li a.icon-right-arrow:before {
+	position: absolute;
     content: "\e901";
     font-size: 10px;
     line-height: 16px;
     color: #fff;
-    padding: 0 10px;
+    right: 0;
 }
 h1.b-title, h2.b-title{
 	font-size: 48px;
@@ -2960,7 +2970,7 @@ padding-top: 19px;
 		background: #136aa424;
 	}
 .partner-block{
-	padding-top: 20px;
+	padding-top: 50px;
 	padding-bottom: 84px;
 }
 	.partner-list{
@@ -2983,7 +2993,7 @@ margin-top: 15px;
     padding-top: 26px;
     padding-bottom: 70px;
 }
-#career-page ul.b-breadcrumbs, #career-page ul.b-breadcrumbs a, #career-page ul.b-breadcrumbs li.icon-right-arrow:before{
+#career-page ul.b-breadcrumbs, #career-page ul.b-breadcrumbs a, #career-page ul.b-breadcrumbs li a.icon-right-arrow:before{
 	color: #000;
 }
 #career-page .jq-selectbox{
