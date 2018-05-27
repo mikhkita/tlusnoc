@@ -147,6 +147,7 @@ label.error{
 	display: none !important;
 }
 input.error,textarea.error{
+	-webkit-appearance: none;
 	box-shadow: 0 0px 0px 2px #F00;
 }
 .fancybox-inner{
@@ -3578,7 +3579,7 @@ margin-top: 15px;
     margin-top: 23px;
 }
 .block-line{
-	width: 900px;
+	max-width: 900px;
 	margin-top: 15px;
 	margin-bottom: 41px;
 	border-bottom: 1px solid #000;
