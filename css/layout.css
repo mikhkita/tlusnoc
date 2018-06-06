@@ -3706,6 +3706,9 @@ padding-top: 19px;
 						.outsourcing-right .monitoring-scheme-item:not(:last-child){
 							margin-bottom: 28px;
 						}
+						.outsourcing-right .monitoring-scheme-item:nth-child(n+4){
+							margin-top: 0;
+						}
 
 		.outsourcing-scheme-block p{
 			font-size: 18px;
@@ -3815,6 +3818,7 @@ padding-top: 19px;
 					}
 			.b-head-scheme{
 				padding: 20px 15px;
+			    padding-bottom: 40px;
 				background-color: #FFF;
 				margin-bottom: 37px;
 				margin-top: 49px;
@@ -3833,6 +3837,8 @@ padding-top: 19px;
 
 				.b-head-scheme .b-escort-scheme-header{
 					padding: 14px 15px;
+				    max-width: 315px;
+   					width:  calc(100% - 15px);
 				}
 
 				.b-head-scheme-header .item-text{
