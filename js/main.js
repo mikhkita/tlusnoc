@@ -68,12 +68,12 @@ function LineBlockHeight(block){
      
     $(block).height(maxHeight);
 }
-function SchemeLine(){
-    $('.b-maintenance-scheme-list').each(function(){
+function SchemeLine(page){
+    $('.b-'+page+'-scheme-list').each(function(){
         var heightLine,
             top;
-        top = $(this).children(".b-maintenance-scheme-header").outerHeight() / 2;
-        heightLine = $(this).outerHeight() - top - $(this).children(".b-maintenance-scheme-item:last-child").outerHeight() / 2;
+        top = $(this).children('.b-'+page+'-scheme-header').outerHeight() / 2;
+        heightLine = $(this).outerHeight() - top - $(this).children('.b-'+page+'-scheme-item:last-child').outerHeight() / 2;
          $(this).find('.main-line').css({
             "top" : top,
             "height" : heightLine,
@@ -179,7 +179,8 @@ $(document).ready(function(){
 
     $(window).resize(function() {
         TeamPhotoHeight();
-        SchemeLine();
+        SchemeLine('maintenance');
+        SchemeLine('escort');
         if (!isMobile) {
             TwoBlockHeight(".about-container .b-text", ".about-img");
             LineBlockHeight(".about-scheme-item");
@@ -268,15 +269,18 @@ $(document).ready(function(){
     });
     $('.b-calc-item select').styler();
 
-    SchemeLine();
+    SchemeLine('maintenance');
+    SchemeLine('escort');
 
-    $('.monitoring-tabs .choice-block a').on('click', function() {
-        $('.monitoring-tabs .choice-block a').removeClass('active');
-        $(this).addClass('active');
-        $("div .monitoring-tab").addClass("hide");
-        var thisAttr = $(this).attr('data-block');
-        $("div " + thisAttr).removeClass("hide");
-      });
+    $('.choice-block div a').on('click', function() {
+        $(this).parent().parent().find('div').find('a').removeClass("active");
+        $(this).addClass("active");
+        var block = $(this).attr("data-block");
+        $(block).siblings().addClass("hide");
+        $(block).removeClass("hide");
+        
+    });
+
     // function toggleBlock($this){
     //     $this.siblings(".choice-item").each(function(){
     //         var block = $(this).attr("data-block");

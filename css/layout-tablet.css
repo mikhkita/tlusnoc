@@ -16,9 +16,13 @@ body {
 }
 
 .b-block{
-	width: 100%;
+	width: 860px;
 	max-width: calc(100% - 48px);
 	margin: 0 auto;
+}
+h1.b-title, h2.b-title{
+	font-size: 40px;
+	line-height: 48px;
 }
 /*-----------Slideout-----------*/
 
@@ -446,6 +450,94 @@ body {
 	.help-form-block .b-btn-center{
 		float: none;
 	}
+/*------Аутсорсинг тендерного отдела-------*/
+	.inline-doc-item{
+		width: calc(100%/3 - 44px);
+	}
+		.inline-doc-item a{
+			font-size: 18px;
+		}
+/*--------Работа с ЭДО и ЭТП------------*/
+	.b-text .etp-left p{
+		font-size: 14px;
+	}
+	.b-text .etp-left li{
+		font-size: 14px;
+	}
+		.etp-white-block p{
+			line-height: 20px;
+		}
+	.etp-container .service-mark{
+	    width: calc(100%/3 - 3px);
+	}
+	.etp-container .service-marks .service-mark:nth-child(n+2){
+		margin-top: 0;
+	}
+	.etp-left .service-mark p{
+		padding-bottom: 0;
+	}
+	.etp-right{
+		width: calc(100%/3 - 6px);
+		margin-left: 15px;
+	    padding: 25px 20px;
+	}
+		.etp-right h4{
+			font-size: 22px;
+		}
+	.etp-work .service-item-section{
+		width: calc(100%/2 - 20px);
+	}
+
+	.etp-work  .service-item-section:not(:first-child){
+		margin-top: unset;
+	}
+	.etp-work .service-item-section:nth-child(n+3){
+		margin-top: 18px;
+	}
+	.reference h4{
+	    padding-top: 0;
+	}
+	.etp-work .choice-block div a{
+	    font-size: 16px;
+	}
+	.reference .b-text{
+		padding-bottom: 20px;
+	}
+	.reference .block-line{
+		margin-top: 30px;
+	    margin-bottom: 30px;
+	}
+/*--------Лизинг------------*/
+		.leasing-item-left{
+			width: 76px;
+	    	height: 66px;
+		}
+			.leasing-item-left img{
+			    max-width: 56px;
+	    		max-height: 46px;
+			}
+		.leasing-item-right{
+		    padding-left: 5px;
+		    font-size: 14px;
+		    line-height: 20px;
+		}
+
+	.leasing-block .service-marks .service-mark{
+		width: calc(100%/3 - 9px);
+		vertical-align: top;
+		margin-top: unset;
+	}
+		.leasing-block .service-marks .service-mark div{
+		    display: table-cell;
+    		vertical-align: top;
+		}
+	.leasing-block .service-marks .service-mark:not(:first-child){
+	    margin-left: 10px;
+	}
+	.leasing-block .service-mark p{
+		font-size: 16px;
+		line-height: 22px;
+	}
 }
 @media screen and (max-width: 960px){
 	.b-btn-center{
@@ -591,9 +683,87 @@ body {
 	.monitoring-scheme-item:nth-child(2n){
 		margin-left: 15px;
 	}
-#analysis-block .monitoring-scheme-item:nth-child(n+3){
-	margin-top: 0;
-}
+	#analysis-block .monitoring-scheme-item:nth-child(n+3){
+		margin-top: 0;
+	}
+/*------Аутсорсинг тендерного отдела-------*/
+	.outsourcing-left{
+		display: block;
+		width: 100%;
+	}
+	.outsourcing-right{
+		display: block;
+		width: 100%;
+		margin-left: unset;
+	}
+		.outsourcing-right .monitoring-scheme-item{
+			max-width: 540px;
+			margin: unset;
+		}
+	.outsourcing-scheme-block{
+		padding-top: 30px;
+	}
+	.b-head-scheme{
+		margin-top: 20px;
+	}
+	.b-head-scheme .b-escort-scheme-list {
+	    width: 100%;
+	    margin-right: 0;
+	    margin-bottom: 30px;
+	}
+
+	.b-head-scheme-block .left-line,
+	.b-head-scheme-block .right-line{
+		display: none;
+	}
+
+	.b-head-scheme-header{
+		position: static;
+	}
+
+	.b-head-scheme-block{
+		height: auto;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+
+	.b-escort-scheme-list:last-child{
+		margin-bottom: 10px;
+	}
+/*--------Работа с ЭДО и ЭТП------------*/
+
+	.etp-left{
+		width: 100%;
+		display: block;
+	}
+	.etp-right{
+		width: 100%;
+		display: block;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.etp-scheme-item{
+		max-width: 700px;
+	}
+	.etp-right p{
+		max-width: 700px;
+	}
+	.etp-container .service-marks .service-mark{
+		vertical-align: middle;
+	}
+	.important-info div:nth-child(2) p{
+		font-size: 14px;
+	}
+/*--------Лизинг------------*/
+	.leasing-item{
+		width: calc(100%/3 - 27px);
+	}
+	.leasing-item:not(:nth-child(4n)){
+		margin-right: 0;
+	}
+	.leasing-item:not(:nth-child(3n)){
+		margin-right: 20px;
+	}
 }
 @media screen and (max-width: 844px){
 	.b-index h2.b-title{
@@ -733,10 +903,63 @@ body {
 		margin-top: 20px;
 	}
 
+/*------Аутсорсинг тендерного отдела-------*/
+.outsourcing-container h3.b-title{
+	font-size: 24px;
+	line-height: 28px;
+}
+.outsourcing-container h4{
+	font-size: 20px;
+}
+.outsourcing-left li{
+	font-size: 16px;
+	line-height: 20px;
+}
+.outsourcing-scheme-block p{
+	width: 100%;
+}
+/*--------Работа с ЭДО и ЭТП------------*/
 
+.etp-work .service-item-sections{
+	max-width: unset;
+}
+.etp-work  .service-item-section:nth-child(2n){
+	margin-left: 15px;
+}
 
-
-
+/*--------Лизинг------------*/
+.leasing-item{
+	width: calc(100%/2 - 27px);
+}
+.leasing-item:not(:nth-child(3n)){
+	margin-right: 0;
+}
+.leasing-item:nth-child(n+3){
+	margin-top: 60px;
+}
+.leasing-item:nth-child(2n){
+	margin-left: 30px;
+}
+.leasing-block .service-marks .service-mark{
+	width: 100%;
+	max-width: 500px;
+}
+.leasing-block .service-marks .service-mark:not(:first-child){
+	margin-left: unset;
+	margin-top: 20px;
+}
+.leasing-block .service-marks .service-mark div{
+	display: inline-block;
+}
+.leasing-block .leasing-item{
+	width: 100%;
+}
+.leasing-block .leasing-item:nth-child(2n){
+	margin-left: unset;
+}
+.leasing-block .leasing-item:not(:first-child){
+	margin-top: 20px;
+}
 
 
 

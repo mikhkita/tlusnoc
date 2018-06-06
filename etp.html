@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<!-- <link rel="stylesheet" href="css/jquery.formstyler.css" type="text/css"> -->
+	
+
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 1023px)" href="css/layout-tablet.css">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+</head>
+<body>
+<div id="mobile-menu" class="mobile-menu hide">
+	<ul>
+		<h2 class="b-title">Меню</h2>
+		<li><a href="index.html" class="active">Главная</a></li>
+		<li><a href="services.html">Услуги и продукты</a></li>
+		<li><a href="about.html">О компании</a></li>
+		<li><a href="cooperation.html">Сотрудничество</a></li>
+		<li><a href="documents.html">Документация</a></li>
+		<li><a href="contacts.html" class="contact-info">Контакты</a></li>
+	</ul>
+	<div class="social-icons">
+		<a href="#" class="icon-facebook"></a>
+		<a href="#" class="icon-vk"></a>
+		<a href="#" class="icon-instagram"></a>
+	</div>
+</div>
+<div id="panel-page">
+	<div class="b b-top">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<ul class="b-top-content">
+					<li>
+						<a href="https://t.me/EAconsbot" class="contact-info telegram">
+							<img src="i/telegram.svg" class="telegram">@EAConsBot
+						</a>
+					</li>
+					<li>
+						<a href="#" class="contact-info">Контактная информация</a>
+					</li>
+					<li>
+						<div class="social-icons">
+							<a href="#" class="icon-facebook" target="_blank"></a>
+							<a href="#" class="icon-vk" target="_blank"></a>
+							<a href="#" class="icon-instagram" target="_blank"></a>
+							<a href="#" class="icon-twitter" target="_blank"></a>
+						</div>
+					</li>
+					<li>
+						<a href="tel:+74991100046" class="phone">+7 499 110 00 46</a>
+					</li>
+					<li class="cabinet-cont">
+						<a href="#" class="cabinet" onclick="return false;"><span class="icon-cabinet"></span>Кабинет</a>
+						<div class="cabinet-bubble">
+							<div class="cabinet-bubble-wrap">
+								<h3 class="b-title">Войти</h3>
+								<form id="b-login-form" class="b-login-form" method="post" action="action.php">
+									<input type="text" name="email" placeholder="E-mail" required>
+									<input type="password" name="password" placeholder="Пароль" required>
+									<a href="#" class="b-btn b-btn-blue ajax" onclick="$('#b-login-form').submit(); return false;">Войти</a>
+								</form>
+								<a href="#" class="b-btn b-btn-transparent">Регистрация</a>
+								<a href="#" class="restore-password">Восстановить пароль</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="b b-menu">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<div class="b-logo">
+					<a href="index.html">
+						<img src="i/logo.png" data-retina-src="i/logo@2x.png">
+					</a>
+				</div>
+				<ul class="b-menu-items">
+					<li><a href="services.html">Услуги и продукты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Вики</a></li>
+					<li><a href="documents.html">Блог</a></li>
+				</ul>
+				<div id="burger-menu" class="burger-menu icon-menu">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="etp-page">
+		<div class="etp-container gray-gradient">
+			<div class="b-block">
+				<ul class="b-breadcrumbs black">
+					<li><a href="index.html" class="icon-right-arrow">Главная</a></li>
+					<li><a href="services.html" class="icon-right-arrow">Услуги и продукты</a></li>
+					<li><span>Работа с ЭДО и ЭТП</span></li>
+				</ul>
+				<h1 class="b-title">Системы Электронного документооборота (ЭДО) и электронная торговля</h1>
+				<div class="b-text etp-block">
+					<div class="etp-left">
+						<p>Данный раздел посвящен двум ключевым направлениям при технической организации системы работы с закупками, исполнением контрактов и иных обязательств – <b>системам ЭДО и обеспечению работыс ЭТП и цифровой подписью.</b> Оба этих направления последовательно освещены на данной странице.<br>Начинаем мы именно с документооборота, поскольку полагаем, что порядок в делах начинается с порядка в бумагах идокументах.<br><br>
+						Малый и средний бизнес особенно чувствителен к выбору и качеству внедрения систем электронного документооборота. Работая с нашими клиентами, мы всегда обращаем внимание на то, как устроен обмен документами внутри предприятия. Если в этом деле царит беспорядок, противоречивые алгоритмы, дублирование потоков – можно смело утверждать – любые последующие инициативы, примененные на таком «фундаменте» ни к чему хорошему не приведут.<br><br>
+
+						По этой причине, задумавшись о реализации мероприятий по развитию тендерного дела, участию в крупных контрактах, масштабированию бизнеса и тому подобных задач следует начинать с наведения порядка в обороте документации. <br>
+						В настоящее время на рынке существует множество решений по автоматизации потоков документов, их хранению, распознаванию и обработке, но не все они подходят именно вашей компании. Для микро- и малых предприятий подойдут совсем простые «коробочные» решения с минимальной доработкой и внедрением, для среднего бизнеса, также, как правило, применимы низкозатратные схемы внедрения уже готовых продуктов. <br><br>
+
+						Для оценки возможных вариантов развертывания и внедрения программных продуктов ЭДО, в нашей компании разработана методика, применяя которую, можно с высокой точностью предположить наиболее эффективную и наименее затратную схему внедрения. <br><br>
+						<b>Как правило, порядок работ, выполняемых в рамках внедрения программных продуктов ЭДО, следующий:</b>
+						<ol class="num-list">
+							<li><b>Аудит бизнес-процессов, подготовка схемы процессов «КАК ЕСТЬ»</b></li>
+							<li><b>Проектирование процессов «КАК БУДЕТ»</b></li>
+							<li><b>Выбор программного продукта и схемы внедрения</b></li>
+							<li><b>Поставка и внедрение</b></li>
+							<li><b>Обучение персонала</b></li>
+							<li><b>Сопровождение и техническая поддержка</b></li>
+						</ol>
+						<p>EA Consult с готовностью исполнит проект внедрения системы электронного документооборота в вашей компании «под ключ» с минимальными доработками, и соответственно, с минимальным ценой. Обращайтесь в <a href="#" class="underline">Отдел по работе с системами ЭДО нашей компании для более детальной информации.</a>
+						</p>
+						<div class="etp-white-block">
+							<h4>Важно!</h4>
+							<img src="i/etp-white-block.png">
+							<p>Используйте метод «бритвы Оккама» <br>
+							<b><a href="https://ru.wikipedia.org/wiki/Бритва_Оккама" class="underline">https://ru.wikipedia.org/wiki/Бритва_Оккама</a></b><br>
+							для разработки схем процессов, планов масштабирования и правил операционной деятельности.</p>
+							<div class="block-line gray-line"></div>
+							<p>Кто такой Уильям Оккам и чем этот францисканский монах<br>может помочь вашему бизнесу.<br>
+							<b><a href="https://ru.wikipedia.org/wiki/Оккам,_Уильям" class="underline">https://ru.wikipedia.org/wiki/Оккам,_Уильям</a></b>
+							</p>
+						</div>
+						<p><b>Внедрение систем ЭДО — </b>весьма непростая задача, и мы будем рады оказаться вам полезными при решении любых задач в этом направлении:</p>
+						<div class="service-marks">
+							<div class="service-mark">
+								<div><img src="i/blue-mark.svg"></div>
+								<div><p>Проанализируем процессы</p></div>
+							</div>
+							<div class="service-mark">
+								<div><img src="i/blue-mark.svg"></div>
+								<div><p>Поставим и настроим ПО</p></div>
+							</div>
+							<div class="service-mark">
+								<div><img src="i/blue-mark.svg"></div>
+								<div><p>Обучим ваших специалистов</p></div>
+							</div>
+						</div>
+						<p>Оцените возможности внедрения и развития ЭДО — примите участие в нашем обследовании <a href="https://ru.wikipedia.org/wiki/Оккам,_Уильям">https://ru.wikipedia.org/wiki/Оккам,_Уильям</a>, ответив на 10 вопросов о системе документооборота.</p>
+					</div>
+					<div class="blue-gradient white etp-right">
+						<h4>Работа с ЭДО и ЭТП</h4>
+						<p>Электронный документооборот и система его организации играют важную роль в эффективной работе тендерного и юридического направлений любой компании. <br><br>Документооборот — кровеносная система бизнеса. Несбалансированный документооборот, противоречивые алгоритмы и схемы, неподготовленный персонал — эти и другие факторы риска не способствуют росту производительности труда, и, конечно, оказывают крайне негативное влияние на компанию.<br><br>
+						<b>Основные принципы построения эффективных систем документооборота:</b></p>
+						<div class="etp-scheme-container">
+							<div class="etp-scheme-item">
+								<div class="etp-scheme-top b-table">
+									<div class="b-table-cell-middle"><img src="i/etp-scheme-1.svg"></div>
+									<div class="b-table-cell-middle"><b>Простые «бережливые» схемы бизнес процессов</b></div>
+								</div>
+								<div class="etp-scheme-bottom">
+									Не усложняйте систему сверх необходимости. Постройте схемы процессов вашего документооборота и сделайте предположения — от каких процессов можно отказаться вообще, какие следует упростить, а какие оставить.
+								</div>
+							</div>
+							<div class="etp-scheme-item">
+								<div class="etp-scheme-top b-table">
+									<div class="b-table-cell-middle"><img src="i/etp-scheme-2.svg"></div>
+									<div class="b-table-cell-middle"><b>Проверенное ПО</b></div>
+								</div>
+								<div class="etp-scheme-bottom">
+									Никогда не начинайте разработку системы на заказ, не убедившись, что на рынке нет готовых систем, способных удовлетворить вашим требованиям и пожеланиям. Помните — практически любые задачи малого бизнеса можно решать небольшой доработкой и внедрением коробочного продукта. 
+								</div>
+							</div>
+							<div class="etp-scheme-item">
+								<div class="etp-scheme-top b-table">
+									<div class="b-table-cell-middle"><img src="i/etp-scheme-3.svg"></div>
+									<div class="b-table-cell-middle"><b>Правильно обученный персонал</b></div>
+								</div>
+								<div class="etp-scheme-bottom">
+									Когда отрисованы схемы и поставлено программное обеспечение — самое главное, — обучить и адаптировать к новым процессам персонал. Убедитесь в том, что все задействованные в процессе специалисты хорошо понимают задачи, инструментарий и основные принципы работы с документо-оборотом во всех его проявлениях.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="etp-work">
+			<div class="b-block">
+				<h2 class="b-title">Работа с ЭТП</h2>
+				<h4>В рамках работы с электронными торговыми площадками наша команда решает для вас следующие задачи</h4>
+				<div class="choice-block">
+					<div><a href="#" class="active" data-block="#order-block" onclick="return false;">Заказ ЭЦП</a></div>
+					<div><a href="#" data-block="#accreditation-block" onclick="return false;">Аккредитация на ЭТП</a></div>
+					<div><a href="#" data-block="#set-block" onclick="return false;">Настройка пк для ЭТП</a></div>
+				</div>
+				<div>
+					<div class="choice-item" id="order-block">
+						<h2 class="b-title">Заказ ЭЦП</h2>
+						<p><b>Заказ электронно-цифровой подписи — </b>первый шаг на пути участия в электронных торговых процедурах. ЭЦП используется практически во всех операциях на торговых площадках:</p>
+						<div class="service-item-sections strait">
+							<div class="service-item-section">
+								<div><img src="i/etp-work-1.svg"></div>
+								<div><b>Аккредитация компании на площадке</b></div>
+							</div>
+							<div class="service-item-section">
+								<div><img src="i/etp-work-2.svg"></div>
+								<div><b>Подписание электронных документов</b></div>
+							</div>
+							<div class="service-item-section">
+								<div><img src="i/etp-work-3.svg"></div>
+								<div><b>Подача заявок</b></div>
+							</div>
+							<div class="service-item-section">
+								<div><img src="i/etp-work-4.svg"></div>
+								<div><b>Подписание контрактов и другое</b></div>
+							</div>
+						</div>
+						<p><a href="#" class="underline black">Что такое ЭЦП?</a></p>
+						<div class="important-info">
+							<div class="white">Важно!</div>
+							<div>
+								<p>Цена выпуска ЭЦП зависит от количества торговых площадок, с которыми смогут работать ваши средства электронно-цифровой подписи. Заказывая услугу выпуска ЭЦП, заранее определите список площадок, с которыми вы хотите работать. Рекомендации по выбору площадок вы можете получить у своего <a href="#" class="underline">персонального менеджера, пишите нам!</a></p>
+							</div>
+						</div>
+						<div class="help-form-container">
+							<div class="help-form-block">
+								<h3 class="b-title white">Можем ли мы чем-то помочь?</h3>
+								<p class="white">По любым вопросам, связанным с системами электронного документооборота, работе с торговыми площадками, получении средств цифровой подписи и настройки рабочих мест пользователей пожалуйста, отправьте информацию о себе в форме ниже. Мы свяжемся с вами максимально оперативно</p>
+								<form method="POST" action="kitsend.php">
+									<div class="input-string">
+										<input type="text" name="bank" placeholder="Банк">
+									</div>
+									<div class="input-string">
+										<input type="text" name="fio" placeholder="ФИО контактного лица">
+									</div>
+									<div class="input-string">
+										<input type="text" name="phone" placeholder="Телефон">
+									</div>
+									<div class="b-btn-center">
+										<a href="#" class="b-btn ajax">Отправить заявку</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="reference">
+							<h2 class="b-title">Справка</h2>
+							<h4>Список документов, необходимый для подачи заявки на получение ЭЦП</h4>
+							<div class="choice-block">
+								<div><a href="#" class="active" data-block="#entity-text" onclick="return false;">Для юридического лица</a></div>
+								<div><a href="#" data-block="#ip-text" onclick="return false;">Для ИП</a></div>
+								<div><a href="#" data-block="#individual-text" onclick="return false;">Для физического лица</a></div>
+							</div>
+							<div>
+								<div class="b-text" id="entity-text">
+									<ul>
+										<li class="icon-mark">Копия Свидетельства о государственной регистрации юридического лица</li>
+										<li class="icon-mark">Копия Свидетельства о постановке на учет в налоговом органе</li>
+										<li class="icon-mark">Если ЭЦП для торговых площадок изготавливается на имя руководителя организации: копию документа о назначении руководителя, заверенную подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Если получать ЭЦП для торгов будет не ее владелец, то на имя уполномоченного представителя организации нужна доверенность, подтверждающая полномочия владельца сертификата ключа ЭЦП, заверенная подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Копия паспорта гражданина Российской Федерации,<br>
+										на чье имя изготавливается ключ для участия в торгах (владелец сертификата)</li>
+										<li class="icon-mark">Согласие на обработку персональных данных пользователя</li>
+										<li class="icon-mark">СНИЛС (для торгов по 223-ФЗ и коммерческих закупок)</li>
+									</ul>
+								</div>
+								<div class="b-text hide" id="ip-text">
+									<ul>
+										<li class = "icon-mark">Копия Свидетельства о государственной регистрации юридического лица</li>
+										<li class = "icon-mark">Копия Свидетельства о постановке на учет в налоговом органе</li>
+										<li class = "icon-mark">Если ЭЦП для торговых площадок изготавливается на имя руководителя организации: копию документа о назначении руководителя, заверенную подписью руководителя и печатью организации</li>
+									</ul>
+								</div>
+								<div class="b-text hide" id="individual-text">
+									<ul>
+										<li class="icon-mark">Копия Свидетельства о государственной регистрации юридического лица</li>
+										<li class="icon-mark">Копия Свидетельства о постановке на учет в налоговом органе</li>
+										<li class="icon-mark">Если ЭЦП для торговых площадок изготавливается на имя руководителя организации: копию документа о назначении руководителя, заверенную подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Если получать ЭЦП для торгов будет не ее владелец, то на имя уполномоченного представителя организации нужна доверенность, подтверждающая полномочия владельца сертификата ключа ЭЦП, заверенная подписью руководителя и печатью организации</li>
+									</ul>
+								</div>
+							</div>
+							<h4>Срок изготовления ЭЦП — от 1 дня<br>
+							Срочное изготовления за 1 час</h4>
+							<div class="block-line gray-line"></div>
+							<h4>Полный список электронных торговых площадок в нашей <a href="#" class="underline">Базе знаний</a></h4>
+						</div>
+					</div>
+					<div class="choice-item hide" id="accreditation-block">
+						<h2 class="b-title">Аккредитация на ЭТП</h2>
+						<p><b>Заказ электронно-цифровой подписи — </b>первый шаг на пути участия в электронных торговых процедурах. ЭЦП используется практически во всех операциях на торговых площадках:</p>
+						<div class="service-item-sections strait">
+							<div class="service-item-section">
+								<div><img src="i/etp-work-1.svg"></div>
+								<div><b>Аккредитация компании на площадке</b></div>
+							</div>
+							<div class="service-item-section">
+								<div><img src="i/etp-work-2.svg"></div>
+								<div><b>Подписание электронных документов</b></div>
+							</div>
+							<div class="service-item-section">
+								<div><img src="i/etp-work-3.svg"></div>
+								<div><b>Подача заявок</b></div>
+							</div>
+							<div class="service-item-section">
+								<div><img src="i/etp-work-4.svg"></div>
+								<div><b>Подписание контрактов и другое</b></div>
+							</div>
+						</div>
+						<p><a href="#" class="underline black">Что такое ЭЦП?</a></p>
+						<div class="important-info">
+							<div class="white">Важно!</div>
+							<div>
+								<p>Цена выпуска ЭЦП зависит от количества торговых площадок, с которыми смогут работать ваши средства электронно-цифровой подписи. Заказывая услугу выпуска ЭЦП, заранее определите список площадок, с которыми вы хотите работать. Рекомендации по выбору площадок вы можете получить у своего <a href="#" class="underline">персонального менеджера, пишите нам!</a></p>
+							</div>
+						</div>
+						<div class="help-form-container">
+							<div class="help-form-block">
+								<h3 class="b-title white">Можем ли мы чем-то помочь?</h3>
+								<p class="white">По любым вопросам, связанным с системами электронного документооборота, работе с торговыми площадками, получении средств цифровой подписи и настройки рабочих мест пользователей пожалуйста, отправьте информацию о себе в форме ниже. Мы свяжемся с вами максимально оперативно</p>
+								<form method="POST" action="kitsend.php">
+									<div class="input-string">
+										<input type="text" name="bank" placeholder="Банк">
+									</div>
+									<div class="input-string">
+										<input type="text" name="fio" placeholder="ФИО контактного лица">
+									</div>
+									<div class="input-string">
+										<input type="text" name="phone" placeholder="Телефон">
+									</div>
+									<div class="b-btn-center">
+										<a href="#" class="b-btn ajax">Отправить заявку</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="reference">
+							<h2 class="b-title">Справка</h2>
+							<h4>Список документов, необходимый для подачи заявки на получение ЭЦП</h4>
+							<div class="choice-block">
+								<div><a href="#" class="active" data-block="#entity-text" onclick="return false;">Для юридического лица</a></div>
+								<div><a href="#" data-block="#ip-text" onclick="return false;">Для ИП</a></div>
+								<div><a href="#" data-block="#individual-text" onclick="return false;">Для физического лица</a></div>
+							</div>
+							<div>
+								<div class="b-text" id="entity-text">
+									<ul>
+										<li class="icon-mark">Копия Свидетельства о государственной регистрации юридического лица</li>
+										<li class="icon-mark">Копия Свидетельства о постановке на учет в налоговом органе</li>
+										<li class="icon-mark">Если ЭЦП для торговых площадок изготавливается на имя руководителя организации: копию документа о назначении руководителя, заверенную подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Если получать ЭЦП для торгов будет не ее владелец, то на имя уполномоченного представителя организации нужна доверенность, подтверждающая полномочия владельца сертификата ключа ЭЦП, заверенная подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Копия паспорта гражданина Российской Федерации,<br>
+										на чье имя изготавливается ключ для участия в торгах (владелец сертификата)</li>
+										<li class="icon-mark">Согласие на обработку персональных данных пользователя</li>
+										<li class="icon-mark">СНИЛС (для торгов по 223-ФЗ и коммерческих закупок)</li>
+									</ul>
+								</div>
+								<div class="b-text hide" id="ip-text">
+									<ul>
+										<li class="icon-mark">Копия Свидетельства о государственной регистрации юридического лица</li>
+										<li class="icon-mark">Копия Свидетельства о постановке на учет в налоговом органе</li>
+										<li class="icon-mark">Если ЭЦП для торговых площадок изготавливается на имя руководителя организации: копию документа о назначении руководителя, заверенную подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Если получать ЭЦП для торгов будет не ее владелец, то на имя уполномоченного представителя организации нужна доверенность, подтверждающая полномочия владельца сертификата ключа ЭЦП, заверенная подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Копия паспорта гражданина Российской Федерации,<br>
+										на чье имя изготавливается ключ для участия в торгах (владелец сертификата)</li>
+										<li class="icon-mark">Согласие на обработку персональных данных пользователя</li>
+										<li class="icon-mark">СНИЛС (для торгов по 223-ФЗ и коммерческих закупок)</li>
+									</ul>
+								</div>
+								<div class="b-text hide" id="individual-text">
+									<ul>
+										<li class="icon-mark">Копия Свидетельства о государственной регистрации юридического лица</li>
+										<li class="icon-mark">Копия Свидетельства о постановке на учет в налоговом органе</li>
+										<li class="icon-mark">Если ЭЦП для торговых площадок изготавливается на имя руководителя организации: копию документа о назначении руководителя, заверенную подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Если получать ЭЦП для торгов будет не ее владелец, то на имя уполномоченного представителя организации нужна доверенность, подтверждающая полномочия владельца сертификата ключа ЭЦП, заверенная подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Копия паспорта гражданина Российской Федерации,<br>
+										на чье имя изготавливается ключ для участия в торгах (владелец сертификата)</li>
+										<li class="icon-mark">Согласие на обработку персональных данных пользователя</li>
+										<li class="icon-mark">СНИЛС (для торгов по 223-ФЗ и коммерческих закупок)</li>
+									</ul>
+								</div>
+							</div>
+							<h4>Срок изготовления ЭЦП — от 1 дня<br>
+							Срочное изготовления за 1 час</h4>
+							<div class="block-line gray-line"></div>
+							<h4>Полный список электронных торговых площадок в нашей <a href="#" class="underline">Базе знаний</a></h4>
+						</div>
+					</div>
+					<div class="choice-item hide" id="set-block">
+						<h2 class="b-title">Настройка пк для ЭТП</h2>
+						<p><b>Заказ электронно-цифровой подписи — </b>первый шаг на пути участия в электронных торговых процедурах. ЭЦП используется практически во всех операциях на торговых площадках:</p>
+						<div class="service-item-sections strait">
+							<div class="service-item-section">
+								<div><img src="i/etp-work-1.svg"></div>
+								<div><b>Аккредитация компании на площадке</b></div>
+							</div>
+							<div class="service-item-section">
+								<div><img src="i/etp-work-2.svg"></div>
+								<div><b>Подписание электронных документов</b></div>
+							</div>
+							<div class="service-item-section">
+								<div><img src="i/etp-work-3.svg"></div>
+								<div><b>Подача заявок</b></div>
+							</div>
+							<div class="service-item-section">
+								<div><img src="i/etp-work-4.svg"></div>
+								<div><b>Подписание контрактов и другое</b></div>
+							</div>
+						</div>
+						<p><a href="#" class="underline black">Что такое ЭЦП?</a></p>
+						<div class="important-info">
+							<div class="white">Важно!</div>
+							<div>
+								<p>Цена выпуска ЭЦП зависит от количества торговых площадок, с которыми смогут работать ваши средства электронно-цифровой подписи. Заказывая услугу выпуска ЭЦП, заранее определите список площадок, с которыми вы хотите работать. Рекомендации по выбору площадок вы можете получить у своего <a href="#" class="underline">персонального менеджера, пишите нам!</a></p>
+							</div>
+						</div>
+						<div class="help-form-container">
+							<div class="help-form-block">
+								<h3 class="b-title white">Можем ли мы чем-то помочь?</h3>
+								<p class="white">По любым вопросам, связанным с системами электронного документооборота, работе с торговыми площадками, получении средств цифровой подписи и настройки рабочих мест пользователей пожалуйста, отправьте информацию о себе в форме ниже. Мы свяжемся с вами максимально оперативно</p>
+								<form method="POST" action="kitsend.php">
+									<div class="input-string">
+										<input type="text" name="bank" placeholder="Банк">
+									</div>
+									<div class="input-string">
+										<input type="text" name="fio" placeholder="ФИО контактного лица">
+									</div>
+									<div class="input-string">
+										<input type="text" name="phone" placeholder="Телефон">
+									</div>
+									<div class="b-btn-center">
+										<a href="#" class="b-btn ajax">Отправить заявку</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="reference">
+							<h2 class="b-title">Справка</h2>
+							<h4>Список документов, необходимый для подачи заявки на получение ЭЦП</h4>
+							<div class="choice-block">
+								<div><a href="#" class="active" data-block="#entity-text" onclick="return false;">Для юридического лица</a></div>
+								<div><a href="#" data-block="#ip-text" onclick="return false;">Для ИП</a></div>
+								<div><a href="#" data-block="#individual-text" onclick="return false;">Для физического лица</a></div>
+							</div>
+							<div>
+								<div class="b-text" id="entity-text">
+									<ul>
+										<li class="icon-mark">Копия Свидетельства о государственной регистрации юридического лица</li>
+										<li class="icon-mark">Копия Свидетельства о постановке на учет в налоговом органе</li>
+										<li class="icon-mark">Если ЭЦП для торговых площадок изготавливается на имя руководителя организации: копию документа о назначении руководителя, заверенную подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Если получать ЭЦП для торгов будет не ее владелец, то на имя уполномоченного представителя организации нужна доверенность, подтверждающая полномочия владельца сертификата ключа ЭЦП, заверенная подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Копия паспорта гражданина Российской Федерации,<br>
+										на чье имя изготавливается ключ для участия в торгах (владелец сертификата)</li>
+										<li class="icon-mark">Согласие на обработку персональных данных пользователя</li>
+										<li class="icon-mark">СНИЛС (для торгов по 223-ФЗ и коммерческих закупок)</li>
+									</ul>
+								</div>
+								<div class="b-text hide" id="ip-text">
+									<ul>
+										<li class = "icon-mark">Копия Свидетельства о государственной регистрации юридического лица</li>
+										<li class = "icon-mark">Копия Свидетельства о постановке на учет в налоговом органе</li>
+										<li class = "icon-mark">Если ЭЦП для торговых площадок изготавливается на имя руководителя организации: копию документа о назначении руководителя, заверенную подписью руководителя и печатью организации</li>
+									</ul>
+								</div>
+								<div class="b-text hide" id="individual-text">
+									<ul>
+										<li class="icon-mark">Копия Свидетельства о государственной регистрации юридического лица</li>
+										<li class="icon-mark">Копия Свидетельства о постановке на учет в налоговом органе</li>
+										<li class="icon-mark">Если ЭЦП для торговых площадок изготавливается на имя руководителя организации: копию документа о назначении руководителя, заверенную подписью руководителя и печатью организации</li>
+										<li class="icon-mark">Если получать ЭЦП для торгов будет не ее владелец, то на имя уполномоченного представителя организации нужна доверенность, подтверждающая полномочия владельца сертификата ключа ЭЦП, заверенная подписью руководителя и печатью организации</li>
+									</ul>
+								</div>
+							</div>
+							<h4>Срок изготовления ЭЦП — от 1 дня<br>
+							Срочное изготовления за 1 час</h4>
+							<div class="block-line gray-line"></div>
+							<h4>Полный список электронных торговых площадок в нашей <a href="#" class="underline">Базе знаний</a></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-footer">
+		<div class="b-block">
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Сотрудничество</a></li>
+					<li><a href="cooperation.html#career">Карьера</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">Тендерное сопровождение</a></li>
+					<li><a href="#">Банковские гарантии и&nbsp;тендерный&nbsp;кредит</a></li>
+					<li><a href="#">Обучение и сертификация</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">44-ФЗ</a></li>
+					<li><a href="#">223-ФЗ</a></li>
+					<li><a href="#">Список электронных торговых&nbsp;площадок</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<a href="tel:+74995515463" class="phone">+7 499 551 54 63</a>
+				<p>Москва, Новодмитровская улица 2к2, этаж 3, офис 22</p>
+				<p><a href="mailto:info@eaconsult.ru">info@eaconsult.ru</a></p>
+			</div>
+			<div class="b-bottom">
+				<p>© 2012 — 2017 «EA CONSULT»</p>
+			</div>
+		</div>
+	</div>
+	<div class="b-menu-overlay" id="b-menu-overlay" style="display: none;"></div>
+</div>
+	<div style="display:none;">
+		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+		<div class="b-popup" id="b-popup-app" style="display: inline-block;">
+			<h2 class="b-title">Отправить заявку</h2>
+			<form id="b-popup-app-form" class="b-popup-app-form" method="post" action="kitsend.php" novalidate="novalidate">
+				<input type="text" name="name" placeholder="Ваше имя" required="">
+				<input type="text" name="email" placeholder="Ваш E-mail" required="">
+				<textarea name="message" required="" rows="1" placeholder="Ваше сообщение" style="overflow-x: hidden; word-wrap: break-word; overflow-y: visible;"></textarea>
+				<div class="clearfix">
+				<div style="width: 100%">
+					<input id="personal" type="checkbox" name="personal" required checked>
+					<label for="personal">Я согласен на <a href="/politics" class="underline">обработку персональных данных</a></label>
+				</div>
+				<input type="text" name="MAIL">
+				</div>
+				<a href="#" class="b-btn b-btn-blue ajax">Отправить</a>
+				<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+			</form>
+			<button data-fancybox-close="" class="fancybox-close-small"></button>
+		</div>
+		<div class="b-popup" id="b-popup-1">
+			<h3>Оставьте заявку</h3>
+			<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
+			<form action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-1">
+				<div class="b-popup-form">
+					<label for="name">Введите Ваше имя</label>
+					<input type="text" id="name" name="name" required/>
+					<label for="tel">Введите Ваш номер телефона</label>
+					<input type="text" id="tel" name="phone" required/>
+					<label for="tel">Введите Ваш E-mail</label>
+					<input type="text" id="tel" name="email" required/>
+					<input type="hidden" name="subject" value="Заказ"/>
+					<input type="submit" style="display:none;">
+					<a href="#" class="b-btn b-blue-btn ajax">Заказать</a>
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+				</div>
+			</form>
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-success">
+			<h3>Спасибо!</h3>
+			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-error">
+			<h3>Ошибка отправки!</h3>
+			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<!-- <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script> -->
+	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/slideout.min.js"></script>
+	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+</body>
+</html>

@@ -181,7 +181,7 @@ ul.b-breadcrumbs{
     padding-top: 40px;
     padding-bottom: 50px;
 }
-.review-block{
+#about-page .review-block{
 	padding-bottom: 0;
 }
 .about-img{
@@ -310,7 +310,7 @@ select.vacancy-select{
 .monitoring-howto-block h4{
 	margin-bottom: 30px;
 }
-.monitoring-howto-block .citate-block{
+.citate-block.blue-citate{
 	padding: 40px;
 }
 .monitoring-scheme-item{
@@ -343,7 +343,73 @@ select.vacancy-select{
 	.monitoring-tabs .choice-block div:nth-child(2n){
 		margin-left: 0;
 	}
+/*------Аутсорсинг тендерного отдела-------*/
 
+.inline-doc-item{
+	display: block;
+	width: 100%;
+}
+	.inline-doc-item:not(:first-child){
+		margin-left: 0px;
+	}
+	.inline-doc-item:not(:last-child){
+		margin-bottom: 15px;
+	}
+/*--------Работа с ЭДО и ЭТП------------*/
+
+.etp-work .choice-block{
+	padding-top: 25px;
+}
+.etp-work .choice-block div{
+	width: 100%;
+}
+.etp-work .choice-block div:not(:first-child){
+	margin-left: unset;
+}
+.important-info{
+	text-align: center;
+}
+.etp-work .service-item-sections{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.etp-work .service-item-section{
+	width: 100%;
+}
+.etp-work .service-item-section:nth-child(2n){
+	margin-left: unset;
+}
+.etp-work .service-item-section:nth-child(n+2){
+	margin-top: 15px;
+}
+.important-info div:nth-child(1){
+	width: 100%;
+	max-width: 153px;
+}
+.important-info div:nth-child(2){
+	padding-top: 30px;
+	width: 100%;
+    padding-left: 0px;
+}
+/*--------Лизинг------------*/
+
+.leasing-item{
+	width: 100%;
+}
+.leasing-item:nth-child(n+2){
+	margin-top: 20px;
+}
+.leasing-item:nth-child(2n){
+	margin-left: 0;
+}
+.leasing-item-left{
+	width: 66px;
+    height: 56px;
+}
+.leasing-item-left img{
+    max-width: 46px;
+    max-height: 36px;
+}
 @media screen and (max-width: 600px){
 	.b-menu-down li{
 		width: calc(100%/2 - 3px);
@@ -454,6 +520,36 @@ select.vacancy-select{
 	.maintenance-text ul li{
 		font-size: 14px;
 	}
+	/*------Аутсорсинг тендерного отдела-------*/
+
+	.b-info-partners-item{
+		text-align: left
+	}
+	.outsourcing-container{
+		padding-bottom: 50px;
+	}
+	#outsourcing-page .help-form-container{
+		padding-top: 50px;
+	}
+	#outsourcing-page .block-line{
+	    margin-top: 0px;
+    	margin-bottom: 30px;
+	}
+	#outsourcing-page .crypto-block{
+		padding-bottom: 50px;
+	}
+/*--------Работа с ЭДО и ЭТП------------*/
+	.etp-container .service-marks{
+	    padding-top: 10px;
+   		padding-bottom: 30px;
+	}
+	.etp-container .service-mark{
+		width: 100%;
+	}
+	.etp-container .service-marks .service-mark:nth-child(n+2){
+		margin-top: 15px;
+	}
+
 }
 @media screen and (max-width: 500px){
 	.b-index h2.b-title{
@@ -575,198 +671,280 @@ select.vacancy-select{
 	.service-link:not(:first-child){
 	    margin-top: 20px;
 	}
-	@media screen and (max-width: 500px){
-		.b-calc-item input{
-			font-size: 16px;
+	
+	.b-calc-item input{
+		font-size: 16px;
+	}
+	.jq-selectbox__select{
+		font-size: 16px;
+	}
+	.jq-selectbox__dropdown li{
+		font-size: 16px;
+	}
+	.dash{
+		padding: 20px 0;
+	}
+	.b-calc-item p{
+		font-size: 16px;
+	}
+	.b-calc-item select{
+		font-size: 16px;
+	}
+	.b-calc .icon-rub-medium:before{
+		font-size: 12px;
+		bottom: 3px;
+	}
+	/*services*/
+	.service-item{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.guarantee-info h2.b-title, .service-item .b-block h2{
+		font-family: GothamProMedium;
+	    font-size: 20px;
+		line-height: 24px;
+	}
+	.service-bottom-text{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.service-item h3{
+		font-family: GothamProRegular;
+	    font-size: 14px;
+		line-height: 18px;
+		padding-top: 18px;
+	}
+	.service-item-sections{
+	    padding-top: 20px;
+			padding-bottom: 20px;
+	}
+		.service-item-section img{
+		    padding-right: 0;
+			width: 65px;
 		}
-		.jq-selectbox__select{
-			font-size: 16px;
-		}
-		.jq-selectbox__dropdown li{
-			font-size: 16px;
-		}
-		.dash{
-			padding: 20px 0;
-		}
-		.b-calc-item p{
-			font-size: 16px;
-		}
-		.b-calc-item select{
-			font-size: 16px;
-		}
-		.b-calc .icon-rub-medium:before{
-			font-size: 12px;
-			bottom: 3px;
-		}
-		/*services*/
-		.service-item{
-			padding-top: 40px;
-			padding-bottom: 40px;
-		}
-		.guarantee-info h2.b-title, .service-item .b-block h2{
-			font-family: GothamProMedium;
-		    font-size: 20px;
-    		line-height: 24px;
-		}
-		.service-bottom-text{
+		.service-item-section a{
 			font-size: 14px;
     		line-height: 18px;
 		}
-		.service-item h3{
-			font-family: GothamProRegular;
-		    font-size: 14px;
+		.service-item-section:not(:first-child){
+			margin-top: 16px;
+		}
+		.service-item-section .service-item-text, .service-item-section .service-item-text a{
+			font-size: 14px;
     		line-height: 18px;
-    		padding-top: 18px;
 		}
-		.service-item-sections{
-		    padding-top: 20px;
-   			padding-bottom: 20px;
+	.service-links{
+	    padding-top: 20px;
+			padding-bottom: 20px;
+	}
+		.service-link:last-child div:first-child{
+			left: 5px;
 		}
-			.service-item-section img{
-			    padding-right: 0;
-    			width: 65px;
-			}
-			.service-item-section a{
-				font-size: 14px;
-	    		line-height: 18px;
-			}
-			.service-item-section:not(:first-child){
-				margin-top: 16px;
-			}
-			.service-item-section .service-item-text, .service-item-section .service-item-text a{
-				font-size: 14px;
-	    		line-height: 18px;
-			}
-		.service-links{
-		    padding-top: 20px;
-   			padding-bottom: 20px;
+		.service-link div:first-child{
+			position: absolute;
+			padding-left: 0;
 		}
-			.service-link:last-child div:first-child{
-				left: 5px;
-			}
-			.service-link div:first-child{
-				position: absolute;
-				padding-left: 0;
-			}
-			.service-link div:last-child{
-				padding-left: 40px;
-			}
-			.service-link a{
-				font-size: 14px;
-				line-height: 18px;
-			}
-		.service-marks{
-			padding-top: 20px;
-   			padding-bottom: 20px;
+		.service-link div:last-child{
+			padding-left: 40px;
 		}
-		.service-marks .service-mark:nth-child(n+2){
-			margin-top: 15px;
-		}
-			.service-mark div:last-child{
-			    padding-left: 15px;
-			}
-			.service-mark p{
-				font-size: 14px;
-				line-height: 18px;
-			}
-		.guarantee-info{
-			padding-top: 40px;
-   			padding-bottom: 40px;
-		}
-		.guarantee-info h3{
+		.service-link a{
 			font-size: 14px;
 			line-height: 18px;
 		}
-		.guarantee-info a{
-			padding-left: 29px;
-		}
-		.whatsapp{
-			width: 16px;
-		}
-		.telegram-small-icon{
-			width: 17px;
-		}
-		.scheme{
-			margin-top: 28px;
-		}
-		.b-scheme-item{
-			padding-left: 60px;
-			padding-right: 24px;
-		}
-		.b-scheme-item:after{
-		    left: 20px;
-		}
-		.b-scheme-item span.scheme-num:before{
-			left: 12px;
-		}
-		.b-scheme-item:nth-child(1):before,
-		.b-scheme-item:nth-child(2):before,
-		.b-scheme-item:nth-child(3):before,
-		.b-scheme-item:nth-child(4):before,
-		.b-scheme-item:nth-child(5):before,
-		.b-scheme-item:nth-child(6):before{
-		    left: 60px;
-		}
-		.base-block{
-		    padding-top: 30px;
-   			padding-bottom: 50px;
-		}
-			.b-base-list{
-			    padding-bottom: 25px;
-			}
-			.b-base-item span{
-				line-height: 16px;
-			}	
-		.b-footer{
-		    padding-top: 40px;
-		    padding-bottom: 40px;
-		}
-		.b-footer p{
-		    font-size: 16px;
-   			line-height: 20px;
-		}
-		.b-footer-column p{
-			margin-top: 12px;
-		}
-		/* О компании */
-		.b-team-item{
-		    width: 100%;
-		}
-			.b-team-item:not(:nth-child(2n)){
-				margin-right: 0;
-			}
-			.b-team-item:nth-child(n+2){
-				margin-top: 15px;
-			}
-		/*------Сопровождение конкурсных процедур-------*/
-		.maintenance-container h1.b-title{
-			font-size: 24px;
-			line-height: 28px;
-		}
-		.maintenance-reasons h3.b-title{
-	    	line-height: 28px;
-	    	font-size: 20px;
-		}
-		.help-form-block h3.b-title{
-			font-size: 20px;
-			margin-bottom: 10px;
-			line-height: 24px;
-		}
-		#maintenance-page .help-form-container{
-		    padding-bottom: 50px;
-		}
-		/*------Сопровождение конкурсных процедур-------*/
-		.monitoring-container h1.b-title{
-			line-height: 32px;
-		}
-		.monitoring-tab h2.b-title{
-			line-height: 32px;
-		    font-size: 22px;
-		}
-		.monitoring-howto-block .citate-block{
-			padding: 30px 20px;
-		}
+	.service-marks{
+		padding-top: 20px;
+			padding-bottom: 20px;
 	}
+	.service-marks .service-mark:nth-child(n+2){
+		margin-top: 15px;
+	}
+		.service-mark div:last-child{
+		    padding-left: 15px;
+		}
+		.service-mark p{
+			font-size: 14px;
+			line-height: 18px;
+		}
+	.guarantee-info{
+		padding-top: 40px;
+			padding-bottom: 40px;
+	}
+	.guarantee-info h3{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.guarantee-info a{
+		padding-left: 29px;
+	}
+	.whatsapp{
+		width: 16px;
+	}
+	.telegram-small-icon{
+		width: 17px;
+	}
+	.scheme{
+		margin-top: 28px;
+	}
+	.b-scheme-item{
+		padding-left: 60px;
+		padding-right: 24px;
+	}
+	.b-scheme-item:after{
+	    left: 20px;
+	}
+	.b-scheme-item span.scheme-num:before{
+		left: 12px;
+	}
+	.b-scheme-item:nth-child(1):before,
+	.b-scheme-item:nth-child(2):before,
+	.b-scheme-item:nth-child(3):before,
+	.b-scheme-item:nth-child(4):before,
+	.b-scheme-item:nth-child(5):before,
+	.b-scheme-item:nth-child(6):before{
+	    left: 60px;
+	}
+	.base-block{
+	    padding-top: 30px;
+		padding-bottom: 50px;
+	}
+		.b-base-list{
+		    padding-bottom: 25px;
+		}
+		.b-base-item span{
+			line-height: 16px;
+		}	
+	.b-footer{
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	}
+	.b-footer p{
+	    font-size: 16px;
+		line-height: 20px;
+	}
+	.b-footer-column p{
+		margin-top: 12px;
+	}
+	/* О компании */
+	.b-team-item{
+	    width: 100%;
+	}
+		.b-team-item:not(:nth-child(2n)){
+			margin-right: 0;
+		}
+		.b-team-item:nth-child(n+2){
+			margin-top: 15px;
+		}
+	/*------Сопровождение конкурсных процедур-------*/
+	.maintenance-container h1.b-title{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.maintenance-reasons h3.b-title{
+    	line-height: 28px;
+    	font-size: 20px;
+	}
+	.help-form-block h3.b-title{
+		font-size: 20px;
+		margin-bottom: 10px;
+		line-height: 24px;
+	}
+	#maintenance-page .help-form-container{
+	    padding-bottom: 50px;
+	}
+	/*------Сопровождение конкурсных процедур-------*/
+	.monitoring-container h1.b-title{
+		line-height: 32px;
+	}
+	.monitoring-tab h2.b-title{
+		line-height: 32px;
+	    font-size: 22px;
+	}
+	.citate-block.blue-citate{
+		padding: 30px 20px;
+	}
+	/*------Аутсорсинг тендерного отдела-------*/
+	.outsourcing-container h3.b-title{
+		font-size: 20px;
+	}
+	.outsourcing-container h4{
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+	ul.list-padding li.icon-mark{
+		margin-bottom: 10px;
+	}
+	ul.list-padding p{
+		padding-bottom: 35px;
+	}
+	#outsourcing-page .b-info-partners h2.b-title{
+		padding-bottom: 20px;
+	}
+	.crypto-block h2.b-title{
+	    line-height: 32px;
+        padding-bottom: 20px;
+	}
+	.outsourcing-scheme-block span{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	/*--------Работа с ЭДО и ЭТП------------*/
+	.etp-container{
+		padding-bottom: 60px;
+	}
+	.etp-work{
+		padding-top: 45px;
+		padding-bottom: 60px;
+	}
+	.etp-container h1.b-title{
+		line-height: 32px;
+	}
+	.etp-work .choice-item h2.b-title{
+		padding-bottom: 15px;
+	}
+	/*--------Лизинг------------*/
+	.leasing-container{
+	    padding-bottom: 48px;
+	}
+	.leasing-block {
+	    padding-top: 50px;
+	}
+	.leasing-block .service-marks{
+		padding-bottom: 40px;
+	}
+	.b-text h5{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.leasing-container h1.b-title{
+		line-height: 32px;
+		padding-bottom: 20px;
+	}
+	.leasing-block h3.b-title{
+		font-size: 28px;
+		line-height: 36px;
+		margin-bottom: 15px;
+	}
+	.leasing-block .leasing-items{
+		padding-bottom: 55px;
+	}
+	.leasing-block p{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.leasing-block .service-mark p{
+		font-size: 14px;
+	}
+	.leasing-block span{
+		font-size: 14px;
+	}
+	.leasing-item-right{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	#leasing-page .help-form-container{
+		padding-bottom: 50px;
+	}
+}
 	@media screen and (max-width: 350px){
 		#b-popup-call{
 		    width: 100%;
