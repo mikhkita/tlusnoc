@@ -150,6 +150,12 @@ input.error,textarea.error{
 	-webkit-appearance: none;
 	box-shadow: 0 0px 0px 2px #F00;
 }
+ul.dots{
+	padding-left: 20px;
+}
+ul.dots li{
+	list-style:disc;
+}
 .fancybox-inner{
 	overflow: visible !important;
 }
@@ -4158,6 +4164,10 @@ padding-top: 19px;
 			padding-top: 39px;
 			padding-bottom: 49px;
 		}
+		.important-info.important-blue div:nth-child(1){
+			background: #1b82c7;
+			border-right: 13.75px solid #1673ba;
+		}
 			.important-info div{
 				display: inline-block;
 				vertical-align: middle;
@@ -4334,10 +4344,160 @@ padding-top: 19px;
 #leasing-page .help-form-container{
 	padding-bottom: 89px;
 }
-
-
-
-
+/*--------Страховые продукты------------*/
+#insurance-page h1{
+	padding-bottom: 10px;
+}
+#insurance-page h3{
+	font-size: 34px;
+	line-height: 40px;
+	font-family: 'GothamProBlack';
+	text-transform: uppercase;
+    margin-top: 75px;
+}
+#insurance-page .b-text span{
+	font-size: 18px;
+	line-height: 22px;
+	font-family: 'GothamProMedium';
+}
+.insurance-container{
+	padding-top: 25px;
+	padding-bottom: 57px;
+}
+	.insurance-container .important-info{
+	    padding-top: 16px;
+		padding-bottom: 32px;
+	}
+		.important-info div:nth-child(2){
+		    max-width: 735px;
+		}
+	.insurance-container .b-text{
+		max-width: 900px;
+	}
+	.insurance-container .service-marks{
+		border-top: unset;
+		max-width:unset;
+		padding-bottom: 20px;
+		padding-top: 27px;
+	}
+		.insurance-container .service-mark div:last-child{
+			padding-left: 6px;
+		}
+		.insurance-container .service-marks .service-mark:not(:first-child){
+			margin-left: 44px;
+		}
+		.insurance-container .service-marks .service-mark{
+			    width: calc(100%/3 - 35px);
+		}
+		.service-marks .service-mark:not(:first-child){
+			margin-left: 10px;
+		}
+			.insurance-container .service-mark div{
+				vertical-align: middle;
+			}
+.insurance-advantages .leasing-item{
+    width: calc(100%/3 - 26px);
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 33px;
+}
+	.insurance-advantages .leasing-item-container{
+		min-height: 72px;
+	}
+	.insurance-advantages .leasing-item:nth-child(3n){
+		margin-right: 0;
+	}
+	.insurance-advantages .leasing-item p{
+		font-size: 16px;
+		line-height: 22px;
+		font-family: "GothamProRegular";
+		padding-top: 12px;
+	}
+	.insurance-advantages .leasing-item-left{
+		width: 65px;
+		height: 65px;
+	}
+	.insurance-advantages .leasing-item-left img{
+		max-height: 37px;
+	}
+	.insurance-advantages .leasing-item-right{
+		padding-left: 15px;
+	}
+.items-to-insure .leasing-item{
+	width: calc(100%/2 - 50px);
+	vertical-align: top;
+}
+	.items-to-insure .leasing-item .leasing-item-left{
+		width: 35px;
+		height: unset;
+		background: unset;
+	}
+	.items-to-insure .leasing-item .leasing-item-left img{
+		width:100%;
+	}
+.insurance-block .b-head-scheme{
+	background: #eaeaea;
+}
+.insurance-block .b-head-scheme p{
+	font-family: 'GothamProRegular';
+	font-size: 16px;
+	line-height: 22px;
+}
+.insurance-block .b-head-scheme .b-escort-scheme-list{
+	width: calc(100%/2 - 32px);
+}
+.insurance-block .b-head-scheme-header{
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.insurance-block .b-head-scheme .b-escort-scheme-header{
+	max-width: unset;
+	max-width: 600px;
+}
+.insurance-block .b-head-scheme-block .left-line{
+	border-right: unset;
+}
+.insurance-block .b-escort-scheme-item .item-text-cont{
+	background: #fff;
+}
+.insurance-block .b-head-scheme-block .left-line{
+    top: 41px;
+    left: 292px;
+}
+.insurance-block .b-head-scheme-block .right-line{
+	top: 41px;
+    right: 30%;
+}
+.liability-service-marks.service-marks{
+	max-width: unset;
+}
+	.liability-service-marks .service-mark{
+		width: calc(100%/2 - 30px);
+	}
+		.liability-service-marks .service-mark p{
+			font-size: 16px;
+			line-height: 22px;
+			font-family: 'GothamProRegular';
+		}
+		.liability-service-marks .service-mark b{
+			font-family: 'GothamProMedium';
+		}
+.b-text.liability-text p{
+	line-height: 22px;
+}
+.insurance-block ul.dots li{
+	font-size: 16px;
+	line-height: 19px;
+	font-family: 'GothamProMedium';
+	padding-bottom: 20px;
+}
+.insurance-block .important-info div:nth-child(2){
+	font-size: 18px;
+}
 
 
 
@@ -5203,6 +5363,10 @@ input[name="MAIL"]{
 		}
 	.etp-container .service-marks .service-mark:not(:first-child){
 	    margin-left: 35px;
+	}
+	.etp-container .service-marks .service-mark div{
+		display: table-cell;
+		vertical-align: top;
 	}
 	.etp-work .service-item-section{
 		width: calc(100%/2 - 20px);

@@ -273,12 +273,13 @@ $(document).ready(function(){
     SchemeLine('escort');
 
     $('.choice-block div a').on('click', function() {
-        $(this).parent().parent().find('div').find('a').removeClass("active");
-        $(this).addClass("active");
-        var block = $(this).attr("data-block");
-        $(block).siblings().addClass("hide");
-        $(block).removeClass("hide");
-        
+        if (!$(this).hasClass("b-go")) {
+            $(this).parent().parent().find('div').find('a').removeClass("active");
+            $(this).addClass("active");
+            var block = $(this).attr("data-block");
+            $(block).siblings().addClass("hide");
+            $(block).removeClass("hide");
+        }
     });
 
     // function toggleBlock($this){
