@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<!-- <link rel="stylesheet" href="css/jquery.formstyler.css" type="text/css"> -->
+	
+
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 1023px)" href="css/layout-tablet.css">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+</head>
+<body>
+<div id="mobile-menu" class="mobile-menu hide">
+	<ul>
+		<h2 class="b-title">Меню</h2>
+		<li><a href="index.html" class="active">Главная</a></li>
+		<li><a href="services.html">Услуги и продукты</a></li>
+		<li><a href="about.html">О компании</a></li>
+		<li><a href="cooperation.html">Сотрудничество</a></li>
+		<li><a href="documents.html">Документация</a></li>
+		<li><a href="contacts.html" class="contact-info">Контакты</a></li>
+	</ul>
+	<div class="social-icons">
+		<a href="#" class="icon-facebook"></a>
+		<a href="#" class="icon-vk"></a>
+		<a href="#" class="icon-instagram"></a>
+	</div>
+</div>
+<div id="panel-page">
+	<div class="b b-top">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<ul class="b-top-content">
+					<li>
+						<a href="https://t.me/EAconsbot" class="contact-info telegram">
+							<img src="i/telegram.svg" class="telegram">@EAConsBot
+						</a>
+					</li>
+					<li>
+						<a href="#" class="contact-info">Контактная информация</a>
+					</li>
+					<li>
+						<div class="social-icons">
+							<a href="#" class="icon-facebook" target="_blank"></a>
+							<a href="#" class="icon-vk" target="_blank"></a>
+							<a href="#" class="icon-instagram" target="_blank"></a>
+							<a href="#" class="icon-twitter" target="_blank"></a>
+						</div>
+					</li>
+					<li>
+						<a href="tel:+74991100046" class="phone">+7 499 110 00 46</a>
+					</li>
+					<li class="cabinet-cont">
+						<a href="#" class="cabinet" onclick="return false;"><span class="icon-cabinet"></span>Кабинет</a>
+						<div class="cabinet-bubble">
+							<div class="cabinet-bubble-wrap">
+								<h2 class="b-title">Войти</h2>
+								<form id="b-login-form" class="b-login-form" method="post" action="action.php">
+									<input type="text" name="email" placeholder="E-mail" required>
+									<input type="password" name="password" placeholder="Пароль" required>
+									<a href="#" class="b-btn b-btn-blue ajax" onclick="$('#b-login-form').submit(); return false;">Войти</a>
+								</form>
+								<a href="#" class="b-btn b-btn-transparent">Регистрация</a>
+								<a href="#" class="restore-password">Восстановить пароль</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="b b-menu">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<div class="b-logo">
+					<a href="index.html">
+						<img src="i/logo.png" data-retina-src="i/logo@2x.png">
+					</a>
+				</div>
+				<ul class="b-menu-items">
+					<li><a href="services.html">Услуги и продукты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Вики</a></li>
+					<li><a href="documents.html">Блог</a></li>
+				</ul>
+				<div id="burger-menu" class="burger-menu icon-menu">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="msp-page">
+		<div class="msp-container gray-gradient">
+			<div class="b-block">
+				<ul class="b-breadcrumbs black">
+					<li><a href="index.html" class="icon-right-arrow">Главная</a></li>
+					<li><a href="services.html" class="icon-right-arrow">Услуги и продукты</a></li>
+					<li><span>ЕА&nbsp;Консалт для малого и среднего бизнеса</span></li>
+				</ul>
+				<h1 class="b-title">ЕА&nbsp;Консалт для малого и среднего бизнеса</h1>
+				<div class="b-text">
+					<h5>Узнайте, чем мы можем вам помочь.<br>
+					<a href="#" class="underline">https://ru.wikipedia.org/wiki/Малое_предпринимательство</a></h5>
+				</div>
+				<h2 class="b-title">Текущая ситуация</h2>
+				<div class="b-text">
+					<p><b>Малый и средний предприятия (МСП)</b> – основа экономики многих развитых стран, Индии и Китая, где на их долю приходится более половины ВВП и рабочих мест. В иных развивающихся странах доля МСП в экономике составляет в среднем 33%. В России малые и средние предприятия создают не более 20% ВВП и используют не более четверти активного населения. Для сравнения, более 50% экспорта в Китае приходится на МСП, тогда как в Российской Федерации не более 7%.</p>
+					<p><b>Малый и средний бизнес – локомотив экономики многих стран.</b></p>
+					<ul class="dots">
+						<li>По данным Организации экономического сотрудничества и развития (ОЭСР), в развитых странах в МСП работает от 60 до 70% занятого населения, в Китае – 80%.</li>
+						<li>Вклад малого и среднего бизнеса в США составляет порядка 50%, в&nbsp;Великобритании&nbsp;-&nbsp;47%, в Германии - 57%, в Китае - 60%, в Индии — 45%.</li>
+						<li>В Китае сектору малого и среднего бизнеса принадлежит 65% патентов, 75% технических новшеств и более 80% новой продукции.</li>
+						<li>По подсчетам Всемирного банка, в развивающихся странах в ближайшие 15 лет четыре из пяти новых рабочих мест будут создаваться малыми и средними предприятиями.</li>
+					</ul>
+					<p><b>МСП производят значительную часть товара на экспорт.</b></p>
+					<ul class="dots">
+						<li>В развитых странах эта доля, по данным ОЭСР, составляет от 25 до 35%, а в отдельных странах еще выше: в Южной Корее около 40%, в США и Германии более 40%, в Китае - более 50%.</li>
+					</ul>
+					<p><b>Ситуация с поддержкой малого и среднего бизнеса в России до последнего времени оставалась в весьма удручающем состоянии.</b> </p>
+					<ul class="dots">
+						<li>Россия на последнем месте среди более 60 стран-участниц международного проекта «Глобальный мониторинг предпринимательства» по количеству людей, планирующих открытие своего бизнеса. В 2016 году об этом сказали только 5,2% опрошенных (показатель вырос в два раза с 2014 года). При этом лишь 17,9% считают, что в регионе их проживания есть благоприятная среда для открытия собственного дела.</li>
+						<li>Последние три года падают доходы населения, что негативно сказывается на прибыли малого бизнеса, почти 40% которого занято в сфере торговли.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="msp-block">
+			<div class="b-block">
+				<div class="important-info">
+					<div class="white">Важно!</div>
+					<div>
+						<p>В 2016 году принята Стратегия развития МСП до 2030 года, в рамках которой уже реализуется ряд мер.</p>
+					</div>
+				</div>
+				<h2 class="b-title">Льготное кредитование:</h2>
+				<div class="b-text">
+					<ul>
+						<li class="icon-mark">В 2015 году создана Федеральная корпорация по развитию МСП. В 2016 году она выдала гарантийных обязательств на сумму 50 млрд руб. по «программе 6,5%»</li>
+						<li class="icon-mark">МСП банк, входящий в состав корпорации, создал отдельную программу кредитования МСП, выдав в 2016 году кредиты на 91 млрд руб. по средневзвешенной ставке 13,38%.</li>
+					</ul>
+				</div>
+				<h2 class="b-title">Сокращение налогов и проверок:</h2>
+				<div class="b-text">
+					<ul>
+						<li class="icon-mark">С 2017 года увеличен с 60 до 150 млн руб. предельный размер дохода за налоговый период, при превышении которого налогоплательщик утрачивает право на упрощенную систему налогообложения. В пределах этого оборота компания платит с него 6%.</li>
+						<li class="icon-mark">С 1 января 2016 года по 31 декабря 2018 года введены надзорные каникулы в отношении юридических лиц, индивидуальных предпринимателей, отнесенных к субъектам малого предпринимательства (оборот не более 800 млн руб.), за рядом исключений.</li>
+						<li class="icon-mark">С 1 января 2016 года для впервые зарегистрированных ИП, использующих упрощенную или патентную системы, деятельность которых связана с производственной, социальной или научной сферой, введены двухлетние налоговые каникулы.
+						</li>
+					</ul>
+				</div>
+				<h2 class="b-title">Выделение субсидий и грантов:</h2>
+				<div class="b-text">
+					<ul>
+						<li class="icon-mark">В 2017 году на господдержку МСП выделено 7,5 млрд руб., которые распределены между 82 регионами.</li>
+					</ul>
+				</div>
+				<h2 class="b-title">Преимущества в закупках:</h2>
+				<div class="leasing-items msp-advantages">
+					<div class="leasing-item">
+						<div class="leasing-item-container">
+							<div class="leasing-item-left"><img src="i/msp-icon-1.svg"></div>
+							<div class="leasing-item-right"></div>
+						</div>
+						<p>Госзаказчики должны размещать у субъектов малогопредпринимательства не менее 15% годового объема закупок.</p>
+					</div>
+					<div class="leasing-item">
+						<div class="leasing-item-container">
+							<div class="leasing-item-left"><img src="i/msp-icon-2.svg"></div>
+							<div class="leasing-item-right"></div>
+						</div>
+						<p>Госкомпании должны отдавать малому и среднему бизнесу не менее 18% от общего объема заказов и 10% по прямым торгам. С 1 января 2018 года объем закупок по прямым договорам увеличится до 15%.</p>
+					</div>
+					<div class="leasing-item">
+						<div class="leasing-item-container">
+							<div class="leasing-item-left"><img src="i/msp-icon-3.svg"></div>
+							<div class="leasing-item-right"></div>
+						</div>
+						<p>По данным Корпорации МСП, в 2016 году объем закупок крупнейших заказчиков у субъектов МСП составил более 1,511 трлн&nbsp;руб.</p>
+					</div>
+				</div>
+				<h2 class="b-title">Поддержка малых инновационных предприятий:</h2>
+				<div class="b-text">
+					<ul>
+						<li class="icon-mark">Фонд содействия инновациям проводит конкурсы грантов на выполнение НИОКР с последующей коммерциализацией результатов.</li>
+						<li class="icon-mark">Корпорация МСП в 2017 году выделяет 1,8 млрд руб. на поддержку стартапов.</li>
+					</ul>
+				</div>
+				<h2 class="b-title">Поддержка экспорта товаров и&nbsp;услуг, производимых субъектами МСП:</h2>
+				<div class="b-text">
+					<ul>
+						<li class="icon-mark">По данным Минэкономразвития, в 37 регионах созданы центры поддержки экспорта, а в 53 субъектах РФ - региональные интегрированные центры.</li>
+					</ul>
+					<p>Планируется, что реализация этих и других мер поддержки увеличит вклад МСП в экономику страны вдвое, а доля занятого на них населения достигнет 35%. По мнению авторов стратегии, это станет фактором инновационного развития и улучшения отраслевой структуры экономики, а также обеспечения стабильно высокого уровня занятости.</p>
+					<a href="#" class="more underline">Узнайте больше о мерах поддержки малых и средних предприятий в нашей базе знаний</a>
+				</div>
+				<h2 class="b-title">ЕА&nbsp;Консалт и поддержка МСП</h2>
+				<div class="b-text">
+					<h5>Cубъектам малого и среднего предпринимательства ЕА&nbsp;Консалт оказывает комплекс услуг по финансово-юридическому сопровождению, поддержке в процессах аудита, получении кредитного финансирования и поручительства региональных гарантийных организаций (РГО).</h5>
+					<a href="#" class="underline more">Узнайте подробнее о деятельности гарантийных организаций в вашем регионе</a>
+				</div>
+				<div class="leasing-items msp-links">
+					<div class="leasing-item">
+						<div class="leasing-item-container">
+							<div class="leasing-item-left"><img src="i/msp-icon-4.svg"></div>
+							<div class="leasing-item-right">Что нужно знать о&nbsp;контргарантиях</div>
+						</div>
+						<a href="https://corpmsp.ru/regionalnim_garant_organization/docs_scheme/" class="underline">https://corpmsp.ru/regionalnim_garant_organization/docs_scheme/</a>
+					</div>
+					<div class="leasing-item">
+						<div class="leasing-item-container">
+							<div class="leasing-item-left"><img src="i/msp-icon-5.svg"></div>
+							<div class="leasing-item-right">Что нужно знать о&nbsp;согарантиях</div>
+						</div>
+						<a href="https://corpmsp.ru/regionalnim_garant_organization/chema/" class="underline">https://corpmsp.ru/regionalnim_garant_organization/chema/</a>
+					</div>
+					<div class="leasing-item">
+						<div class="leasing-item-container">
+							<div class="leasing-item-left"><img src="i/msp-icon-6.svg"></div>
+							<div class="leasing-item-right">Что нужно знать о&nbsp;синдицированных гарантиях</div>
+						</div>
+						<a href="https://corpmsp.ru/regionalnim_garant_organization/chema_s/" class="underline">https://corpmsp.ru/regionalnim_garant_organization/chema_s/</a>
+					</div>
+				</div>
+				<div class="b-text">
+					<p>Совместно с банками-партнерами команда <a href="#" class="underline">EA Consult</a> проведет анализ вашего бизнеса, подготовит документацию для подачи заявки на кредитное или заемное финансирование в банк, а также обеспечит поддержку в получении поручительства РГО и Корпорации МСП в объеме до 50% кредита. <br><br>
+					Преимущество для вашего бизнеса при работе с нашей компанией в вопросах привлечения кредитного или заемного финансирования с государственной поддержкой в лице РГО и Корпорацией МСП состоит в простоте коммуникаций и удобстве администрирования данной задачи. К примеру, для получения синдицированной гарантии вам потребуется провести переговоры, согласовать условия, подготовить и заключить четырехсторонний договор с банком-партнером, РГО и Корпорацией.  Этот многогранный процесс мы готовы взять на себя и обеспечить для наших клиентов единую точку входа в рамках решения этой и подобных задач. От вашего лица мы проведем переговоры со всеми участниками процесса, обеспечим юридическое и бухгалтерское сопровождение сделки и поддержку на всем протяжении проекта в режиме 24/7 – все для того, чтобы вы могли сконцентрироваться на главном – вашем бизнесе, качестве продукта и удовлетворенности ваших клиентов.</p>
+				</div>
+				<div class="msp-partners">
+					<h2 class="b-title">Банки-партнеры<br>по программам поддержки МСП</h2>
+					<div class="msp-partners-list">
+						<div><img src="i/msp-logo-11.png"></div>
+						<div><img src="i/msp-logo-22.png"></div>
+						<div><img src="i/msp-logo-33.png"></div>
+						<div><img src="i/msp-logo-44.png"></div>
+					</div>
+				</div>
+				<div class="help-form-container">
+					<div class="help-form-block">
+						<h3 class="b-title white">Можем ли мы чем-то помочь?</h3>
+						<p class="white">По любым вопросам, связанным с системами электронного документооборота, работе с торговыми площадками, получении средств цифровой подписи и настройки рабочих мест пользователей пожалуйста, отправьте информацию о себе в форме ниже. Мы свяжемся с вами максимально оперативно</p>
+						<form method="POST" action="kitsend.php">
+							<div class="input-string">
+								<input type="text" name="bank" placeholder="Банк">
+							</div>
+							<div class="input-string">
+								<input type="text" name="fio" placeholder="ФИО контактного лица">
+							</div>
+							<div class="input-string">
+								<input type="text" name="phone" placeholder="Телефон">
+							</div>
+							<div class="b-btn-center">
+								<a href="#" class="b-btn ajax">Отправить заявку</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="b-footer">
+		<div class="b-block">
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Сотрудничество</a></li>
+					<li><a href="cooperation.html#career">Карьера</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">Тендерное сопровождение</a></li>
+					<li><a href="#">Банковские гарантии и&nbsp;тендерный&nbsp;кредит</a></li>
+					<li><a href="#">Обучение и сертификация</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">44-ФЗ</a></li>
+					<li><a href="#">223-ФЗ</a></li>
+					<li><a href="#">Список электронных торговых&nbsp;площадок</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<a href="tel:+74995515463" class="phone">+7 499 551 54 63</a>
+				<p>Москва, Новодмитровская улица 2к2, этаж 3, офис 22</p>
+				<p><a href="mailto:info@eaconsult.ru">info@eaconsult.ru</a></p>
+			</div>
+			<div class="b-bottom">
+				<p>© 2012 — 2017 «EA CONSULT»</p>
+			</div>
+		</div>
+	</div>
+	<div class="b-menu-overlay" id="b-menu-overlay" style="display: none;"></div>
+</div>
+	<div style="display:none;">
+		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+		<div class="b-popup" id="b-popup-app" style="display: inline-block;">
+			<h2 class="b-title">Отправить заявку</h2>
+			<form id="b-popup-app-form" class="b-popup-app-form" method="post" action="kitsend.php" novalidate="novalidate">
+				<input type="text" name="name" placeholder="Ваше имя" required="">
+				<input type="text" name="email" placeholder="Ваш E-mail" required="">
+				<textarea name="message" required="" rows="1" placeholder="Ваше сообщение" style="overflow-x: hidden; word-wrap: break-word; overflow-y: visible;"></textarea>
+				<div class="clearfix">
+				<div style="width: 100%">
+					<input id="personal" type="checkbox" name="personal" required checked>
+					<label for="personal">Я согласен на <a href="/politics" class="underline">обработку персональных данных</a></label>
+				</div>
+				<input type="text" name="MAIL">
+				</div>
+				<a href="#" class="b-btn b-btn-blue ajax">Отправить</a>
+				<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+			</form>
+			<button data-fancybox-close="" class="fancybox-close-small"></button>
+		</div>
+		<div class="b-popup" id="b-popup-1">
+			<h2>Оставьте заявку</h2>
+			<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
+			<form action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-1">
+				<div class="b-popup-form">
+					<label for="name">Введите Ваше имя</label>
+					<input type="text" id="name" name="name" required/>
+					<label for="tel">Введите Ваш номер телефона</label>
+					<input type="text" id="tel" name="phone" required/>
+					<label for="tel">Введите Ваш E-mail</label>
+					<input type="text" id="tel" name="email" required/>
+					<input type="hidden" name="subject" value="Заказ"/>
+					<input type="submit" style="display:none;">
+					<a href="#" class="b-btn b-blue-btn ajax">Заказать</a>
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+				</div>
+			</form>
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-success">
+			<h2>Спасибо!</h2>
+			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-error">
+			<h2>Ошибка отправки!</h2>
+			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<!-- <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script> -->
+	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/slideout.min.js"></script>
+	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+</body>
+</html>

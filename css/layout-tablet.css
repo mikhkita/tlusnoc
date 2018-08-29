@@ -291,6 +291,7 @@ h1.b-title, h2.b-title{
 	.monitoring-tabs .choice-block div:nth-child(n+3){
 		margin-top: 25px;
 	}
+
 @media screen and (max-width: 1120px){
 	.b-special h4.item-title{
 		width: 100%;
@@ -538,15 +539,49 @@ h1.b-title, h2.b-title{
 		font-size: 16px;
 		line-height: 22px;
 	}
+
+	/*--------Страховые продукты------------*/
+
+	.insurance-container .service-marks .service-mark:not(:first-child){
+		margin-top: 0px;
+	}
+	.leasing-item-right{
+		font-size: 18px;
+	}
+	.liability-service-marks .service-mark div{
+		vertical-align: top;
+	}
+	/*--------Банковские продукты------------*/
+
+	.bank-guarantees-columns{
+	    padding-top: 65px;
+	    padding-bottom: 70px;
+	}
+		.bank-guarantees-column{
+		    width: calc(100%/3 - 13px);
+		}
+			.bank-guarantees-column:not(:last-child){
+				margin-right: 15px;
+			}
+				.bank-guarantees-column-top{
+					font-size: 16px;
+				    padding: 18px 10px 5px;
+				}
+				.bank-guarantees-column-bottom{
+				    padding: 25px 15px 32px 15px;
+			}
+	#bank-guarantees-page .review-list{
+		margin-top: 21px;
+	}
+	.b-wiki-item h3 {
+		font-size: 26px;
+		line-height: 30px;
+	}
 }
 @media screen and (max-width: 960px){
 	.b-btn-center{
 		display: inline-block;
 		float: right;
-	}
-	.b-index{
-		padding-bottom: 0;
-		background-size: unset;
 	}
 	.burger-menu{
 		display: inline-block;
@@ -764,6 +799,93 @@ h1.b-title, h2.b-title{
 	.leasing-item:not(:nth-child(3n)){
 		margin-right: 20px;
 	}
+
+/*--------Страховые продукты------------*/
+	.insurance-advantages .leasing-item{
+	    width: 100%;
+	    max-width: 600px;
+	}
+	.insurance-block .b-head-scheme-header{
+		left: 0;
+		-webkit-transform: unset;
+		-ms-transform: unset;
+		-o-transform: unset;
+		transform: unset;
+	}
+	.insurance-block .b-head-scheme .b-head-scheme-block{
+		height: unset;
+	}
+	.insurance-block .b-head-scheme .b-escort-scheme-header{
+		max-width: 640px;
+	}
+	.insurance-block .b-head-scheme .b-escort-scheme-list{
+		width: 100%;
+	}
+	.insurance-block .b-head-scheme .b-escort-scheme-list:last-child{
+		margin-left: unset;
+	}
+	.insurance-block .b-head-scheme-header .item-text{
+		text-align: center;
+	}
+	#insurance-page .b-text span{
+		line-height: 24px;
+	}
+/*--------Банковские продукты------------*/
+
+	.bank-guarantees-column{
+		width: 100%;
+	}
+	.bank-guarantees-column:not(:last-child){
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+/*------------МСП------------*/
+
+	#msp-page .leasing-items .leasing-item{
+		width: 100%;
+		margin: 0;
+	}
+	#msp-page .leasing-items .leasing-item:not(:last-child){
+		margin-bottom: 30px;
+	}
+		.msp-advantages .leasing-item-container{
+			float: left;
+		}
+		.msp-advantages .leasing-item p{
+			padding-top: 0;
+			width: calc(100% - 80px);
+			display: inline-block;
+		}
+	.msp-partners-list img{
+		max-width: 160px;
+	}
+/*------------Блог------------*/
+	.blog-page .b-block{
+		width: 860px;
+	}
+		.b-tile-block{
+
+		}
+			.b-tile-item{
+				width: calc(50% - 12px);
+			}
+				.b-tile-item.bcg-img{
+					height: auto;
+				    width: 50%;
+		    		padding-bottom: 0;
+		    		width: calc(50% - 12px);
+		    		vertical-align: top;
+				}
+				.b-tile-item.big-img{
+				    width: calc(50% - 12px);
+				    float: unset;
+				}
+				.bcg-img .b-tile-content{
+					position: relative;
+				}
+		.b-blog-right-item .help-form-block .input-string{
+			max-width: 100%;
+		}
 }
 @media screen and (max-width: 844px){
 	.b-index h2.b-title{
@@ -843,123 +965,194 @@ h1.b-title, h2.b-title{
 
 	/*Услуги*/
 
-.service-item h3{
-	font-size: 18px;
-    line-height: 24px;
-    padding-right: 0;
-}
-.service-item-section a{
-	font-size: 18px;
-    line-height: 24px;
-}
-.service-bottom-text{
-	font-size: 18px;
-}
-.b-base-item{
-	width: calc(50% - 10px);
-}
-.b-base-item:not(:last-child){
-	margin-right: 0;
-}
-.b-base-item:nth-child(2n){
-	margin-left: 20px;
-}
-.b-base-item:nth-child(n+3){
-	margin-top: 20px;
-}
-
-/*О компании*/
-.choice-about a{
-		position: relative;
+	.service-item h3{
+		font-size: 18px;
+	    line-height: 24px;
+	    padding-right: 0;
 	}
-	.choice-about div{
-		width: unset;
-		height: unset;
+	.service-item-section a{
+		font-size: 18px;
+	    line-height: 24px;
 	}
-	.choice-about{
-		text-align: left;
-		padding-bottom: 20px;
-   		padding-top: 10px;
+	.service-bottom-text{
+		font-size: 18px;
 	}
-.b-team-photo {
-    height: 415px;
-}
-/*------Сопровождение конкурсных процедур-------*/
-.maintenance-container h1.b-title{
-	line-height: 42px;
-	font-size: 36px;
-	padding-top: 0;
-}
-.maintenance-reasons h3.b-title{
-	line-height: 36px;
-}
-/*------Мониторинг, обработка и анализ информации о закупках-------*/
-#analysis-block .monitoring-scheme-item{
-	width: 100%;
-	max-width: 500px;
-	margin:0;
-}
-	#analysis-block .monitoring-scheme-item:not(:first-child){
+	.b-base-item{
+		width: calc(50% - 10px);
+	}
+	.b-base-item:not(:last-child){
+		margin-right: 0;
+	}
+	.b-base-item:nth-child(2n){
+		margin-left: 20px;
+	}
+	.b-base-item:nth-child(n+3){
 		margin-top: 20px;
 	}
 
-/*------Аутсорсинг тендерного отдела-------*/
-.outsourcing-container h3.b-title{
-	font-size: 24px;
-	line-height: 28px;
-}
-.outsourcing-container h4{
-	font-size: 20px;
-}
-.outsourcing-left li{
-	font-size: 16px;
-	line-height: 20px;
-}
-.outsourcing-scheme-block p{
-	width: 100%;
-}
-/*--------Работа с ЭДО и ЭТП------------*/
+	/*О компании*/
+	.choice-about a{
+			position: relative;
+		}
+		.choice-about div{
+			width: unset;
+			height: unset;
+		}
+		.choice-about{
+			text-align: left;
+			padding-bottom: 20px;
+	   		padding-top: 10px;
+		}
+	.b-team-photo {
+	    height: 415px;
+	}
+	/*------Сопровождение конкурсных процедур-------*/
+	.maintenance-container h1.b-title{
+		line-height: 42px;
+		font-size: 36px;
+		padding-top: 0;
+	}
+	.maintenance-reasons h3.b-title{
+		line-height: 36px;
+	}
+	/*------Мониторинг, обработка и анализ информации о закупках-------*/
+	#analysis-block .monitoring-scheme-item{
+		width: 100%;
+		max-width: 500px;
+		margin:0;
+	}
+		#analysis-block .monitoring-scheme-item:not(:first-child){
+			margin-top: 20px;
+		}
 
-.etp-work .service-item-sections{
-	max-width: unset;
-}
-.etp-work  .service-item-section:nth-child(2n){
-	margin-left: 15px;
-}
+	/*------Аутсорсинг тендерного отдела-------*/
+	.outsourcing-container h3.b-title{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.outsourcing-container h4{
+		font-size: 20px;
+	}
+	.outsourcing-left li{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.outsourcing-scheme-block p{
+		width: 100%;
+	}
+	/*--------Работа с ЭДО и ЭТП------------*/
 
-/*--------Лизинг------------*/
-.leasing-item{
-	width: calc(100%/2 - 27px);
-}
-.leasing-item:not(:nth-child(3n)){
-	margin-right: 0;
-}
-.leasing-item:nth-child(n+3){
-	margin-top: 60px;
-}
-.leasing-item:nth-child(2n){
-	margin-left: 30px;
-}
-.leasing-block .service-marks .service-mark{
-	width: 100%;
-	max-width: 500px;
-}
-.leasing-block .service-marks .service-mark:not(:first-child){
-	margin-left: unset;
-	margin-top: 20px;
-}
-.leasing-block .service-marks .service-mark div{
-	display: inline-block;
-}
-.leasing-block .leasing-item{
-	width: 100%;
-}
-.leasing-block .leasing-item:nth-child(2n){
-	margin-left: unset;
-}
-.leasing-block .leasing-item:not(:first-child){
-	margin-top: 20px;
-}
+	.etp-work .service-item-sections{
+		max-width: unset;
+	}
+	.etp-work  .service-item-section:nth-child(2n){
+		margin-left: 15px;
+	}
+
+	/*--------Лизинг------------*/
+	.leasing-item{
+		width: calc(100%/2 - 27px);
+	}
+	.leasing-item:not(:nth-child(3n)){
+		margin-right: 0;
+	}
+	.leasing-item:nth-child(n+3){
+		margin-top: 60px;
+	}
+	.leasing-item:nth-child(2n){
+		margin-left: 30px;
+	}
+	.leasing-block .service-marks .service-mark{
+		width: 100%;
+		max-width: 500px;
+	}
+	.leasing-block .service-marks .service-mark:not(:first-child){
+		margin-left: unset;
+		margin-top: 20px;
+	}
+	.leasing-block .service-marks .service-mark div{
+		display: inline-block;
+	}
+	.leasing-block .leasing-item{
+		width: 100%;
+	}
+	.leasing-block .leasing-item:nth-child(2n){
+		margin-left: unset;
+	}
+	.leasing-block .leasing-item:not(:first-child){
+		margin-top: 20px;
+	}
+	/*--------Страховые продукты------------*/
+		.insurance-advantages .leasing-item:nth-child(2n){
+			margin-left: 0;
+		}
+		.insurance-advantages .leasing-item:nth-child(n+3){
+			margin-top: 20px;
+		}
+	/*--------Банковские продукты------------*/
+	.bank-guarantees-block .leasing-item{
+		width: 100%;
+	}
+	.bank-guarantees-block .leasing-item-container{
+		float: left;
+	}
+	.bank-guarantees-block .leasing-item p{
+		padding-top: 0;
+	    display: inline-block;
+	    width: calc(100% - 80px);
+	}
+	.bank-guarantees-block .leasing-item:not(:last-child){
+		margin-bottom: 30px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.bank-guarantees-block  .leasing-item:nth-child(n+3){
+		margin-top: 0;
+	}
+	/*------------База данных------------*/
+	.wiki-container{
+		padding-top: 50px;
+	}
+		.wiki-container h1.b-title{
+			font-size: 40px;
+			line-height: 46px;
+		}
+		.choice-block.four-block{
+			padding-top: 0;
+		}
+			.choice-block.four-block div{
+				width: calc(100%/2 - 24px);
+			}
+				.choice-block.four-block div:nth-child(2n){
+					margin-right: 0;
+				}
+			.b-wiki-item:nth-child(n){
+				width: 100%;
+				margin-right: 0;
+				min-height: unset;
+			}
+			.b-wiki-list-bottom .b-wiki-item.big-wiki-item{
+				margin-left: 0;
+			}
+				.b-wiki-item h4{
+					font-size: 18px;
+				}
+/*------------База данных (страница шаблонов)------------*/
+	.b-template-item{
+		min-height: unset;
+		width: 100%;
+	}
+/*------------База данных (страница статьи)------------*/
+	
+
+
+
+
+
+
+
+
+
 
 
 

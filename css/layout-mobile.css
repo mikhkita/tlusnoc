@@ -410,6 +410,94 @@ select.vacancy-select{
     max-width: 46px;
     max-height: 36px;
 }
+/*--------Страховые продукты------------*/
+
+#insurance-page h3{
+	font-size: 28px;
+	line-height: 34px;
+    margin-top: 40px;
+}
+.important-info.medical-info div:nth-child(2){
+    width: calc(100% - 163px);
+    padding-top: 0;
+}
+.insurance-container .service-marks .service-mark{
+	width: 100%;
+}
+.insurance-container .service-marks .service-mark:not(:first-child){
+	margin-left: 0;
+	margin-top: 20px;
+}
+.insurance-advantages .leasing-item-left img{
+	padding-left: 0;
+}
+.items-to-insure .leasing-item{
+	width: 100%;
+}
+.items-to-insure .leasing-item:last-child{
+	margin-left: 0;
+}
+.items-to-insure .leasing-item .leasing-item-left{
+	width: 65px;
+}
+.items-to-insure .leasing-item .leasing-item-left img{
+    max-width: 55px;
+    max-height: 55px;
+    padding-left: 0;
+}
+/*--------Банковские продукты------------*/
+
+.bank-guarantees-container{
+	padding-bottom: 40px;
+}
+.bank-guarantees-block{
+	padding-top: 40px;
+}
+#bank-guarantees-page .b-text h4{
+    font-size: 16px;
+    line-height: 20px;
+}
+.bank-guarantees-block .leasing-item:nth-child(1) img{
+	width: 32px;
+	height: 40px;
+}
+.bank-guarantees-block .leasing-item:nth-child(2) img{
+	width: 45px;
+	height: 35px;
+}
+.bank-guarantees-block .leasing-item:nth-child(3) img{
+	width: 45px;
+	height: 37px;
+}
+.bank-guarantees-block .leasing-item-left img{
+	padding-left: 0;
+}
+.bank-guarantees-block .leasing-item p{
+	font-size: 14px;
+}
+.bank-guarantees-column-bottom li.icon-mark{
+	font-size: 14px;
+}
+/*------------МСП------------*/
+
+.msp-block .leasing-item-left img{
+	padding-left: 0;
+}
+
+	.msp-partners-list div{
+		width: calc(50% - 4px);
+	}
+	.msp-partners-list div:nth-child(n+3){
+		margin-top: 20px;
+	}
+/*------------База данных------------*/
+.wiki-template-header a.b-btn{
+	max-width: 180px;
+}
+.wiki-template-header h2{
+	font-size: 24px;
+	line-height: 30px;
+}
 @media screen and (max-width: 600px){
 	.b-menu-down li{
 		width: calc(100%/2 - 3px);
@@ -548,6 +636,22 @@ select.vacancy-select{
 	}
 	.etp-container .service-marks .service-mark:nth-child(n+2){
 		margin-top: 15px;
+	}
+/*------------База данных------------*/
+	.wiki-template-header .b-template-block:nth-child(n){
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+		.wiki-template-header .b-template-block:nth-child(2){
+			text-align: left;
+		}
+		.wiki-template-header .b-template-block:nth-child(1){
+			padding-right: 0;
+		}
+	.wiki-template-header .b-template-block div{
+		padding-top: 10px;
+		padding-bottom: 20px;
 	}
 
 }
@@ -944,6 +1048,109 @@ select.vacancy-select{
 	#leasing-page .help-form-container{
 		padding-bottom: 50px;
 	}
+	/*--------Страховые продукты------------*/
+	#insurance-page h3{
+		font-size: 20px;
+		margin-top: 20px;
+		line-height: 28px;
+	}
+	.insurance-container{
+		padding-bottom: 25px;
+	}
+	.items-to-insure .leasing-item .leasing-item-left{
+		width: 35px;
+	}
+	.items-to-insure .leasing-item .leasing-item-left img{
+		max-width: 35px;
+	}
+	.items-to-insure .leasing-item-right{
+		padding-left: 15px;
+	}
+	.insurance-block .b-head-scheme{
+	    padding: 20px 10px;
+	}
+	.insurance-block .b-head-scheme .b-escort-scheme-header{
+		width: 100%;
+		margin-left: 0;
+	}
+	.insurance-block .b-head-scheme-block{
+		text-align: center;
+	}
+	.insurance-block .main-line{
+		display: none;
+	}
+	.insurance-block .b-escort-scheme-item .item-line{
+		display: none;
+	}
+	.insurance-block .b-escort-scheme-item .item-text-cont{
+		margin-left: 0;
+	}
+	.insurance-block .b-head-scheme p{
+		padding-top: 20px;
+		padding-left: 0;
+	}
+	.insurance-container .important-info{
+		padding-bottom: 15px;
+	}
+	.insurance-container .important-info div:nth-child(1){
+	    padding: 12px 20px 12px 40px;
+		font-size: 18px;
+	}
+/*--------Банковские продукты------------*/
+	.bank-guarantees-block .leasing-item-left{
+	    width: 55px;
+    	height: 55px;
+	}
+	.bank-guarantees-block .leasing-item:nth-child(2) img{
+	    width: 35px;
+	}
+	.bank-guarantees-block .leasing-item:nth-child(3) img{
+		width: 35px;
+	}
+	#bank-guarantees-page .review-block .b-btn{
+	    padding: 21px 45px 19px 45px;
+	}
+/*------------МСП------------*/
+	.msp-container h1.b-title{
+		line-height: 32px;
+	}
+	#msp-page h2.b-title{
+	    font-size: 20px;
+	    line-height: 32px;
+	    padding-top: 40px;
+	}
+	.msp-partners-list div{
+		width: 100%;
+	}
+	.msp-partners-list div:not(:first-child){
+		margin-top: 20px;
+	}
+	.msp-container ul.b-breadcrumbs{
+		padding-bottom: 30px;
+	}
+	.msp-container{
+		padding-bottom: 45px;
+	}
+	.msp-block{
+	    padding-top: 15px;
+    	padding-bottom: 45px;
+	}
+	#msp-page .msp-block h2.b-title{
+		padding-top: 30px;
+	}
+	.msp-block .msp-partners{
+		padding-top: 0;
+		padding-bottom: 45px;
+	}
+/*------------База данных------------*/
+	.choice-block.four-block div{
+		width: 100%;
+	}
+	.wiki-templates h1.b-title{
+		padding-top: 15px;
+		padding-bottom: 8px;
+	}
+/*------------База данных------------*/
 }
 	@media screen and (max-width: 350px){
 		#b-popup-call{
@@ -951,6 +1158,9 @@ select.vacancy-select{
 		}
 		.b-logo{
 		    width: 208px;
+		}
+		.b-logo a img{
+		 	width: 208px;
 		}
 		.burger-menu{
 			margin-top: 35px;

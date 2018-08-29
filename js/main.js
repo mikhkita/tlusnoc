@@ -57,17 +57,33 @@ function LineBlockHeight(block){
 
     $(block).css("height","");
 
-    var maxHeight = $(block).height();
+    var maxHeight = $(block).innerHeight();
 
     $(block).each(function(){
-      if ( $(this).height() > maxHeight ) 
+      if ( $(this).innerHeight() > maxHeight ) 
       { 
-        maxHeight = $(this).height();
+        maxHeight = $(this).innerHeight();
       }
     });
      
-    $(block).height(maxHeight);
+    $(block).innerHeight(maxHeight);
 }
+
+function wikiBlockHeight(){
+    $(".b-wiki-item").css("height","");
+    if (myWidth > 844) {
+        $(".b-wiki-block").each(function(){
+            var maxHeight = $(this).children(".b-wiki-item").innerHeight();
+            $(this).children(".b-wiki-item").each(function(){
+                if ($(this).innerHeight() > maxHeight){ 
+                    maxHeight = $(this).innerHeight();
+                };
+            });
+            $(this).children(".b-wiki-item").innerHeight(maxHeight);
+        });
+    }
+}
+
 function SchemeLine(page){
     $('.b-'+page+'-scheme-list').each(function(){
         var heightLine,
@@ -81,6 +97,15 @@ function SchemeLine(page){
          $(this).find('.main-line-inner').css({
             "height" : heightLine
         });
+    });
+}
+function BlogBlockHeight(){
+    $('.b-tile-block').each(function(){
+        var block = $(this);
+        if (!block.hasClass('bcg-img-container')) {
+            var child = block.children('.b-tile-item');
+            LineBlockHeight(child);
+        };
     });
 }
 
@@ -188,6 +213,8 @@ $(document).ready(function(){
             LineBlockHeight(".white-block");
             LineBlockHeight(".item-service");
             LineBlockHeight(".b-about-blocks-item");
+            wikiBlockHeight();
+            BlogBlockHeight();
         }
         else{
             $(".about-img").css("height","");
@@ -199,11 +226,11 @@ $(document).ready(function(){
         }
         if (myWidth > 767 && myWidth < 960) {
             $(".competence-item").css("height","auto");
+            $(".bank-guarantees-column-bottom.white-block").css("height","auto");
         }
 
     });
     
-
     $('.cabinet').on('click', function(event){
         $('.cabinet-bubble').toggleClass("bubble-active");
         event.stopPropagation();
@@ -281,26 +308,6 @@ $(document).ready(function(){
             $(block).removeClass("hide");
         }
     });
-
-    // function toggleBlock($this){
-    //     $this.siblings(".choice-item").each(function(){
-    //         var block = $(this).attr("data-block");
-    //         $('.'+block).addClass("hide");
-    //         $(this).removeClass("active");
-    //     });
-    //     var block = $this.attr("data-block");
-    //     $('.'+block).removeClass("hide");
-    //     $this.addClass("active");
-    //     if(!!$this.attr("id") && $this.attr("data-hash") === "true"){
-    //         if(history.pushState) {
-    //             history.pushState(null, null, "#"+$this.attr("id"));
-    //         }else{
-    //             location.hash = "#"+$this.attr("id");
-    //         } 
-    //     }
-        
-    // }
-
 
     $('.b-slider').slick({
         dots: false,
@@ -405,28 +412,6 @@ $(document).ready(function(){
             },
         ]
     });
-    // $('.review-list').slick({
-    //     dots: false,
-    //     arrows: false,
-    //     infinite: true,
-    //     slidesToShow: 2,
-    //     slidesToScroll: 1,
-    //     speed: 600,
-    //     adaptiveHeight: true,
-    //     autoplay: true,
-    //     autoplaySpeed: 3000,
-    //     responsive: [
-    //         {
-    //           breakpoint: 768,
-    //           settings: {
-    //             slidesToShow: 1,
-    //             arrows: true,
-    //             nextArrow: '<div class="icon-arrow-right b-slider-arrows" aria-hidden="true"></div>',
-    //             prevArrow: '<div class="icon-arrow-left b-slider-arrows" aria-hidden="true"></div>'
-    //           }
-    //         }
-    //     ]
-    // });
      periodInDays = 30;
 
      $('.period-items a').on('click', function(event){
@@ -674,11 +659,10 @@ var dataPeriod = [[1,29],[30,59],[60,89],[90,119],[120,149],[150,179],[180,209],
         }
     });
 
-
-
-
-    
-
+    $('#blog-accordion').accordion({
+        header: "> div > h2"
+    });
+      
     $(document).on('click', function(event){
         var container = $('.cabinet-bubble');
         if ($(event.target).closest(".cabinet-bubble").length) 
@@ -686,40 +670,6 @@ var dataPeriod = [[1,29],[30,59],[60,89],[90,119],[120,149],[150,179],[180,209],
         container.removeClass("bubble-active");
         event.stopPropagation();
     });
-	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
- //    var myOptions = {
- //        zoom: 16,
- //        center: myPlace,
- //        mapTypeId: google.maps.MapTypeId.ROADMAP,
- //        disableDefaultUI: true,
- //        scrollwheel: false,
- //        zoomControl: true
- //    }
- //    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
-
- //    var marker = new google.maps.Marker({
-	//     position: myPlace,
-	//     map: map,
-	//     title: "Ярмарка вакансий и стажировок"
-	// });
-
-    //  var options = {
-    //     $AutoPlay: true,                                
-    //     $SlideDuration: 500,                            
-
-    //     $BulletNavigatorOptions: {                      
-    //         $Class: $JssorBulletNavigator$,             
-    //         $ChanceToShow: 2,                           
-    //         $AutoCenter: 1,                            
-    //         $Steps: 1,                                  
-    //         $Lanes: 1,                                  
-    //         $SpacingX: 10,                              
-    //         $SpacingY: 10,                              
-    //         $Orientation: 1                             
-    //     }
-    // };
-
-    // var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 
 });
 
@@ -738,11 +688,14 @@ $(window).on('load', function(){
         LineBlockHeight(".white-block");
         LineBlockHeight(".item-service");
         LineBlockHeight(".b-about-blocks-item");
+        wikiBlockHeight();
+        BlogBlockHeight();
     }
     if (isMobile) {
         TeamPhotoHeight();
     }
     if (myWidth > 767 && myWidth < 960) {
          $(".competence-item").css("height","auto");
+         $(".bank-guarantees-column-bottom.white-block").css("height","auto")
     }
 });
