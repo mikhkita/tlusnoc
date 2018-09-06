@@ -231,6 +231,35 @@ $(document).ready(function(){
 
     });
     
+    $(".reply-link").on('click', function(){
+        var html ='<div class="reply-container clearfix">';
+             html +='<div class="take-comment-block reply-block">';
+                 html +='<div class="user-photo add-photo"></div>';
+                 html +='<div class="user-comment-form">';
+                     html +='<form method="POST" action="kitsend.php">';
+                         html +='<div class="input-string">';
+                             html +='<textarea class="comment-textarea" placeholder="Ваш ответ..."></textarea>';
+                         html +='</div>';
+                         html +='<div class="comment-login">';
+                             html +='<a href="#">Войти с паролем</a><p> или через:</p>';
+                             html +='<div class="repost-block">';
+                                 html +='<a href="#" class="repost-icon icon-facebook"></a>';
+                                 html +='<a href="#" class="repost-icon icon-vk"></a>';
+                                 html +='<a href="#" class="repost-icon icon-twitter"></a>';
+                             html +='</div>';
+                         html +='</div>';
+                         html +='<a href="#" class="b-btn b-btn-blue ajax">Отправить</a>';
+                     html +='</form>';
+                 html +='</div>';
+             html +='</div>';
+         html +='</div>';
+
+        var block = $(this).closest('.user-comment-container');
+        $('.reply-container').remove();
+        block.after(html);
+        return false;
+    });
+
     $('.cabinet').on('click', function(event){
         $('.cabinet-bubble').toggleClass("bubble-active");
         event.stopPropagation();
