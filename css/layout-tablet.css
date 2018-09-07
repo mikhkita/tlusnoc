@@ -1144,7 +1144,9 @@ h1.b-title, h2.b-title{
 	}
 /*------------База данных (страница статьи)------------*/
 	
-
+	.b-article-top-info-item p{
+		display: block;
+	}
 
 
 

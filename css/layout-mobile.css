@@ -498,6 +498,17 @@ select.vacancy-select{
 	font-size: 24px;
 	line-height: 30px;
 }
+.b-article h2{
+	font-size: 24px;
+    line-height: 32px;
+}
+	.b-article .important-info div:nth-child(2){
+		display: block;
+		width: 100%;
+	}
+	.important-info.important-info-big div:nth-child(1){
+		max-width: 100%;
+	}
 @media screen and (max-width: 600px){
 	.b-menu-down li{
 		width: calc(100%/2 - 3px);
@@ -1150,6 +1161,22 @@ select.vacancy-select{
 		padding-top: 15px;
 		padding-bottom: 8px;
 	}
+	.b-article{
+		padding: 25px 20px;
+	}
+		.b-article-top-info-item{
+			width: 100%;
+			padding-bottom: 15px;
+		}
+			.b-article-top-info-item:nth-child(2){
+				text-align: left;
+			}
+			.b-article-top-info-item:nth-child(3){
+				text-align: left;
+			}
+			.b-article-top-info-item p{
+				display: inline-block;
+			}
 /*------------База данных------------*/
 }
 	@media screen and (max-width: 350px){
@@ -1168,6 +1195,10 @@ select.vacancy-select{
 		/*------Сопровождение конкурсных процедур-------*/
 		.monitoring-tabs .choice-block div:not(:last-child){
 			margin-bottom: 15px;
+		}
+		.b-article h2{
+			font-size: 20px;
+			line-height: 28px;
 		}
 	}
 }
