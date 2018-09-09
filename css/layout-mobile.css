@@ -509,6 +509,72 @@ select.vacancy-select{
 	.important-info.important-info-big div:nth-child(1){
 		max-width: 100%;
 	}
+
+/*------------Блог------------*/
+.b-tile-item{
+	width: 100%;
+	padding-bottom: 0;
+}
+	.b-tile-item:not(:first-child){
+		margin-left: 0;
+	}
+	.b-tile-item .tile-img{
+		display: none;
+	}
+.b-tile-item.no-image.no-preview-text{
+	height: auto;
+}
+.b-tile-item.bcg-img{
+	width: 100%;
+	height: auto;
+}
+	.b-tile-item.bcg-img:before{
+		content:unset;
+	}
+	.bcg-img .b-tile-content{
+		color: #000;
+		position: relative;
+		max-width: unset;
+	}
+		.bcg-img .b-tile-content h2{
+			font-size: 16px;
+			line-height: 20px;
+		}
+		.b-tile-content-middle{
+			padding-bottom: 10px;
+		}
+		.b-tile-content-bottom{
+			position: relative;
+			bottom: unset;
+		}
+		.bcg-img .icon-clock, .bcg-img .icon-comment{
+			color: #000;
+		}
+		.bcg-img .icon-clock:before, .bcg-img .icon-comment:before{
+			color: #1b82c7;
+		}
+	.b-tile-item.bcg-img:not(:first-child){
+		margin-left: 0;
+	}
+	.blog-article-bottom-block{
+		width: 100%;
+	}
+		.blog-article-bottom-block:nth-child(2){
+			text-align: left;
+		}
+		.comment-login p{
+			display: block;
+			padding: 5px 0;
+		}
+		.comment-login .repost-icon{
+			margin-left: 0;
+			margin-right: 6px;
+		}
+		.blog-help-form{
+			display: none;
+		}
+
+
 @media screen and (max-width: 600px){
 	.b-menu-down li{
 		width: calc(100%/2 - 3px);
@@ -665,6 +731,22 @@ select.vacancy-select{
 		padding-bottom: 20px;
 	}
 
+/*------------Блог------------*/
+.blog-article-container h1.b-title{
+	line-height: 32px;
+}
+	.user-photo{
+		display: none;
+	}
+	.user-comment-form{
+		width: 100%;
+		margin-left: 0;
+	}
+	.user-comment{
+		width: 100%;
+		margin-left: 0;
+	}
+
 }
 @media screen and (max-width: 500px){
 	.b-index h2.b-title{
@@ -716,8 +798,8 @@ select.vacancy-select{
 		font-size: 24px;
     	line-height: 32px;
 	}
-	.guarantee-info h2.b-title, .service-item .b-block h2{
-		line-height: 32px;
+	.guarantee-info h2.b-title, .service-item .b-block h2.b-title{
+		line-height: 24px;
 	}
 	.b-special h3.b-title{
 	    font-size: 20px;
@@ -1177,7 +1259,50 @@ select.vacancy-select{
 			.b-article-top-info-item p{
 				display: inline-block;
 			}
-/*------------База данных------------*/
+/*------------Блог------------*/
+	/*.comment-login p{
+		display: block;
+		padding: 5px 0;
+	}
+	.repost-icon{
+		margin-left: 0;
+		margin-right: 6px;
+	}*/
+	.blog-article p{
+		font-size: 14px;	
+	}
+	.take-comment-block.reply-block{
+		width: 100%;
+	    border-left: 1px solid #1b82c7;
+   		padding-left: 10px;
+	}
+/*------------Проекты------------*/
+.projects-container h2{
+	font-size: 22px;
+	line-height: 26px;
+}
+.projects-container h3{
+	font-size: 18px;
+	line-height: 24px;
+}
+	.projects-main-block{
+		padding-bottom: 50px;
+	}
+	.projects-consult-block{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+		.projects-mark-left-block{
+			width: 30px;
+		}
+	.projects-marketplace-block{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.projects-studycenter-block{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 }
 	@media screen and (max-width: 350px){
 		#b-popup-call{
@@ -1189,9 +1314,9 @@ select.vacancy-select{
 		.b-logo a img{
 		 	width: 208px;
 		}
-		.burger-menu{
+		/*.burger-menu{
 			margin-top: 35px;
-		}
+		}*/
 		/*------Сопровождение конкурсных процедур-------*/
 		.monitoring-tabs .choice-block div:not(:last-child){
 			margin-bottom: 15px;

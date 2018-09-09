@@ -213,6 +213,7 @@ $(document).ready(function(){
             LineBlockHeight(".white-block");
             LineBlockHeight(".item-service");
             LineBlockHeight(".b-about-blocks-item");
+            LineBlockHeight(".b-three-blocks-item");
             wikiBlockHeight();
             BlogBlockHeight();
         }
@@ -223,6 +224,8 @@ $(document).ready(function(){
             $(".white-block").css("height","auto");
             $(".item-service").css("height","auto");
             $(".b-about-blocks-item").css("height","auto");
+            $(".b-tile-item:not(.bcg-img)").css("height","auto");
+            $(".b-three-blocks-item").css("height","auto");
         }
         if (myWidth > 767 && myWidth < 960) {
             $(".competence-item").css("height","auto");
@@ -264,6 +267,7 @@ $(document).ready(function(){
         $('.cabinet-bubble').toggleClass("bubble-active");
         event.stopPropagation();
     });
+
     $('.fancy').on('click', function(){
         if($(this).attr("data-goal")){
             $('#b-popup-app').find("form").attr("data-goal", $(this).attr("data-goal"));
@@ -689,7 +693,8 @@ var dataPeriod = [[1,29],[30,59],[60,89],[90,119],[120,149],[150,179],[180,209],
     });
 
     $('#blog-accordion').accordion({
-        header: "> div > h2"
+        header: "> div > h2",
+        heightStyle: "content"
     });
       
     $(document).on('click', function(event){
@@ -717,6 +722,7 @@ $(window).on('load', function(){
         LineBlockHeight(".white-block");
         LineBlockHeight(".item-service");
         LineBlockHeight(".b-about-blocks-item");
+        LineBlockHeight(".b-three-blocks-item");
         wikiBlockHeight();
         BlogBlockHeight();
     }

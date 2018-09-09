@@ -863,29 +863,61 @@ h1.b-title, h2.b-title{
 	.blog-page .b-block{
 		width: 860px;
 	}
-		.b-tile-block{
-
+		.blog-block-left{
+			width: 100%;
 		}
-			.b-tile-item{
-				width: calc(50% - 12px);
+			.b-tile-block{
+
 			}
+				.b-tile-item{
+					margin-right: 0;
+				}
+				.b-tile-item:not(:first-child){
+					margin-left: 16px;
+				}
 				.b-tile-item.bcg-img{
-					height: auto;
-				    width: 50%;
-		    		padding-bottom: 0;
-		    		width: calc(50% - 12px);
-		    		vertical-align: top;
+					width: calc(50% - 104px);
+				}
+					.b-tile-item.bcg-img:not(:first-child){
+						margin-left: 17px;
+					}
+				.b-tile-item.middle-img{
+					width: calc(100%/2 - 11px);
 				}
 				.b-tile-item.big-img{
-				    width: calc(50% - 12px);
-				    float: unset;
+				    width: calc(50% + 87px);
 				}
-				.bcg-img .b-tile-content{
-					position: relative;
-				}
-		.b-blog-right-item .help-form-block .input-string{
-			max-width: 100%;
+		.blog-block-right{
+			width: 100%;
 		}
+			.b-blog-right-item .b-blog-logo img{
+				max-width: 250px;
+			}
+			.b-blog-right-item .help-form-block .input-string{
+				max-width: 100%;
+			}
+		.blog-article{
+			margin-right: 0;
+		}
+			.blog-comment-block{
+				margin-right: 0;
+			}
+			.blog-help-form{
+				margin-right: 0;
+				margin-bottom: 50px;
+			}
+			.b-blog-right-item form{
+					max-width: 300px;
+					margin:0 auto;
+				}
+/*------------Проекты------------*/				
+	.b-three-blocks-item{
+		padding: 16px 13px 0;
+		width: calc(100%/3 - 9px);
+	}
+	.b-three-blocks-item:not(:last-child){
+		margin-right: 10px;	
+	}
 }
 @media screen and (max-width: 844px){
 	.b-index h2.b-title{
@@ -1147,12 +1179,31 @@ h1.b-title, h2.b-title{
 	.b-article-top-info-item p{
 		display: block;
 	}
+/*------------Проекты------------*/	
 
-
-
-
-
-
+.b-three-blocks-item{
+	width: 100%;
+}
+	.b-three-blocks-item:not(:last-child){
+		margin-bottom: 20px;
+	}
+.projects-items .leasing-item{
+	width: 100%;
+}
+	.projects-items .leasing-item:not(:nth-child(4n)){
+		margin-right: 0;
+		margin-left: 0;
+		margin-top: 0;
+	}
+	.projects-items .leasing-item:not(:last-child){
+		margin-bottom: 20px;
+	}
+.b-projects-mark-item{
+	width: 100%;
+}
+	.b-projects-mark-item:not(:last-child){
+		margin-bottom: 20px;
+	}
 
 
 
