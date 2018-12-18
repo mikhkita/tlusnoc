@@ -6411,6 +6411,9 @@ padding-top: 19px;
 						width: 16px;
 						height: 17px;
 					}
+				.comment-mark.comment-active:before{
+					background:url(../i/comment-like-blue.svg);
+				}
 				.comment-mark:hover:after{
 					content: "";
 						position: absolute;
