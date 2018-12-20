@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<!-- <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<!-- <link rel="stylesheet" href="css/jquery.formstyler.css" type="text/css"> -->
+	
+
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 1023px)" href="css/layout-tablet.css">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+</head>
+<body>
+<div id="mobile-menu" class="mobile-menu hide">
+	<ul>
+		<h2 class="b-title">Меню</h2>
+		<li><a href="index.html" class="active">Главная</a></li>
+		<li><a href="services.html">Услуги и продукты</a></li>
+		<li><a href="about.html">О компании</a></li>
+		<li><a href="cooperation.html">Сотрудничество</a></li>
+		<li><a href="documents.html">Документация</a></li>
+		<li><a href="contacts.html" class="contact-info">Контакты</a></li>
+	</ul>
+	<div class="social-icons">
+		<a href="#" class="icon-facebook"></a>
+		<a href="#" class="icon-vk"></a>
+		<a href="#" class="icon-instagram"></a>
+	</div>
+</div>
+<div id="panel-page">
+	<div class="b b-top">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<ul class="b-top-content">
+					<li>
+						<a href="https://t.me/EAconsbot" class="contact-info telegram">
+							<img src="i/telegram.svg" class="telegram">@EAConsBot
+						</a>
+					</li>
+					<li>
+						<a href="#" class="contact-info">Контактная информация</a>
+					</li>
+					<li>
+						<div class="social-icons">
+							<a href="#" class="icon-facebook" target="_blank"></a>
+							<a href="#" class="icon-vk" target="_blank"></a>
+							<a href="#" class="icon-instagram" target="_blank"></a>
+							<a href="#" class="icon-twitter" target="_blank"></a>
+						</div>
+					</li>
+					<li>
+						<a href="tel:+74991100046" class="phone">+7 499 110 00 46</a>
+					</li>
+					<li class="cabinet-cont">
+						<a href="#" class="cabinet" onclick="return false;"><span class="icon-cabinet"></span>Кабинет</a>
+						<div class="cabinet-bubble">
+							<div class="cabinet-bubble-wrap">
+								<h3 class="b-title">Войти</h3>
+								<form id="b-login-form" class="b-login-form" method="post" action="action.php">
+									<input type="text" name="email" placeholder="E-mail" required>
+									<input type="password" name="password" placeholder="Пароль" required>
+									<a href="#" class="b-btn b-btn-blue ajax" onclick="$('#b-login-form').submit(); return false;">Войти</a>
+								</form>
+								<a href="#" class="b-btn b-btn-transparent">Регистрация</a>
+								<a href="#" class="restore-password">Восстановить пароль</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="b b-menu">
+		<div class="b-wide-block">
+			<div class="b-block clearfix">
+				<div class="b-logo">
+					<a href="index.html">
+						<img src="i/logo.svg">
+					</a>
+				</div>
+				<ul class="b-menu-items">
+					<li><a href="services.html">Услуги и продукты</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Вики</a></li>
+					<li><a href="documents.html">Блог</a></li>
+				</ul>
+				<div id="burger-menu" class="burger-menu icon-menu">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-services-menu about-menu">
+		<div class="b-block">
+			<div class="choice-tabs two-choice-tabs">
+				<a href="sro.html" class="choice-item"><p>СРО</p></a>
+				<a href="license.html" class="choice-item active"><p>Лицензирование</p></a>
+			</div>
+		</div>
+	</div>
+	<div id="sro-page">
+		<div class="sro-container license-container">
+			<div class="b-block">
+				<ul class="b-breadcrumbs black">
+					<li><a href="index.html" class="icon-right-arrow">Главная</a></li>
+					<li><a href="services.html" class="icon-right-arrow">Услуги и продукты</a></li>
+					<li><span>СРО и лицензирование </span></li>
+				</ul>
+				<h1 class="b-title">СРО и лицензирование </h1>
+				<h4 class="b-subtitle">Центр сертификации и лицензирования EA Consult оказывает клиентам юридическую поддержку «под ключ» в вопросах получения лицензий, их продления, переоформления или аннулирования.</h4>
+				<p>Мы работаем со следующими видами лицензий: </p>
+				<div class="license-accordion">
+					<div class="license-item">
+						<h3>Алкогольная лицензия</h3>
+						<div class="license-item-block">
+							<div class="license-item-docs">
+								<p>Виды лицензии:</p>
+								<ul class="mark">
+									<li>Лицензия на розничную торговлю алкоголем в закрытой таре (как в магазинах)</li>
+									<li>Лицензия на розничную продажу алкогольной продукции при оказании услуг общественного питания (кафе, бары, рестораны, столовые, выездное обслуживание и т.п.)</li>
+								</ul>
+								<p>Необходимые документы:</p>
+								<ul class="mark">
+									<li>Диск с цветными сканированными копиями всех документов, каждый документ отдельно (названия файлов должны соответствовать содержанию</li>
+									<li>Устав</li>
+									<li>Свидетельство о создании (ОГРН)</li>
+									<li>Свидетельство о постановке на налоговый учет (ИНН)</li>
+									<li>Свидетельства обо всех изменениях (при наличии)</li>
+									<li>Квитанция об оплате государственной пошлины;</li>
+									<li>Приказ о назначении Генерального директора и Главного бухгалтера;</li>
+									<li>Выписка из ЕГРЮЛ (для магазина)</li>
+									<li>Справка из банка о величине уставного капитала (для магазина)</li>
+									<li>Зарегистрированный Договор аренды (субаренды) торгового помещения, свидетельство о собственности</li>
+									<li>БТИ: поэтажный план, экспликация, Форма 5</li>
+									<li>Карточка регистрации ККМ</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="license-item">
+						<h3>Образовательная лицензия</h3>
+						<div class="license-item-block">
+							<p>Срок оформления – 65 дней<br>
+							Срок действия лицензии – 3 (три) года, продлевается на 5 (пять) лет.</p>
+						</div>
+					</div>
+					<div class="license-item">
+						<h3>Транспортная лицензия;</h3>
+						<div class="license-item-block">
+							<p>Лицензия для оказания лицензиатом услуг по перевозке пассажиров автотранспотом вместимостью более 8 мест, а также грузов или отходов I-IV классов опасности<br>
+							Срок оформления – от 30 до 90 дней в зависимости от типа лицензии</p>
+						</div>
+					</div>
+					<div class="license-item">
+						<h3>Лицензия на опасные отходы</h3>
+						<div class="license-item-block">
+							<div class="license-item-docs">
+								<p>Виды работ, требующие лицензирования:</p>
+								<ul class="mark">
+									<li>Сбор отходов 1 – 4 класса опасности</li>
+									<li>Транспортирование отходов 1 – 4 класса опасности</li>
+									<li>Обработка отходов 1 – 4 класса опасности</li>
+									<li>Утилизация отходов 1 – 4 класса опасности</li>
+									<li>Обезвреживание отходов 1 – 4 класса опасности</li>
+									<li>Размещение отходов 1 – 4 класса опасности</li>
+								</ul>
+								<p>Необходимые документы:</p>
+								<ol class="num-list">
+									<li>Учредительные документы:
+										<ul class="dots">
+											<li>Решение или протокол о назначении Генерального директора;</li>
+											<li>Решение или протокол о создании Общества;</li>
+											<li>Свидетельство о внесении изменений в учредительные документы (при наличии);</li>
+											<li>Устав;</li>
+											<li>Свидетельство ОГРН;</li>
+											<li>Свидетельство ИНН;</li>
+											<li>Коды Госкомстата;</li>
+											<li>Выписка из ЕГРЮЛ.</li>
+										</ul>
+									</li>
+									<li>Оригинал платежного поручения с отметкой банка об уплате сбора за выдачу лицензии (7 500 руб.) - оплачивается после юридической экспертизы ваших документов.</li>
+									<li>Перечень опасных отходов согласно новому классификатору от 2017 года (оказываем помощь в подборе).</li>
+									<li>Паспорта опасных отходов, в отношении которых осуществляется деятельность по их сбору, использованию, обезвреживанию, транспортировке, размещению.</li>
+									<li>Свидетельства (сертификаты) на право работы с опасными отходами, подтверждающие профессиональную подготовку индивидуального предпринимателя или работников юридического лица, осуществляющих деятельность по сбору, использованию, обезвреживанию, транспортировке, размещению опасных отходов.</li>
+									<li>Документы, подтверждающие наличие у соискателя лицензии (лицензиата) принадлежащих ему на праве собственности или на ином законном основании:
+										<ul class="dots">
+											<li>объектов размещения опасных отходов,</li>
+											<li>производственных помещений,</li>
+											<li>специализированных установок по обезвреживанию опасных отходов, специально оборудованных и снабженных специальными знаками транспортных средств, соответствующих установленным требованиям.</li>
+										</ul>
+									</li>
+									<li>Заключение СЭС о соответствии санитарным правилам деятельности по сбору, использованию, обезвреживанию, транспортировке, размещению опасных отходов.</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<div class="license-item">
+						<h3>Лицензия на металлы</h3>
+						<div class="license-item-block">
+							<p>Лицензируемые виды деятельности:</p>
+							<ul class="mark">
+								<li>Заготовка лома черных/цветных металлов — сбор, покупка лома
+								черных/цветных металлов у юридических и физических лиц и
+								транспортировка заготовленного лома черных/цветных металлов
+								грузовым автомобильным транспортом.</li>
+								<li>Реализация лома черных/цветных металлов — продажа или передача
+								заготовленного и (или) переработанного лома черных/цветных металлов
+								на возмездной или безвозмездной основе.</li>
+								<li>Переработка лома черных/цветных металлов — процесс хранения,
+								сортировки, отбора, измельчения, резки, разделки, прессования,
+								брикетирования лома черных/цветных металлов.</li>
+							</ul>
+							<p class="uppercase"><strong>Требования:</strong></p>
+							<div class="license-item-docs">
+								<ul class="mark">
+									<li>реальный склад</li>
+									<li>реальные специалисты с удостоверениями</li>
+									<li>заключение СЭС</li>
+									<li>аттестационная лаборатория</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="license-item">
+						<h3>Лицензия МЧС</h3>
+						<div class="license-item-block">
+							<p>Лицензия необходима для проведения работ в сфере пожаротушения и огнезащиты в соответствии с Постановлении правительства № 1225 от 30.12.2011 и Приказ МЧС № 665 от 16.10.2013</p>
+							<table>
+								<tr>
+									<td><strong>Срок выдачи</bstrong></td>
+									<td>45 дней</td>
+								</tr>
+								<tr>
+									<td><strong>Срок действия</strong></td>
+									<td>бессрочная</td>
+								</tr>
+							</table>
+							<div class="license-item-docs">
+								<p>Виды работ:</p>
+								<ul class="mark">
+									<li>Монтаж, техническое обслуживание и ремонт систем пожаротушения и
+									их элементов, включая диспетчеризацию и проведение
+									пусконаладочных работ;</li>
+									<li>Монтаж, техническое обслуживание и ремонт систем пожарной и
+									охранно-пожарной сигнализации и их элементов, включая
+									диспетчеризацию и проведение пусконаладочных работ;</li>
+									<li>Монтаж, техническое обслуживание и ремонт систем
+									противопожарного водоснабжения и их элементов, включая
+									диспетчеризацию и проведение пусконаладочных работ;</li>
+									<li>Монтаж, техническое обслуживание и ремонт автоматических систем
+									(элементов автоматических систем) противодымной вентиляции,
+									включая диспетчеризацию и проведение пусконаладочных работ;</li>
+									<li>Монтаж, техническое обслуживание и ремонт систем оповещения и
+									эвакуации при пожаре и их элементов, включая диспетчеризацию и
+									проведение пусконаладочных работ;</li>
+									<li>Монтаж, техническое обслуживание и ремонт фотолюминесцентных
+									эвакуационных систем и их элементов;</li>
+									<li>Монтаж, техническое обслуживание и ремонт противопожарных
+									занавесов и завес, включая диспетчеризацию и проведение
+									пусконаладочных работ;</li>
+									<li>Монтаж, техническое обслуживание и ремонт заполнений проемов в
+									противопожарных преградах;</li>
+									<li>Выполнение работ по огнезащите материалов, изделий и конструкций;</li>
+									<li>Монтаж, техническое обслуживание и ремонт первичных средств
+									пожаротушения.</li>
+								</ul>
+								<p class="uppercase"><strong>Необходимые документы:</strong></p>
+								<ul class="mark">
+									<li>Копия Устава;</li>
+									<li>Копия решения или протокола о создании ООО;</li>
+									<li>Копия решения или протокола о назначении Генерального директора;</li>
+									<li>Копия приказа о назначении Генерального директора;</li>
+									<li>Паспорт Генерального директора, документы о его образовании;</li>
+									<li>Документы на юридический адрес и адреса обособленных подразделений на которые оформляется лицензия МЧС;</li>
+									<li>Свидетельство ОГРН;</li>
+									<li>Свидетельство ИНН;</li>
+									<li>Выписка из ЕГРЮЛ, полученная менее месяца назад (при наличии);</li>
+									<li>Копии Трудовых книжек 3-х специалистов, подтверждающих их трудоустройство в вашей фирме и стаж работы, их дипломов, свидетельств о повышении квалификации.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="license-item">
+						<h3>Лицензия ФСБ</h3>
+						<div class="license-item-block">
+							<p>Лицензия требуется для проведения работ и оказания услуг с использованием сведений, составляющих государственную тайну, в том числе в области шифрования и криптографии.</p>
+							<table>
+								<tr>
+									<td><strong>Срок действия</bstrong></td>
+									<td>5 лет</td>
+								</tr>
+								<tr>
+									<td><strong>Срок оформления</strong></td>
+									<td>3-6 месяцев</td>
+								</tr>
+								<tr>
+									<td><strong>Лицензирующий орган</bstrong></td>
+									<td>Центр по лицензированию, сертификации и защите государственной тайны ФСБ России (ЦЛСЗ ФСБ России)./ ФСТЭК для ИТ-компаний</td>
+								</tr>
+							</table>
+							<p class="uppercase"><strong>Требуемые документы:</strong></p>
+							<div class="license-item-docs">
+								<p>Документы на фирму:</p>
+								<ul class="mark">
+									<li>Устав, протокол/Решение о создании Общества</li>
+									<li>Протокол/Решение о назначении директора фирмы</li>
+									<li>Приказ о назначении директора фирмы</li>
+									<li>Выписка из ЕГРЮЛ, полученная не позднее месяца назад (при наличии)</li>
+									<li>Свидетельства ОГРН, ИНН, письма Госкомстата</li>
+								</ul>
+								<p>Документы на руководителя фирмы:</p>
+								<ul class="mark">
+									<li>Четыре фото 4 х 6 см</li>
+									<li>Трудовая книжка</li>
+									<li>Отечественный и заграничный паспорта</li>
+									<li>Военный билет</li>
+									<li>Свидетельство о заключении брака</li>
+								</ul>
+								<p>Документы на помещение:</p>
+								<ul class="mark">
+									<li>Договор аренды/субаренды</li>
+									<li>Свидетельство о праве собственности на юридический адрес</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="license-item">
+						<h3>Лицензия на экспертизу промышленной безопасности</h3>
+						<div class="license-item-block">
+							<p>Лицензия требуется для оказания услуг по оценке соответствия объекта экспертизы предъявляемым к нему требованиям промышленной безопасности, результатом которой является заключение.</p>
+							<div class="license-item-docs">
+								<p>Виды деятельности:</p>
+								<ul class="mark">
+									<li>Проведение экспертизы промышленной безопасности документации на консервацию, ликвидацию опасного производственного объекта;</li>
+									<li>Проведение экспертизы промышленной безопасности документации на техническое перевооружение опасного производственного объекта в случае, если эта документация не входит в состав проектной документации такого объекта, подлежащей экспертизе в соответствии с законодательством Российской Федерации о градостроительной деятельности;</li>
+									<li>Проведение экспертизы промышленной безопасности технических устройств, применяемых на опасном производственном объекте, в случаях, установленных статьей 7 Федерального закона "О промышленной безопасности опасных производственных объектов";</li>
+									<li>Проведение экспертизы промышленной безопасности зданий и
+									сооружений на опасном производственном объекте, предназначенных
+									для осуществления технологических процессов, хранения сырья или
+									продукции, перемещения людей и грузов, локализации и ликвидации
+									последствий аварий;</li>
+									<li>Проведение экспертизы промышленной безопасности декларации
+									промышленной безопасности, разрабатываемой в составе
+									документации на техническое перевооружение (в случае, если
+									указанная документация не входит в состав проектной документации
+									опасного производственного объекта, подлежащей экспертизе в
+									соответствии с законодательством Российской Федерации о
+									градостроительной деятельности), консервацию, ликвидацию опасного
+									производственного объекта, или вновь разрабатываемой декларации
+									промышленной безопасности;</li>
+									<li>Проведение экспертизы промышленной безопасности обоснования
+									безопасности опасного производственного объекта, а также изменений,
+									вносимых в обоснование безопасности опасного производственного
+									объекта.</li>
+								</ul>
+								<p class="uppercase"><strong>Требуемые документы</strong></p>
+								<ul class="mark">
+									<li>Копии приказов о приеме на работу экспертов, заверенные
+									соискателем лицензии;</li>
+									<li>Реквизиты квалификационных удостоверений экспертов;</li>
+									<li>Копии документов, подтверждающих наличие у соискателя лицензии
+									необходимых для осуществления лицензируемой деятельности и
+									принадлежащих ему на праве собственности или на ином законном
+									основании по месту осуществления лицензируемой деятельности
+									зданий или нежилых помещений, права на которые не
+									зарегистрированы в Едином государственном реестре прав на
+									недвижимое имущество и сделок с ним (в случае, если такие права
+									зарегистрированы в указанном реестре, представляются сведения об
+									этих зданиях или помещениях);</li>
+									<li>Перечень оборудования, приборов, материалов и средств
+									информационного обеспечения, необходимых для осуществления
+									лицензируемой деятельности и принадлежащих соискателю лицензии
+									на праве собственности или на ином законном основании.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="license-item">
+						<h3>Лицензия на медицинскую деятельность</h3>
+						<div class="license-item-block">
+							<p>Лицензия требуется для выполнения работ и оказания широкого спектра медицинских услуг. Существует множество видов медицинских лицензий, в том числе:</p>
+							<div class="license-item-docs">
+								<ul class="dots">
+									<li>лицензия на акушерство и гинекологию;</li>
+									<li>лицензия на аллергологию и имуннологию;</li>
+									<li>лицензия на дерматовенерологию;</li>
+									<li>лицензия на кардиологию;</li>
+									<li>лицензия на терапевтическую косметологию;</li>
+									<li>лицензия на мануальную терапию;</li>
+									<li>лицензия на стоматологию;</li>
+									<li>и другие виды лицензий.</li>
+								</ul>
+								<table>
+									<tr>
+										<td><strong>Срок выдачи</strong></td>
+										<td>45 дней</td>
+									</tr>
+									<tr>
+										<td><strong>Срок действия</strong></td>
+										<td>бессрочная</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="license-item">
+						<h3>Лицензия на обслуживание медицинской техники</h3>
+					</div>
+					<div class="license-item">
+						<h3>Фармацевтическая лицензия</h3>
+					</div>
+					<div class="license-item">
+						<h3>Лицензирование транспортной деятельности</h3>
+					</div>
+					<div class="license-item">
+						<h3>Лицензирование связи</h3>
+					</div>
+					<div class="license-item">
+						<h3>Лицензирование геодезической и картографической деятельности</h3>
+					</div>
+					<div class="license-item">
+						<h3>Лицензирование недропользования</h3>
+					</div>
+					<div class="license-item">
+						<h3>Страховая лицензия</h3>
+					</div>
+					<div class="license-item">
+						<h3>Охранная лицензия</h3>
+					</div>
+					<div class="license-item">
+						<h3>Детективная лицензия</h3>
+					</div>
+					<div class="license-item">
+						<h3>Лицензия на оружие</h3>
+					</div>
+					<div class="license-item">
+						<h3>Регистрация в качестве туроператора</h3>
+					</div>
+					<div class="license-item">
+						<h3>Регистрация в палате пробирного надзора</h3>
+					</div>
+				</div>
+				<div class="important-info">
+					<div class="white">Важно!</div>
+					<div>
+						<p>Команда EA Consult обеспечит для вас юридическое сопровождение по вопросам лицензирования «Под ключ», а также, при необходимости, предложит к рассмотрению готовые фирмы с требуемыми лицензиями. Стоимость таких решений зависит от множества факторов и обговаривается в каждом случае отдельно.</p>
+					</div>
+				</div>
+				<div class="b-text">
+					<p class="">По всем вопросам, связанным с получением, продлением или аннулированием лицензий и допусков, пожалуйста, обращайтесь к нашим специалистам любым удобным для вас способом, например, воспользовавшись формой заявки ниже.</p>
+				</div>
+				<div class="help-form-container">
+					<div class="b-block">
+						<div class="help-form-block">
+							<h3 class="b-title white">Можем ли мы чем-то помочь?</h3>
+							<p class="white">По любым вопросам, связанным с системами электронного документооборота, работе с торговыми площадками, получении средств цифровой подписи и настройки рабочих мест пользователей пожалуйста, отправьте информацию о себе в форме ниже. Мы свяжемся с вами максимально оперативно</p>
+							<form method="POST" action="kitsend.php">
+								<div class="input-string">
+									<input type="text" name="bank" placeholder="Банк">
+								</div>
+								<div class="input-string">
+									<input type="text" name="fio" placeholder="ФИО контактного лица">
+								</div>
+								<div class="input-string">
+									<input type="text" name="phone" placeholder="Телефон">
+								</div>
+								<div class="b-btn-center">
+									<a href="#" class="b-btn ajax">Отправить заявку</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-footer">
+		<div class="b-block">
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="cooperation.html">Сотрудничество</a></li>
+					<li><a href="cooperation.html#career">Карьера</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">Тендерное сопровождение</a></li>
+					<li><a href="#">Банковские гарантии и&nbsp;тендерный&nbsp;кредит</a></li>
+					<li><a href="#">Обучение и сертификация</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<ul class="underline-list">
+					<li><a href="#">44-ФЗ</a></li>
+					<li><a href="#">223-ФЗ</a></li>
+					<li><a href="#">Список электронных торговых&nbsp;площадок</a></li>
+				</ul>
+			</div>
+			<div class="b-footer-column">
+				<a href="tel:+74995515463" class="phone">+7 499 551 54 63</a>
+				<p>Москва, Новодмитровская улица 2к2, этаж 3, офис 22</p>
+				<p><a href="mailto:info@eaconsult.ru">info@eaconsult.ru</a></p>
+			</div>
+			<div class="b-bottom">
+				<p>© 2012 — 2017 «EA CONSULT»</p>
+			</div>
+		</div>
+	</div>
+	<div class="b-menu-overlay" id="b-menu-overlay" style="display: none;"></div>
+</div>
+	<div style="display:none;">
+		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+		<div class="b-popup" id="b-popup-app" style="display: inline-block;">
+			<h2 class="b-title">Отправить заявку</h2>
+			<form id="b-popup-app-form" class="b-popup-app-form" method="post" action="kitsend.php" novalidate="novalidate">
+				<input type="text" name="name" placeholder="Ваше имя" required="">
+				<input type="text" name="email" placeholder="Ваш E-mail" required="">
+				<textarea name="message" required="" rows="1" placeholder="Ваше сообщение" style="overflow-x: hidden; word-wrap: break-word; overflow-y: visible;"></textarea>
+				<div class="clearfix">
+				<div style="width: 100%">
+					<input id="personal" type="checkbox" name="personal" required checked>
+					<label for="personal">Я согласен на <a href="/politics" class="underline">обработку персональных данных</a></label>
+				</div>
+				<input type="text" name="MAIL">
+				</div>
+				<a href="#" class="b-btn b-btn-blue ajax">Отправить</a>
+				<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+			</form>
+			<button data-fancybox-close="" class="fancybox-close-small"></button>
+		</div>
+		<div class="b-popup" id="b-popup-1">
+			<h3>Оставьте заявку</h3>
+			<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
+			<form action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-1">
+				<div class="b-popup-form">
+					<label for="name">Введите Ваше имя</label>
+					<input type="text" id="name" name="name" required/>
+					<label for="tel">Введите Ваш номер телефона</label>
+					<input type="text" id="tel" name="phone" required/>
+					<label for="tel">Введите Ваш E-mail</label>
+					<input type="text" id="tel" name="email" required/>
+					<input type="hidden" name="subject" value="Заказ"/>
+					<input type="submit" style="display:none;">
+					<a href="#" class="b-btn b-blue-btn ajax">Заказать</a>
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+				</div>
+			</form>
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-success">
+			<h3>Спасибо!</h3>
+			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+		<div class="b-thanks b-popup" id="b-popup-error">
+			<h3>Ошибка отправки!</h3>
+			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<!-- <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script> -->
+	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/slideout.min.js"></script>
+	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+</body>
+</html>

@@ -153,6 +153,12 @@ $(document).ready(function(){
         });
     }
 
+   $('.license-accordion').accordion({
+        header: "> div > h3",
+        collapsible: true,
+        heightStyle: "content"
+    });
+
     $('.country-choise a').on('click', function(){
         toggleBlock($(this));
         $('.vacancy-select').change();

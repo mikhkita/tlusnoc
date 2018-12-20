@@ -14,7 +14,6 @@ body {
 	color: #1b1b1b;
 	line-height: 18px;
 }
-
 .b-block{
 	width: 860px;
 	max-width: calc(100% - 48px);
@@ -917,6 +916,18 @@ h1.b-title, h2.b-title{
 	}
 	.b-three-blocks-item:not(:last-child){
 		margin-right: 10px;	
+	}
+/*------------СРО------------*/
+	.b-sro-type-item{
+		display: block;
+		width: 100%;
+	}
+	.b-sro-item{
+		width: 100%;
+		max-width: 600px;
+	}
+	.license-container .important-info div:nth-child(2) p{
+		font-size: 16px;
 	}
 }
 @media screen and (max-width: 844px){

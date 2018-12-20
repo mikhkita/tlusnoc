@@ -746,7 +746,31 @@ select.vacancy-select{
 		width: 100%;
 		margin-left: 0;
 	}
-
+/*------------СРО------------*/	
+	.choice-tabs.two-choice-tabs .choice-item{
+		width: 100%;
+	}
+	.license-container .important-info div:nth-child(2) p{
+		font-size: 14px;
+	}
+	.license-container p{
+		font-size: 14px;
+	}
+	.license-item h3{
+		font-size: 18px;
+	}
+	.license-item-block ul.mark>li{
+		font-size: 14px;
+	}
+	.license-item-block tr{
+		margin-top: 10px;
+	}
+	.license-item-block td{
+		padding-right: 20px;
+		padding-bottom: 10px;
+		font-size: 14px;
+		min-width: 0;
+	}
 }
 @media screen and (max-width: 500px){
 	.b-index h2.b-title{
@@ -1303,6 +1327,35 @@ select.vacancy-select{
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
+/*------------СРО------------*/	
+	.sro-container{
+		padding-bottom: 60px;
+	}
+		.b-sro-types-container{
+			padding-top: 40px;
+		}
+		.sro-container .b-text a.link{
+			font-size: 14px;
+		}
+		.b-sro-types-container p{
+			font-size: 14px;
+		}
+		.b-sro-types-container h3{
+			font-size: 24px;
+			line-height: 30px;
+		}
+		.b-sro-types-container li{
+			font-size: 14px;
+		}
+		.b-sro-types-container ul{
+			margin-bottom: 30px;
+		}
+		h4.b-subtitle{
+			font-size: 16px;
+		}
+		.b-sro-item-text{
+			font-size: 14px;
+		}
 }
 	@media screen and (max-width: 350px){
 		#b-popup-call{
@@ -1324,6 +1377,19 @@ select.vacancy-select{
 		.b-article h2{
 			font-size: 20px;
 			line-height: 28px;
+		}
+		.license-item{
+			padding-left: 24px;
+		}
+		.license-item h3:before{
+			width: 14px;
+			height: 14px;
+			top: 0;
+		}
+		.license-item h3:after{
+			width: 5px;
+			height: 5px;
+			left: 6px;
 		}
 	}
 }
